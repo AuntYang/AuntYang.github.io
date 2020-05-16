@@ -4,6 +4,87 @@
   
     
     <entry>
+      <title>Linux根目录详解</title>
+      <link href="/2020/05/17/linux-gen-mu-lu-xiang-jie/"/>
+      <url>/2020/05/17/linux-gen-mu-lu-xiang-jie/</url>
+      
+        <content type="html"><![CDATA[<p>﻿使用Linux需要弄清楚其文件目录，尤其是根目录的各项文件的作用，进一步可以了解Linux系统的内核原理。<br><img src="https://img-blog.csdnimg.cn/20200516173152753.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ0MTc2NjIw,size_16,color_FFFFFF,t_70" alt="Linux根目录文件"></p><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+      
+      
+      <categories>
+          
+          <category> Linux </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 思维导图 </tag>
+            
+            <tag> Linux文件 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Python基础入门</title>
+      <link href="/2020/05/16/python-ji-chu/"/>
+      <url>/2020/05/16/python-ji-chu/</url>
+      
+        <content type="html"><![CDATA[<p>﻿ 编程语言很多，但大多是大同小异的，所以掌握编程思维、设计模式和学习方法才能更好的适应一门新的编程语言，我习惯于用思维导图的方式开始一门新的学习。<br><img src="https://img-blog.csdnimg.cn/20200516172628898.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ0MTc2NjIw,size_16,color_FFFFFF,t_70" alt="Python基础学习框架"></p><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+      
+      
+      <categories>
+          
+          <category> Python </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 思维导图 </tag>
+            
+            <tag> Python基础 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Git常用初级命令</title>
+      <link href="/2020/05/16/git-chang-yong-ming-ling/"/>
+      <url>/2020/05/16/git-chang-yong-ming-ling/</url>
+      
+        <content type="html"><![CDATA[<p>﻿<img src="https://img-blog.csdnimg.cn/20200516172139305.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ0MTc2NjIw,size_16,color_FFFFFF,t_70" alt="Git常用命令"></p><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+      
+      
+      <categories>
+          
+          <category> Git </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Git命令 </tag>
+            
+            <tag> 思维导图 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Hello World</title>
       <link href="/2020/05/16/hello-world/"/>
       <url>/2020/05/16/hello-world/</url>
