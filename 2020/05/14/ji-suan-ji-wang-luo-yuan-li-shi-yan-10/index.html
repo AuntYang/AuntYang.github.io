@@ -428,12 +428,29 @@
             <div class="row tag-cate">
                 <div class="col s7">
                     
-                          <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
-                          </div>
+                    <div class="article-tag">
+                        
+                            <a href="/tags/%E5%AE%9E%E9%AA%8C/">
+                                <span class="chip bg-color">实验</span>
+                            </a>
+                        
+                            <a href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/">
+                                <span class="chip bg-color">计算机网络</span>
+                            </a>
+                        
+                    </div>
                     
                 </div>
                 <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/source/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E5%8E%9F%E7%90%86/" class="post-category">
+                                计算机网络原理
+                            </a>
+                        
+                    </div>
                     
                 </div>
             </div>
@@ -451,7 +468,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    699
+                    703
                 </div>
                 
 
@@ -478,8 +495,57 @@
 <p>3.继续配置R1串口时钟频率，继续配置R1、R2使两边正常连接运行，操作结果如下图：<br><img src="https://img-blog.csdnimg.cn/20200515220512833.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ0MTc2NjIw,size_16,color_FFFFFF,t_70" alt=""><br><img src="https://img-blog.csdnimg.cn/20200515220523176.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ0MTc2NjIw,size_16,color_FFFFFF,t_70" alt=""><br>两边正常连接<br><img src="https://img-blog.csdnimg.cn/20200515220533448.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ0MTc2NjIw,size_16,color_FFFFFF,t_70" alt=""></p>
 <p>4.在R1、R2上配置静态路由<br><img src="https://img-blog.csdnimg.cn/20200515220543163.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ0MTc2NjIw,size_16,color_FFFFFF,t_70" alt=""><br>查看R1路由器静态路由表证明以上操作成功：<br><img src="https://img-blog.csdnimg.cn/20200515220547504.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ0MTc2NjIw,size_16,color_FFFFFF,t_70" alt=""><br><img src="https://img-blog.csdnimg.cn/20200515220553161.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ0MTc2NjIw,size_16,color_FFFFFF,t_70" alt=""><br>查看R2路由器静态路由表证明以上操作成功：<br><img src="https://img-blog.csdnimg.cn/20200515220558836.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ0MTc2NjIw,size_16,color_FFFFFF,t_70" alt=""><br>5.验证配置是否生效，即验证PC0与PC1是否可以相互通信，操作结果如下图：<br><img src="https://img-blog.csdnimg.cn/20200515220603789.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ0MTc2NjIw,size_16,color_FFFFFF,t_70" alt=""><br>Ping命令结果表明，建立过静态路由后，两不同局域网的设备成功相互通信，至此试验结束。</p>
 <h2 id="实验数据"><a href="#实验数据" class="headerlink" title="实验数据"></a>实验数据</h2><p>配置中各操作命令解析：</p>
-<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br></pre></td><td class="code"><pre><span class="line">PC0 //配置PC0的路由和IP地址</span><br><span class="line">    IP:         192.168.1.2</span><br><span class="line">    Submask:        255.255.255.0</span><br><span class="line">    Gateway:        192.168.1.1</span><br><span class="line">PC1//配置PC1的路由和IP地址</span><br><span class="line">    IP:         192.168.2.2</span><br><span class="line">    Submask:        255.255.255.0</span><br><span class="line">    Gateway:        192.168.2.1     </span><br><span class="line"></span><br><span class="line">PC1 ping PC2 //验证在未配置静态路由前PC0和PC1是否连通 </span><br><span class="line">Ping 192.168.2.2   </span><br><span class="line">R1//配置R1路由的接口和IP地址</span><br><span class="line">    en</span><br><span class="line">    conf t</span><br><span class="line">    hostname R1</span><br><span class="line">    int fa 1/0</span><br><span class="line">    no shut//设置当前接口为管理性打开</span><br><span class="line">    ip address 192.168.1.1 255.255.255.0//设置当前接口IP地址</span><br><span class="line">    <span class="built_in">exit</span></span><br><span class="line">    int serial 2/0  //配置serial 2/0接口</span><br><span class="line">    ip address 192.168.3.1 255.255.255.0//配置serial 2/0接口IP地址</span><br><span class="line">    clock rate 64000（必须配置时钟才可通信）//设置接口时钟频率</span><br><span class="line">    no shut</span><br><span class="line">    end</span><br><span class="line">R2//与上面R1的配置相同</span><br><span class="line">    en</span><br><span class="line">    conf t</span><br><span class="line">    hostname R2</span><br><span class="line">    int fa 1/0  </span><br><span class="line">    ip address 192.168.2.1 255.255.255.0</span><br><span class="line">    no shut</span><br><span class="line">    <span class="built_in">exit</span></span><br><span class="line">    int serial 2/0</span><br><span class="line">    ip address 192.168.3.2 255.255.255.0</span><br><span class="line">    no shut</span><br><span class="line">    end</span><br><span class="line">R1//配置R1路由器的静态路由</span><br><span class="line">    en</span><br><span class="line">    conf t</span><br><span class="line">    ip route 192.168.2.0 255.255.255.0 192.168.3.2//配置静态路由</span><br><span class="line">    end</span><br><span class="line">    show ip route//展示路由表</span><br><span class="line">    </span><br><span class="line">R2//与上面配置R1静态路由相同</span><br><span class="line">    en</span><br><span class="line">    conf t</span><br><span class="line">    ip route 192.168.1.0 255.255.255.0 192.168.3.1</span><br><span class="line">    end</span><br><span class="line">    show ip route</span><br><span class="line">PC1 Ping PC2//验证路由器静态路由是否配置成功，即验证两PC间连通性         </span><br><span class="line">    Ping 192.168.2.2      reply</span><br></pre></td></tr></tbody></table></figure>
+<pre class=" language-bash"><code class="language-bash">PC0 //配置PC0的路由和IP地址
+    IP:         192.168.1.2
+    Submask:        255.255.255.0
+    Gateway:        192.168.1.1
+PC1//配置PC1的路由和IP地址
+    IP:         192.168.2.2
+    Submask:        255.255.255.0
+    Gateway:        192.168.2.1     
 
+PC1 <span class="token function">ping</span> PC2 //验证在未配置静态路由前PC0和PC1是否连通 
+Ping 192.168.2.2   
+R1//配置R1路由的接口和IP地址
+    en
+    conf t
+    <span class="token function">hostname</span> R1
+    int fa 1/0
+    no shut//设置当前接口为管理性打开
+    ip address 192.168.1.1 255.255.255.0//设置当前接口IP地址
+    <span class="token keyword">exit</span>
+    int serial 2/0  //配置serial 2/0接口
+    ip address 192.168.3.1 255.255.255.0//配置serial 2/0接口IP地址
+    clock rate 64000（必须配置时钟才可通信）//设置接口时钟频率
+    no shut
+    end
+R2//与上面R1的配置相同
+    en
+    conf t
+    <span class="token function">hostname</span> R2
+    int fa 1/0  
+    ip address 192.168.2.1 255.255.255.0
+    no shut
+    <span class="token keyword">exit</span>
+    int serial 2/0
+    ip address 192.168.3.2 255.255.255.0
+    no shut
+    end
+R1//配置R1路由器的静态路由
+    en
+    conf t
+    ip route 192.168.2.0 255.255.255.0 192.168.3.2//配置静态路由
+    end
+    show ip route//展示路由表
+
+R2//与上面配置R1静态路由相同
+    en
+    conf t
+    ip route 192.168.1.0 255.255.255.0 192.168.3.1
+    end
+    show ip route
+PC1 Ping PC2//验证路由器静态路由是否配置成功，即验证两PC间连通性         
+    Ping 192.168.2.2      reply</code></pre>
 <script>
         document.querySelectorAll('.github-emoji')
           .forEach(el => {
@@ -560,7 +626,15 @@
                 <div class="post-meta__tag-list" style="display: inline-block;">
                     
                         <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
+                            
+                                <a href="/tags/%E5%AE%9E%E9%AA%8C/">
+                                    <span class="chip bg-color">实验</span>
+                                </a>
+                            
+                                <a href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/">
+                                    <span class="chip bg-color">计算机网络</span>
+                                </a>
+                            
                         </div>
                     
                 </div>
@@ -726,9 +800,53 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="far fa-dot-circle"></i>&nbsp;本篇
+                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+            <div class="card">
+                <a href="/2020/05/16/hello-world/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="Hello World">
+                        
+                        <span class="card-title">Hello World</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            hexo博客使用指南，初始博客，保留
+                        
+                    </div>
+                    <div class="publish-info">
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2020-05-16
+                        </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-user fa-fw"></i>
+                            hexo
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/%E6%8C%87%E5%8D%97/">
+                        <span class="chip bg-color">指南</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                本篇&nbsp;<i class="far fa-dot-circle"></i>
             </div>
             <div class="card">
                 <a href="/2020/05/14/ji-suan-ji-wang-luo-yuan-li-shi-yan-10/">
@@ -743,7 +861,7 @@
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            掌握静态路由的配置方法和技巧、掌握通过静态路由方式实现网络的连通性
+                            掌握静态路由的配置方法和技巧、掌握通过静态路由方式实现网络的连通性、熟悉广域网线缆的链接方式
                         
                     </div>
                     <div class="publish-info">
@@ -752,49 +870,28 @@
                             </span>
                         <span class="publish-author">
                             
-                            <i class="fas fa-user fa-fw"></i>
-                            auntyang
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/source/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E5%8E%9F%E7%90%86/" class="post-category">
+                                    计算机网络原理
+                                </a>
+                            
                             
                         </span>
                     </div>
                 </div>
 
                 
-            </div>
-        </div>
-        
-        
-        <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge right-badge text-color">
-                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
-            </div>
-            <div class="card">
-                <a href="/2020/05/13/hello-world/">
-                    <div class="card-image">
-                        
-                        
-                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="Hello World">
-                        
-                        <span class="card-title">Hello World</span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary block-with-text">
-                        
-                            Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hex
-                        
-                    </div>
-                    <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-05-13
-                            </span>
-                        <span class="publish-author">
-                            
-                            <i class="fas fa-user fa-fw"></i>
-                            auntyang
-                            
-                        </span>
-                    </div>
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/%E5%AE%9E%E9%AA%8C/">
+                        <span class="chip bg-color">实验</span>
+                    </a>
+                    
+                    <a href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/">
+                        <span class="chip bg-color">计算机网络</span>
+                    </a>
+                    
                 </div>
                 
             </div>
@@ -1032,7 +1129,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">824</span>&nbsp;字
+                class="white-color">828</span>&nbsp;字
             
             
             
