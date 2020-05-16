@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="Hello World, 小准子_Code">
+    <meta name="keywords" content="使用网络协议分析仪Wireshark, 小准子_Code">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>Hello World | 小准子_Code</title>
+    <title>使用网络协议分析仪Wireshark | 小准子_Code</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -308,12 +308,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/12.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/11.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">Hello World</h1>
+                    <h1 class="description center-align post-title">使用网络协议分析仪Wireshark</h1>
                 </div>
             </div>
         </div>
@@ -323,10 +323,105 @@
 
 
 
-<main class="container content">
+<main class="post-container content">
 
     
-    <!-- 文章内容详情 -->
+    <link rel="stylesheet" href="/libs/tocbot/tocbot.css">
+<style>
+    #articleContent h1::before,
+    #articleContent h2::before,
+    #articleContent h3::before,
+    #articleContent h4::before,
+    #articleContent h5::before,
+    #articleContent h6::before {
+        display: block;
+        content: " ";
+        height: 100px;
+        margin-top: -100px;
+        visibility: hidden;
+    }
+
+    #articleContent :focus {
+        outline: none;
+    }
+
+    .toc-fixed {
+        position: fixed;
+        top: 64px;
+    }
+
+    .toc-widget {
+        width: 345px;
+        padding-left: 20px;
+    }
+
+    .toc-widget .toc-title {
+        margin: 35px 0 15px 0;
+        padding-left: 17px;
+        font-size: 1.5rem;
+        font-weight: bold;
+        line-height: 1.5rem;
+    }
+
+    .toc-widget ol {
+        padding: 0;
+        list-style: none;
+    }
+
+    #toc-content {
+        height: calc(100vh - 250px);
+        overflow: auto;
+    }
+
+    #toc-content ol {
+        padding-left: 10px;
+    }
+
+    #toc-content ol li {
+        padding-left: 10px;
+    }
+
+    #toc-content .toc-link:hover {
+        color: #42b983;
+        font-weight: 700;
+        text-decoration: underline;
+    }
+
+    #toc-content .toc-link::before {
+        background-color: transparent;
+        max-height: 25px;
+
+        position: absolute;
+        right: 23.5vw;
+        display: block;
+    }
+
+    #toc-content .is-active-link {
+        color: #42b983;
+    }
+
+    #floating-toc-btn {
+        position: fixed;
+        right: 15px;
+        bottom: 76px;
+        padding-top: 15px;
+        margin-bottom: 0;
+        z-index: 998;
+    }
+
+    #floating-toc-btn .btn-floating {
+        width: 48px;
+        height: 48px;
+    }
+
+    #floating-toc-btn .btn-floating i {
+        line-height: 48px;
+        font-size: 1.4rem;
+    }
+</style>
+<div class="row">
+    <div id="main-content" class="col s12 m12 l9">
+        <!-- 文章内容详情 -->
 <div id="artDetail">
     <div class="card">
         <div class="card-content article-info">
@@ -335,14 +430,27 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/%E6%8C%87%E5%8D%97/">
-                                <span class="chip bg-color">指南</span>
+                            <a href="/tags/%E5%AE%9E%E9%AA%8C/">
+                                <span class="chip bg-color">实验</span>
+                            </a>
+                        
+                            <a href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/">
+                                <span class="chip bg-color">计算机网络</span>
                             </a>
                         
                     </div>
                     
                 </div>
                 <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/source/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E5%8E%9F%E7%90%86/" class="post-category">
+                                计算机网络原理
+                            </a>
+                        
+                    </div>
                     
                 </div>
             </div>
@@ -360,14 +468,14 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    125
+                    1.5k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    1 分
+                    6 分
                 </div>
                 
 
@@ -382,16 +490,85 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><pre class=" language-bash"><code class="language-bash">$ hexo new <span class="token string">"My New Post"</span></code></pre>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><pre class=" language-bash"><code class="language-bash">$ hexo server</code></pre>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><pre class=" language-bash"><code class="language-bash">$ hexo generate</code></pre>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><pre class=" language-bash"><code class="language-bash">$ hexo deploy</code></pre>
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-<script>
+                <h2 id="实验名称-使用网络协议分析仪Wireshark"><a href="#实验名称-使用网络协议分析仪Wireshark" class="headerlink" title="﻿实验名称  使用网络协议分析仪Wireshark"></a>﻿实验名称  使用网络协议分析仪Wireshark</h2><h2 id="实验目的："><a href="#实验目的：" class="headerlink" title="实验目的："></a>实验目的：</h2><pre><code> 1. 掌握安装和配置网络协议分析仪Wireshark的方法；
+ 2. 熟悉使用Wireshark工具分析网络协议的基本方法，加深对协议格式、协议层次和协议交互过程的理解。</code></pre><h2 id="实验内容和要求"><a href="#实验内容和要求" class="headerlink" title="实验内容和要求"></a>实验内容和要求</h2><p>​    1. 安装和配置网络协议分析仪Wireshark（<a href="http://www.wireshark.org）；" target="_blank" rel="noopener">http://www.wireshark.org）；</a><br>​    2. 使用并熟悉Wireshark分析协议的界面环境（菜单、工具条和各种窗口等）。<br>​    3. 学会使用Wireshark捕捉协议包。</p>
+<h2 id="实验环境"><a href="#实验环境" class="headerlink" title="实验环境"></a>实验环境</h2><p>​    1.运行Windows 10专业版操作系统的PC机一台<br>​    2.PC具有以太网卡一块，通过双绞线与局域网相连<br>​    3.已安装Wireshark与Cisco Packet Tracer程序</p>
+<h2 id="操作方法与实验步骤"><a href="#操作方法与实验步骤" class="headerlink" title="操作方法与实验步骤"></a>操作方法与实验步骤</h2><h3 id="1-安装网络协议分析仪"><a href="#1-安装网络协议分析仪" class="headerlink" title="1.安装网络协议分析仪"></a>1.安装网络协议分析仪</h3><p><img src="https://img-blog.csdnimg.cn/20200516174918965.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ0MTc2NjIw,size_16,color_FFFFFF,t_70" alt="Wireshark首页"><br>安装成功并运行，进入主界面如图，（可以点击图片跳转Wireshark官网下载）我这里安装的版本是3.0.9，进入自动为中文界面，Wireshark进入后界面如上图没有任何本地接口，检查后发现未安装Winpacp，安装Winpacp后重启Wireshark，正常运行。</p>
+<h3 id="2-使用Wireshark分析协议"><a href="#2-使用Wireshark分析协议" class="headerlink" title="2.使用Wireshark分析协议"></a>2.使用Wireshark分析协议</h3><h4 id="（1）点击Wireshark启动程序，正常运行如图"><a href="#（1）点击Wireshark启动程序，正常运行如图" class="headerlink" title="（1）点击Wireshark启动程序，正常运行如图"></a>（1）点击Wireshark启动程序，正常运行如图</h4><p><img src="https://img-blog.csdnimg.cn/20200516175003774.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ0MTc2NjIw,size_16,color_FFFFFF,t_70" alt="Wireshark首页"><br>其中捕获和分析是最重要的功能</p>
+<h4 id="（2）分组捕获"><a href="#（2）分组捕获" class="headerlink" title="（2）分组捕获"></a>（2）分组捕获</h4><p><img src="https://img-blog.csdnimg.cn/20200516191047640.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ0MTc2NjIw,size_16,color_FFFFFF,t_70" alt="Wireshark捕获接口"><br>开始分组捕获之前选择捕获接口，我所使用的网络是网线接入电脑的有线网，所以我选择的是捕获接口是以太网。</p>
+<h4 id="（3）协议分析。"><a href="#（3）协议分析。" class="headerlink" title="（3）协议分析。"></a>（3）协议分析。</h4><p><img src="https://img-blog.csdnimg.cn/20200516191115617.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ0MTc2NjIw,size_16,color_FFFFFF,t_70" alt="Wireshark以太网监听"><br>监听以太网接口得到的报文信息，如上图，其中有一条黑色底色的TCP报文信息*。<br><img src="https://img-blog.csdnimg.cn/20200516191158370.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ0MTc2NjIw,size_16,color_FFFFFF,t_70" alt="Wireshark以太网监听"><br>选择序号为191的一条报文信息进行分析，从蓝框可知该报文的发送源地址为223.166.151.88，目标地址为192.168.31.97，而目标地址192。168.31.97为我的专用网地址（路由器分配给笔记本的内网IP），源地址经查询地址为上海市，是一个公网IP，很明显该报文由外部网络发送至我的内网。<br>该报文的协议为OICQ，起初并不知道这个协议，但在中间信息框中发现该报文信息中包含了我的QQ号，由此推断OICQ为QQ通信协议，经过查询，OICQ为QQ的通讯协议，OICQ用户到OICQ服务器的通讯协议。<br><img src="https://img-blog.csdnimg.cn/20200516191237382.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ0MTc2NjIw,size_16,color_FFFFFF,t_70" alt="Wireshark以太网监听"><br>进入191号报文信息具体页，可看到报文具体信息和十六进制和ASCI码形式的报文内容。<br>这一帧包包含一下四种信息：<br>Frame: 物理层的数据帧情况。<br>Ethernet II , Src: 数据链路层以太网帧头部信息。<br>Internet Protocol Version 4, Src: 互联网层IP包头信息。<br>Internet Control Message Protocol: 互联网控制信息协议。ping 小包所使用的协议。<br>前三层基本上都是一样的，第四层开始就可以出现TCP, UDP 协议，第五层就可能有HTTP 应用层协议等等。<br><img src="https://img-blog.csdnimg.cn/20200516191313947.png" alt="帧结构"><br>由该栏信息可知，该报文源地址服务器端口为8000，目标端口为4004，报文长度为127，总和校验码（Checksum）为0xe51f。<br><img src="https://img-blog.csdnimg.cn/20200516191327952.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ0MTc2NjIw,size_16,color_FFFFFF,t_70" alt="帧结构"><br>协议层信息，协议为OICQ（即时通讯软件协议）包含目标、版本、数据等信息。</p>
+<h4 id="（4）保存分组捕获信息"><a href="#（4）保存分组捕获信息" class="headerlink" title="（4）保存分组捕获信息"></a>（4）保存分组捕获信息</h4><h2 id="实验数据记录和结果分析"><a href="#实验数据记录和结果分析" class="headerlink" title="实验数据记录和结果分析"></a>实验数据记录和结果分析</h2><p>实验数据与结果分析：</p>
+<pre class=" language-bash"><code class="language-bash">Frame 191: 161 bytes on wire <span class="token punctuation">(</span>1288 bits<span class="token punctuation">)</span>, 161 bytes captured <span class="token punctuation">(</span>1288 bits<span class="token punctuation">)</span> on interface 0
+//第191帧，由161个字节在线，共1288位，实际捕获到161个字节在0接口
+    Interface id: 0 <span class="token punctuation">(</span>\Device\NPF_<span class="token punctuation">{</span>7E2C33C0-0623-46BB-9126-813FB633578B<span class="token punctuation">}</span><span class="token punctuation">)</span>//接口ID：0
+        Interface name: \Device\NPF_<span class="token punctuation">{</span>7E2C33C0-0623-46BB-9126-813FB633578B<span class="token punctuation">}</span>
+        Interface description: \344\273\245\345\244\252\347\275\221
+    Encapsulation type: Ethernet <span class="token punctuation">(</span>1<span class="token punctuation">)</span>//封装类型
+    Arrival Time: Mar 13, 2020 15:22:45.526314000 中国标准时间//到达时间
+    <span class="token punctuation">[</span>Time <span class="token function">shift</span> <span class="token keyword">for</span> this packet: 0.000000000 seconds<span class="token punctuation">]</span>//包偏移时间
+    Epoch Time: 1584084165.526314000 seconds//不理解
+    <span class="token punctuation">[</span>Time delta from previous captured frame: 0.027360000 seconds<span class="token punctuation">]</span>//两帧之间的时间间隔
+    <span class="token punctuation">[</span>Time delta from previous displayed frame: 0.027360000 seconds<span class="token punctuation">]</span>//捕获到显示的间隔时间
+    <span class="token punctuation">[</span>Time since reference or first frame: 3.969859000 seconds<span class="token punctuation">]</span>//此包和第一帧的时间间隔
+    Frame Number: 191//帧号
+    Frame Length: 161 bytes <span class="token punctuation">(</span>1288 bits<span class="token punctuation">)</span>//帧长度
+    Capture Length: 161 bytes <span class="token punctuation">(</span>1288 bits<span class="token punctuation">)</span>//捕获的帧长度
+    <span class="token punctuation">[</span>Frame is marked: False<span class="token punctuation">]</span>//帧显著标志
+    <span class="token punctuation">[</span>Frame is ignored: False<span class="token punctuation">]</span>//帧忽略标志
+    <span class="token punctuation">[</span>Protocols <span class="token keyword">in</span> frame: eth:ethertype:ip:udp:oicq<span class="token punctuation">]</span>//帧内封装的协议层次结构
+    <span class="token punctuation">[</span>Coloring Rule Name: UDP<span class="token punctuation">]</span>//着色标记的协议
+    <span class="token punctuation">[</span>Coloring Rule String: udp<span class="token punctuation">]</span>//着色规则显示的字符串
+Ethernet II, Src: XiaomiEl_ee:46:6f <span class="token punctuation">(</span>40:31:3c:ee:46:6f<span class="token punctuation">)</span>, Dst: LcfcHefe_c2:10:c2 <span class="token punctuation">(</span>e8:6a:64:c2:10:c2<span class="token punctuation">)</span>
+    Destination: LcfcHefe_c2:10:c2 <span class="token punctuation">(</span>e8:6a:64:c2:10:c2<span class="token punctuation">)</span>
+        Address: LcfcHefe_c2:10:c2 <span class="token punctuation">(</span>e8:6a:64:c2:10:c2<span class="token punctuation">)</span>
+        <span class="token punctuation">..</span><span class="token punctuation">..</span> <span class="token punctuation">..</span>0. <span class="token punctuation">..</span><span class="token punctuation">..</span> <span class="token punctuation">..</span><span class="token punctuation">..</span> <span class="token punctuation">..</span><span class="token punctuation">..</span> <span class="token punctuation">..</span><span class="token punctuation">..</span> <span class="token operator">=</span> LG bit: Globally unique address <span class="token punctuation">(</span>factory default<span class="token punctuation">)</span>
+        <span class="token punctuation">..</span><span class="token punctuation">..</span> <span class="token punctuation">..</span>.0 <span class="token punctuation">..</span><span class="token punctuation">..</span> <span class="token punctuation">..</span><span class="token punctuation">..</span> <span class="token punctuation">..</span><span class="token punctuation">..</span> <span class="token punctuation">..</span><span class="token punctuation">..</span> <span class="token operator">=</span> IG bit: Individual address <span class="token punctuation">(</span>unicast<span class="token punctuation">)</span>
+    Source: XiaomiEl_ee:46:6f <span class="token punctuation">(</span>40:31:3c:ee:46:6f<span class="token punctuation">)</span>
+        Address: XiaomiEl_ee:46:6f <span class="token punctuation">(</span>40:31:3c:ee:46:6f<span class="token punctuation">)</span>
+        <span class="token punctuation">..</span><span class="token punctuation">..</span> <span class="token punctuation">..</span>0. <span class="token punctuation">..</span><span class="token punctuation">..</span> <span class="token punctuation">..</span><span class="token punctuation">..</span> <span class="token punctuation">..</span><span class="token punctuation">..</span> <span class="token punctuation">..</span><span class="token punctuation">..</span> <span class="token operator">=</span> LG bit: Globally unique address <span class="token punctuation">(</span>factory default<span class="token punctuation">)</span>
+        <span class="token punctuation">..</span><span class="token punctuation">..</span> <span class="token punctuation">..</span>.0 <span class="token punctuation">..</span><span class="token punctuation">..</span> <span class="token punctuation">..</span><span class="token punctuation">..</span> <span class="token punctuation">..</span><span class="token punctuation">..</span> <span class="token punctuation">..</span><span class="token punctuation">..</span> <span class="token operator">=</span> IG bit: Individual address <span class="token punctuation">(</span>unicast<span class="token punctuation">)</span>
+    Type: IPv4 <span class="token punctuation">(</span>0x0800<span class="token punctuation">)</span>
+Internet Protocol Version 4, Src: 223.166.151.88, Dst: 192.168.31.97
+    0100 <span class="token punctuation">..</span><span class="token punctuation">..</span> <span class="token operator">=</span> Version: 4
+    <span class="token punctuation">..</span><span class="token punctuation">..</span> 0101 <span class="token operator">=</span> Header Length: 20 bytes <span class="token punctuation">(</span>5<span class="token punctuation">)</span>
+    Differentiated Services Field: 0x00 <span class="token punctuation">(</span>DSCP: CS0, ECN: Not-ECT<span class="token punctuation">)</span>
+        0000 00<span class="token punctuation">..</span> <span class="token operator">=</span> Differentiated Services Codepoint: Default <span class="token punctuation">(</span>0<span class="token punctuation">)</span>
+        <span class="token punctuation">..</span><span class="token punctuation">..</span> <span class="token punctuation">..</span>00 <span class="token operator">=</span> Explicit Congestion Notification: Not ECN-Capable Transport <span class="token punctuation">(</span>0<span class="token punctuation">)</span>
+    Total Length: 147
+    Identification: 0x8fa2 <span class="token punctuation">(</span>36770<span class="token punctuation">)</span>
+    Flags: 0x4000, Don<span class="token string">'t fragment
+        0... .... .... .... = Reserved bit: Not set
+        .1.. .... .... .... = Don'</span>t fragment: Set
+        <span class="token punctuation">..</span>0. <span class="token punctuation">..</span><span class="token punctuation">..</span> <span class="token punctuation">..</span><span class="token punctuation">..</span> <span class="token punctuation">..</span><span class="token punctuation">..</span> <span class="token operator">=</span> More fragments: Not <span class="token keyword">set</span>
+    <span class="token punctuation">..</span>.0 0000 0000 0000 <span class="token operator">=</span> Fragment offset: 0
+    Time to live: 52
+    Protocol: UDP <span class="token punctuation">(</span>17<span class="token punctuation">)</span>
+    Header checksum: 0x5faf <span class="token punctuation">[</span>validation disabled<span class="token punctuation">]</span>
+    <span class="token punctuation">[</span>Header checksum status: Unverified<span class="token punctuation">]</span>
+    Source: 223.166.151.88
+    Destination: 192.168.31.97
+User Datagram Protocol, Src Port: 8000, Dst Port: 4004
+    Source Port: 8000//源IP
+    Destination Port: 4004//目标IP
+    Length: 127//长度
+    Checksum: 0xe51f <span class="token punctuation">[</span>unverified<span class="token punctuation">]</span>//和校验
+    <span class="token punctuation">[</span>Checksum Status: Unverified<span class="token punctuation">]</span>//和校验状态
+    <span class="token punctuation">[</span>Stream index: 0<span class="token punctuation">]</span>
+    <span class="token punctuation">[</span>Timestamps<span class="token punctuation">]</span>
+        <span class="token punctuation">[</span>Time since first frame: 3.969859000 seconds<span class="token punctuation">]</span>
+        <span class="token punctuation">[</span>Time since previous frame: 0.031141000 seconds<span class="token punctuation">]</span>
+OICQ - IM software, popular <span class="token keyword">in</span> China//因特网控制信息协议
+    Flag: Oicq packet <span class="token punctuation">(</span>0x02<span class="token punctuation">)</span>
+    Version: 0x3859//版本信息
+    Command: Heart Message <span class="token punctuation">(</span>2<span class="token punctuation">)</span>
+    Sequence: 17154
+    Data<span class="token punctuation">(</span>OICQ Number,if sender is client<span class="token punctuation">)</span>: 1026651458
+    Data: 
+        <span class="token punctuation">[</span>Expert Info <span class="token punctuation">(</span>Warning/Undecoded<span class="token punctuation">)</span>: Trailing stray characters<span class="token punctuation">]</span>
+            <span class="token punctuation">[</span>Trailing stray characters<span class="token punctuation">]</span>
+            <span class="token punctuation">[</span>Severity level: Warning<span class="token punctuation">]</span>
+            <span class="token punctuation">[</span>Group: Undecoded<span class="token punctuation">]</span></code></pre>
+<pre><code></code></pre><script>
         document.querySelectorAll('.github-emoji')
           .forEach(el => {
             if (!el.dataset.src) { return; }
@@ -424,7 +601,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="/about" rel="external nofollow noreferrer">hexo</a>
+                    <a href="/about" rel="external nofollow noreferrer">auntyang</a>
                 </span>
             </div>
             <div class="reprint__type">
@@ -434,7 +611,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://auntyang.github.io/2020/05/16/hello-world/">http://auntyang.github.io/2020/05/16/hello-world/</a>
+                    <a href="http://auntyang.github.io/2020/05/16/ji-suan-ji-wang-luo-yuan-li-shi-yan-1/">http://auntyang.github.io/2020/05/16/ji-suan-ji-wang-luo-yuan-li-shi-yan-1/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -447,7 +624,7 @@
                     本博客所有文章除特別声明外，均采用
                     <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a>
                     许可协议。转载请注明来源
-                    <a href="/about" target="_blank">hexo</a>
+                    <a href="/about" target="_blank">auntyang</a>
                     !
                 </span>
             </div>
@@ -472,8 +649,12 @@
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/%E6%8C%87%E5%8D%97/">
-                                    <span class="chip bg-color">指南</span>
+                                <a href="/tags/%E5%AE%9E%E9%AA%8C/">
+                                    <span class="chip bg-color">实验</span>
+                                </a>
+                            
+                                <a href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/">
+                                    <span class="chip bg-color">计算机网络</span>
                                 </a>
                             
                         </div>
@@ -645,31 +826,31 @@
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2020/05/16/git-chang-yong-ming-ling/">
+                <a href="/2020/05/17/linux-gen-mu-lu-xiang-jie/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/19.jpg" class="responsive-img" alt="Git常用初级命令">
+                        <img src="/medias/featureimages/23.jpg" class="responsive-img" alt="Linux根目录详解">
                         
-                        <span class="card-title">Git常用初级命令</span>
+                        <span class="card-title">Linux根目录详解</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            用思维导图来总结一些Git常用的初级命令，防止遗忘
+                            用思维导图的方式总结了Linux系统根目录下各个文件夹作用。
                         
                     </div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2020-05-16
+                            <i class="far fa-clock fa-fw icon-date"></i>2020-05-17
                         </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/source/categories/Git/" class="post-category">
-                                    Git
+                            <a href="/source/categories/Linux/" class="post-category">
+                                    Linux
                                 </a>
                             
                             
@@ -679,12 +860,12 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/Git%E5%91%BD%E4%BB%A4/">
-                        <span class="chip bg-color">Git命令</span>
-                    </a>
-                    
                     <a href="/tags/%E6%80%9D%E7%BB%B4%E5%AF%BC%E5%9B%BE/">
                         <span class="chip bg-color">思维导图</span>
+                    </a>
+                    
+                    <a href="/tags/Linux%E6%96%87%E4%BB%B6/">
+                        <span class="chip bg-color">Linux文件</span>
                     </a>
                     
                 </div>
@@ -698,31 +879,31 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2020/05/14/ji-suan-ji-wang-luo-yuan-li-shi-yan-10/">
+                <a href="/2020/05/16/python-ji-chu/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/17.jpg" class="responsive-img" alt="路由器静态路由配置实验">
+                        <img src="/medias/featureimages/3.jpg" class="responsive-img" alt="Python基础入门">
                         
-                        <span class="card-title">路由器静态路由配置实验</span>
+                        <span class="card-title">Python基础入门</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            掌握静态路由的配置方法和技巧、掌握通过静态路由方式实现网络的连通性、熟悉广域网线缆的链接方式
+                            用思维导图的方式总结了Python入门基础的学习框架
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-05-14
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-05-16
                             </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/source/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E5%8E%9F%E7%90%86/" class="post-category">
-                                    计算机网络原理
+                            <a href="/source/categories/Python/" class="post-category">
+                                    Python
                                 </a>
                             
                             
@@ -732,12 +913,12 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E5%AE%9E%E9%AA%8C/">
-                        <span class="chip bg-color">实验</span>
+                    <a href="/tags/%E6%80%9D%E7%BB%B4%E5%AF%BC%E5%9B%BE/">
+                        <span class="chip bg-color">思维导图</span>
                     </a>
                     
-                    <a href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/">
-                        <span class="chip bg-color">计算机网络</span>
+                    <a href="/tags/Python%E5%9F%BA%E7%A1%80/">
+                        <span class="chip bg-color">Python基础</span>
                     </a>
                     
                 </div>
@@ -813,6 +994,100 @@
 code[class*="language-"], pre[class*="language-"] { white-space: pre !important; }
 </style>
 
+
+    </div>
+    <div id="toc-aside" class="expanded col l3 hide-on-med-and-down">
+        <div class="toc-widget">
+            <div class="toc-title"><i class="far fa-list-alt"></i>&nbsp;&nbsp;目录</div>
+            <div id="toc-content"></div>
+        </div>
+    </div>
+</div>
+
+<!-- TOC 悬浮按钮. -->
+
+<div id="floating-toc-btn" class="hide-on-med-and-down">
+    <a class="btn-floating btn-large bg-color">
+        <i class="fas fa-list-ul"></i>
+    </a>
+</div>
+
+
+<script src="/libs/tocbot/tocbot.min.js"></script>
+<script>
+    $(function () {
+        tocbot.init({
+            tocSelector: '#toc-content',
+            contentSelector: '#articleContent',
+            headingsOffset: -($(window).height() * 0.4 - 45),
+            collapseDepth: Number('0'),
+            headingSelector: 'h2, h3, h4'
+        });
+
+        // modify the toc link href to support Chinese.
+        let i = 0;
+        let tocHeading = 'toc-heading-';
+        $('#toc-content a').each(function () {
+            $(this).attr('href', '#' + tocHeading + (++i));
+        });
+
+        // modify the heading title id to support Chinese.
+        i = 0;
+        $('#articleContent').children('h2, h3, h4').each(function () {
+            $(this).attr('id', tocHeading + (++i));
+        });
+
+        // Set scroll toc fixed.
+        let tocHeight = parseInt($(window).height() * 0.4 - 64);
+        let $tocWidget = $('.toc-widget');
+        $(window).scroll(function () {
+            let scroll = $(window).scrollTop();
+            /* add post toc fixed. */
+            if (scroll > tocHeight) {
+                $tocWidget.addClass('toc-fixed');
+            } else {
+                $tocWidget.removeClass('toc-fixed');
+            }
+        });
+
+        
+        /* 修复文章卡片 div 的宽度. */
+        let fixPostCardWidth = function (srcId, targetId) {
+            let srcDiv = $('#' + srcId);
+            if (srcDiv.length === 0) {
+                return;
+            }
+
+            let w = srcDiv.width();
+            if (w >= 450) {
+                w = w + 21;
+            } else if (w >= 350 && w < 450) {
+                w = w + 18;
+            } else if (w >= 300 && w < 350) {
+                w = w + 16;
+            } else {
+                w = w + 14;
+            }
+            $('#' + targetId).width(w);
+        };
+
+        // 切换TOC目录展开收缩的相关操作.
+        const expandedClass = 'expanded';
+        let $tocAside = $('#toc-aside');
+        let $mainContent = $('#main-content');
+        $('#floating-toc-btn .btn-floating').click(function () {
+            if ($tocAside.hasClass(expandedClass)) {
+                $tocAside.removeClass(expandedClass).hide();
+                $mainContent.removeClass('l9');
+            } else {
+                $tocAside.addClass(expandedClass).show();
+                $mainContent.addClass('l9');
+            }
+            fixPostCardWidth('artDetail', 'prenext-posts');
+        });
+        
+    });
+</script>
 
     
 
