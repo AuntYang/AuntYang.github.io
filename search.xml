@@ -4,6 +4,37 @@
   
     
     <entry>
+      <title>web自动化测试（python+selenium）</title>
+      <link href="/2020/05/18/web-zi-dong-hua-ce-shi/"/>
+      <url>/2020/05/18/web-zi-dong-hua-ce-shi/</url>
+      
+        <content type="html"><![CDATA[<h2 id="环境配置"><a href="#环境配置" class="headerlink" title="环境配置"></a>环境配置</h2><h3 id="安装py"><a href="#安装py" class="headerlink" title="安装py"></a>安装py</h3><h3 id="安装selenium"><a href="#安装selenium" class="headerlink" title="安装selenium"></a>安装selenium</h3><h3 id="配置相应浏览器驱动"><a href="#配置相应浏览器驱动" class="headerlink" title="配置相应浏览器驱动"></a>配置相应浏览器驱动</h3><h2 id="selenium之webdriver框架"><a href="#selenium之webdriver框架" class="headerlink" title="selenium之webdriver框架"></a>selenium之webdriver框架</h2><h3 id="webdriver-API"><a href="#webdriver-API" class="headerlink" title="webdriver API"></a>webdriver API</h3><pre class=" language-python"><code class="language-python"><span class="token comment" spellcheck="true"># 导入webdriver模块</span><span class="token keyword">from</span> selenium <span class="token keyword">import</span> webdriver<span class="token comment" spellcheck="true"># 导入计时器模块</span><span class="token keyword">import</span> time<span class="token comment" spellcheck="true"># 打开Chrome浏览器</span><span class="token comment" spellcheck="true"># 其他浏览器替换浏览器名即可</span>driver <span class="token operator">=</span> webdriver<span class="token punctuation">.</span>Chrome<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token comment" spellcheck="true"># 使用webdriver模块api导入网址</span>driver<span class="token punctuation">.</span>get<span class="token punctuation">(</span><span class="token string">"https://auntyang.tk"</span><span class="token punctuation">)</span><span class="token comment" spellcheck="true"># 计时器6s等待时间，一些异常报错可能就是因为没有在语句下设置等待时间</span><span class="token comment" spellcheck="true"># time模块的单位是s（秒），参数可以是小数也可以是整数</span>time<span class="token punctuation">.</span>sleep<span class="token punctuation">(</span><span class="token number">6</span><span class="token punctuation">)</span><span class="token comment" spellcheck="true"># 截屏保存到指定目录，参数格式：保存路径+文件名称+后缀</span>driver<span class="token punctuation">.</span>get_screenshot_as_file<span class="token punctuation">(</span><span class="token string">"D:\\test.jgp"</span><span class="token punctuation">)</span><span class="token comment" spellcheck="true"># 设置指定浏览器窗口尺寸</span>driver<span class="token punctuation">.</span>set_window_size<span class="token punctuation">(</span><span class="token number">540</span><span class="token punctuation">,</span> <span class="token number">960</span><span class="token punctuation">)</span><span class="token comment" spellcheck="true"># 设置浏览器窗口最大化</span>driver<span class="token punctuation">.</span>maximize_window<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token comment" spellcheck="true"># 上一页，相当于浏览器左上角的左箭头按钮</span>driver<span class="token punctuation">.</span>back<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token comment" spellcheck="true"># 下一页，相当于浏览器左上角的右箭头按钮</span>driver<span class="token punctuation">.</span>forward<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token comment" spellcheck="true"># 使用webdriver模块api进行刷新</span><span class="token comment" spellcheck="true"># 相当于浏览器输入框后面的刷新按钮</span>driver<span class="token punctuation">.</span>refresh<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token comment" spellcheck="true"># 结束浏览器进程</span>driver<span class="token punctuation">.</span>quit<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token comment" spellcheck="true"># 关闭当前窗口</span>driver<span class="token punctuation">.</span>close<span class="token punctuation">(</span><span class="token punctuation">)</span></code></pre><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+      
+      
+      <categories>
+          
+          <category> Web </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Web </tag>
+            
+            <tag> 自动化测试 </tag>
+            
+            <tag> python </tag>
+            
+            <tag> selenium库 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Linux根目录详解</title>
       <link href="/2020/05/17/linux-gen-mu-lu-xiang-jie/"/>
       <url>/2020/05/17/linux-gen-mu-lu-xiang-jie/</url>
