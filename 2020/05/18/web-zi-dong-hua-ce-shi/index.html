@@ -29,6 +29,7 @@
 
     <script src="/libs/jquery/jquery.min.js"></script>
 
+
 <meta name="generator" content="Hexo 4.2.0"><link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
 
 
@@ -476,14 +477,14 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    323
+                    1.1k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    1 分
+                    5 分
                 </div>
                 
 
@@ -498,7 +499,83 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="环境配置"><a href="#环境配置" class="headerlink" title="环境配置"></a>环境配置</h2><h3 id="安装py"><a href="#安装py" class="headerlink" title="安装py"></a>安装py</h3><h3 id="安装selenium"><a href="#安装selenium" class="headerlink" title="安装selenium"></a>安装selenium</h3><h3 id="配置相应浏览器驱动"><a href="#配置相应浏览器驱动" class="headerlink" title="配置相应浏览器驱动"></a>配置相应浏览器驱动</h3><h2 id="selenium之webdriver框架"><a href="#selenium之webdriver框架" class="headerlink" title="selenium之webdriver框架"></a>selenium之webdriver框架</h2><h3 id="webdriver-API"><a href="#webdriver-API" class="headerlink" title="webdriver API"></a>webdriver API</h3><pre class=" language-python"><code class="language-python"><span class="token comment" spellcheck="true"># 导入webdriver模块</span>
+                <h2 id="环境配置"><a href="#环境配置" class="headerlink" title="环境配置"></a>环境配置</h2><h3 id="Python安装"><a href="#Python安装" class="headerlink" title="Python安装"></a>Python安装</h3><h4 id="Windows"><a href="#Windows" class="headerlink" title="Windows"></a>Windows</h4><p><a href="https://www.python.org/" target="_blank" rel="noopener">https://www.python.org/</a></p>
+<h4 id="Linux"><a href="#Linux" class="headerlink" title="Linux"></a>Linux</h4><h5 id="下载文件"><a href="#下载文件" class="headerlink" title="下载文件"></a>下载文件</h5><pre class=" language-bash"><code class="language-bash"><span class="token function">wget</span> https://www.python.org/ftp/python/3.6.8/Python-3.6.8.tar.xz</code></pre>
+<h5 id="进行安装"><a href="#进行安装" class="headerlink" title="进行安装"></a>进行安装</h5><pre class=" language-bash"><code class="language-bash">　　　　<span class="token function">tar</span> xf Python-3.7.1.tar.xz
+　　　　<span class="token function">cd</span> Python-3.7.1
+　　　　yum -y <span class="token function">install</span> gcc-* openssl-* libffi-devel sqlite-devel
+　　　　./configure --enable-optimizations --with-openssl<span class="token operator">=</span>/usr/bin/openssl
+　　　　<span class="token function">make</span> -j4
+　　　　<span class="token function">make</span> <span class="token function">install</span>
+　　　　默认安装路径：/usr/local/lib/python3.7</code></pre>
+<h5 id="更改安装源"><a href="#更改安装源" class="headerlink" title="更改安装源"></a>更改安装源</h5><pre class=" language-bash"><code class="language-bash">pip3 config <span class="token keyword">set</span> global.index-url https://pypi.tuna.tsinghua.edu.cn/simple</code></pre>
+<h5 id="升级pip"><a href="#升级pip" class="headerlink" title="升级pip"></a>升级pip</h5><pre class=" language-bash"><code class="language-bash">pip3 <span class="token function">install</span> --upgrade pip</code></pre>
+<h5 id="安装虚拟环境工具"><a href="#安装虚拟环境工具" class="headerlink" title="安装虚拟环境工具"></a>安装虚拟环境工具</h5><pre class=" language-bash"><code class="language-bash">pip3 <span class="token function">install</span> virtualenv</code></pre>
+<h5 id="创建虚拟环境"><a href="#创建虚拟环境" class="headerlink" title="创建虚拟环境"></a>创建虚拟环境</h5><pre class=" language-bash"><code class="language-bash">virtualenv web01</code></pre>
+<h5 id="切换到虚拟环境"><a href="#切换到虚拟环境" class="headerlink" title="切换到虚拟环境"></a>切换到虚拟环境</h5><pre class=" language-bash"><code class="language-bash"><span class="token function">source</span> web01/bin/activate</code></pre>
+<h5 id="退出虚拟环境"><a href="#退出虚拟环境" class="headerlink" title="退出虚拟环境"></a>退出虚拟环境</h5><pre class=" language-bash"><code class="language-bash">　　　deactivate</code></pre>
+<h3 id="Selenium"><a href="#Selenium" class="headerlink" title="Selenium"></a>Selenium</h3><h4 id="检查"><a href="#检查" class="headerlink" title="检查"></a>检查</h4><p>打开dos窗口输入：</p>
+<pre class=" language-bash"><code class="language-bash">pip</code></pre>
+<p>正常应显示以下内容：</p>
+<pre class=" language-bash"><code class="language-bash">Usage:
+  pip <span class="token operator">&lt;</span>command<span class="token operator">></span> <span class="token punctuation">[</span>options<span class="token punctuation">]</span>
+
+Commands:
+  <span class="token function">install</span>                     Install packages.
+  download                    Download packages.
+  uninstall                   Uninstall packages.
+  freeze                      Output installed packages <span class="token keyword">in</span> requirements format.
+  list                        List installed packages.
+  show                        Show information about installed packages.
+  check                       Verify installed packages have compatible dependencies.
+  config                      Manage local and global configuration.
+  search                      Search PyPI <span class="token keyword">for</span> packages.
+  wheel                       Build wheels from your requirements.
+  <span class="token function">hash</span>                        Compute hashes of package archives.
+  completion                  A helper <span class="token function">command</span> used <span class="token keyword">for</span> <span class="token function">command</span> completion.
+  <span class="token function">help</span>                        Show <span class="token function">help</span> <span class="token keyword">for</span> commands.
+
+General Options:
+  -h, --help                  Show help.
+  --isolated                  Run pip <span class="token keyword">in</span> an isolated mode, ignoring environment variables and user configuration.
+  -v, --verbose               Give <span class="token function">more</span> output. Option is additive, and can be used up to 3 times.
+  -V, --version               Show version and exit.
+  -q, --quiet                 Give <span class="token function">less</span> output. Option is additive, and can be used up to 3 <span class="token function">times</span> <span class="token punctuation">(</span>corresponding to
+                              WARNING, ERROR, and CRITICAL logging levels<span class="token punctuation">)</span>.
+  --log <span class="token operator">&lt;</span>path<span class="token operator">></span>                Path to a verbose appending log.
+  --proxy <span class="token operator">&lt;</span>proxy<span class="token operator">></span>             Specify a proxy <span class="token keyword">in</span> the form <span class="token punctuation">[</span>user:passwd@<span class="token punctuation">]</span>proxy.server:port.
+  --retries <span class="token operator">&lt;</span>retries<span class="token operator">></span>         Maximum number of retries each connection should attempt <span class="token punctuation">(</span>default 5 times<span class="token punctuation">)</span>.
+  --timeout <span class="token operator">&lt;</span>sec<span class="token operator">></span>             Set the socket <span class="token function">timeout</span> <span class="token punctuation">(</span>default 15 seconds<span class="token punctuation">)</span>.
+  --exists-action <span class="token operator">&lt;</span>action<span class="token operator">></span>    Default action when a path already exists: <span class="token punctuation">(</span>s<span class="token punctuation">)</span>witch, <span class="token punctuation">(</span>i<span class="token punctuation">)</span>gnore, <span class="token punctuation">(</span>w<span class="token punctuation">)</span>ipe, <span class="token punctuation">(</span>b<span class="token punctuation">)</span>ackup,
+                              <span class="token punctuation">(</span>a<span class="token punctuation">)</span>bort<span class="token punctuation">)</span>.
+  --trusted-host <span class="token operator">&lt;</span>hostname<span class="token operator">></span>   Mark this host as trusted, even though it does not have valid or any HTTPS.
+  --cert <span class="token operator">&lt;</span>path<span class="token operator">></span>               Path to alternate CA bundle.
+  --client-cert <span class="token operator">&lt;</span>path<span class="token operator">></span>        Path to SSL client certificate, a single <span class="token function">file</span> containing the private key and the
+                              certificate <span class="token keyword">in</span> PEM format.
+  --cache-dir <span class="token operator">&lt;</span>dir<span class="token operator">></span>           Store the cache data <span class="token keyword">in</span> <span class="token operator">&lt;</span>dir<span class="token operator">></span>.
+  --no-cache-dir              Disable the cache.
+  --disable-pip-version-check
+                              Don't periodically check PyPI to determine whether a new version of pip is available <span class="token keyword">for</span>
+                              download. Implied with --no-index.
+  --no-color                  Suppress colored output</code></pre>
+<h4 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h4><p>dos输入在线安装selenium指令：</p>
+<pre class=" language-bash"><code class="language-bash">pip <span class="token function">install</span> selenium<span class="token operator">==</span>2.53.6</code></pre>
+<h4 id="验证安装"><a href="#验证安装" class="headerlink" title="验证安装"></a>验证安装</h4><p>确保已经安装Firefox/Chrome/Ie浏览器中的一个</p>
+<p>以Firefox为例（Firefox请安装46以下的版本），打开dos窗口输入指令：</p>
+<pre class=" language-bash"><code class="language-bash">python
+from selenium <span class="token function">import</span> webdriver
+webdriver.Firefox<span class="token punctuation">(</span><span class="token punctuation">)</span></code></pre>
+<p>如果Firefox浏览器被调用启动，则表示selenium安装成功，其他浏览器请查阅“浏览器驱动”</p>
+<h4 id="浏览器驱动"><a href="#浏览器驱动" class="headerlink" title="浏览器驱动"></a>浏览器驱动</h4><h5 id="Firefox"><a href="#Firefox" class="headerlink" title="Firefox"></a>Firefox</h5><p>请勿安装47以上的版本（selenium2不兼容47以上版本）</p>
+<p>firefox历年版本的官方镜像地址：<br><a href="https://download-installer.cdn.mozilla.net/pub/firefox/releases/" target="_blank" rel="noopener">https://download-installer.cdn.mozilla.net/pub/firefox/releases/</a> </p>
+<h5 id="Chrome"><a href="#Chrome" class="headerlink" title="Chrome"></a>Chrome</h5><p>selenium启动Chrome浏览器需要安装驱动包，不同的Chrome浏览器版本号对应的驱动文件版本号也不同，若不匹配，则无法启动。</p>
+<p>查看Chrome版本号？</p>
+<p>浏览器内：设置-&gt;关于-&gt;版本号</p>
+<p>浏览器外：打开Chrome安装文件夹</p>
+<p>Chrome浏览器chromedriver各版本驱动大全，下载地址：<br><a href="http://chromedriver.storage.googleapis.com/index.html" target="_blank" rel="noopener">http://chromedriver.storage.googleapis.com/index.html</a></p>
+<p>下载驱动成功后，确保chromedriver.exe文件放置于path路径下，我之前将环境变量配置到了python根目录，所以一般将chromedriver.exe放置于python安装的根目录。</p>
+<h5 id="IE"><a href="#IE" class="headerlink" title="IE"></a>IE</h5><p>IE浏览器的IEdriver各版本驱动大全，下载地址：<br><a href="http://selenium-release.storage.googleapis.com/index.html" target="_blank" rel="noopener">http://selenium-release.storage.googleapis.com/index.html</a></p>
+<h2 id="selenium之webdriver框架"><a href="#selenium之webdriver框架" class="headerlink" title="selenium之webdriver框架"></a>selenium之webdriver框架</h2><h3 id="webdriver-API"><a href="#webdriver-API" class="headerlink" title="webdriver API"></a>webdriver API</h3><pre class=" language-python"><code class="language-python"><span class="token comment" spellcheck="true"># 导入webdriver模块</span>
 <span class="token keyword">from</span> selenium <span class="token keyword">import</span> webdriver
 
 <span class="token comment" spellcheck="true"># 导入计时器模块</span>
@@ -1145,7 +1222,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">2.9k</span>&nbsp;字
+                class="white-color">3.7k</span>&nbsp;字
             
             
             
