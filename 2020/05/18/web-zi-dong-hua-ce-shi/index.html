@@ -490,14 +490,14 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    1.1k
+                    1.5k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    5 分
+                    6 分
                 </div>
                 
 
@@ -627,7 +627,51 @@ driver<span class="token punctuation">.</span>quit<span class="token punctuation
 <span class="token comment" spellcheck="true"># 关闭当前窗口</span>
 driver<span class="token punctuation">.</span>close<span class="token punctuation">(</span><span class="token punctuation">)</span>
 </code></pre>
-<script>
+<h3 id="元素定位"><a href="#元素定位" class="headerlink" title="元素定位"></a>元素定位</h3><p>webdriver框架提供了18种元素定位方法，前8种通过元素属性定位，后10种通过xpan和css定位</p>
+<pre class=" language-python"><code class="language-python"><span class="token comment" spellcheck="true">#id定位：</span>
+find_element_by_id<span class="token punctuation">(</span>self<span class="token punctuation">,</span> id_<span class="token punctuation">)</span>
+<span class="token comment" spellcheck="true">#name定位：</span>
+find_element_by_name<span class="token punctuation">(</span>self<span class="token punctuation">,</span> name<span class="token punctuation">)</span>
+<span class="token comment" spellcheck="true">#class定位：</span>
+find_element_by_class_name<span class="token punctuation">(</span>self<span class="token punctuation">,</span> name<span class="token punctuation">)</span>
+<span class="token comment" spellcheck="true">#tag定位：</span>
+find_element_by_tag_name<span class="token punctuation">(</span>self<span class="token punctuation">,</span> name<span class="token punctuation">)</span>
+<span class="token comment" spellcheck="true">#link定位：</span>
+find_element_by_link_text<span class="token punctuation">(</span>self<span class="token punctuation">,</span> link_text<span class="token punctuation">)</span>
+<span class="token comment" spellcheck="true">#partial_link定位</span>
+find_element_by_partial_link_text<span class="token punctuation">(</span>self<span class="token punctuation">,</span> link_text<span class="token punctuation">)</span>
+<span class="token comment" spellcheck="true">#xpath定位：</span>
+find_element_by_xpath<span class="token punctuation">(</span>self<span class="token punctuation">,</span> xpath<span class="token punctuation">)</span>
+<span class="token comment" spellcheck="true">#css定位：</span>
+find_element_by_css_selector<span class="token punctuation">(</span>self<span class="token punctuation">,</span> css_selector）</code></pre>
+<p>复数形式：</p>
+<pre class=" language-python"><code class="language-python"><span class="token comment" spellcheck="true">#id复数定位</span>
+find_elements_by_id<span class="token punctuation">(</span>self<span class="token punctuation">,</span> id_<span class="token punctuation">)</span>
+<span class="token comment" spellcheck="true">#name复数定位</span>
+find_elements_by_name<span class="token punctuation">(</span>self<span class="token punctuation">,</span> name<span class="token punctuation">)</span>
+<span class="token comment" spellcheck="true">#class复数定位</span>
+find_elements_by_class_name<span class="token punctuation">(</span>self<span class="token punctuation">,</span> name<span class="token punctuation">)</span>
+<span class="token comment" spellcheck="true">#tag复数定位</span>
+find_elements_by_tag_name<span class="token punctuation">(</span>self<span class="token punctuation">,</span> name<span class="token punctuation">)</span>
+<span class="token comment" spellcheck="true">#link复数定位</span>
+find_elements_by_link_text<span class="token punctuation">(</span>self<span class="token punctuation">,</span> text<span class="token punctuation">)</span>
+<span class="token comment" spellcheck="true">#partial_link复数定位</span>
+find_elements_by_partial_link_text<span class="token punctuation">(</span>self<span class="token punctuation">,</span> link_text<span class="token punctuation">)</span>
+<span class="token comment" spellcheck="true">#xpath复数定位</span>
+find_elements_by_xpath<span class="token punctuation">(</span>self<span class="token punctuation">,</span> xpath<span class="token punctuation">)</span>
+<span class="token comment" spellcheck="true">#css复数定位</span>
+find_elements_by_css_selector<span class="token punctuation">(</span>self<span class="token punctuation">,</span> css_selector<span class="token punctuation">)</span></code></pre>
+<p>参数化方法：</p>
+<pre class=" language-python"><code class="language-python">find_element<span class="token punctuation">(</span>self<span class="token punctuation">,</span> by<span class="token operator">=</span><span class="token string">'id'</span><span class="token punctuation">,</span> value<span class="token operator">=</span>None<span class="token punctuation">)</span>
+find_elements<span class="token punctuation">(</span>self<span class="token punctuation">,</span> by<span class="token operator">=</span><span class="token string">'id'</span><span class="token punctuation">,</span> value<span class="token operator">=</span>None<span class="token punctuation">)</span></code></pre>
+<h3 id="xpath定位"><a href="#xpath定位" class="headerlink" title="xpath定位"></a>xpath定位</h3><h4 id="标签"><a href="#标签" class="headerlink" title="标签"></a>标签</h4><p>1.有时候同一个属性，同名的比较多，这时候可以通过标签筛选下，定位更准一点<br>2.如果不想制定标签名称，可以用*号表示任意标签<br>3.如果想制定具体某个标签，就可以直接写标签名称</p>
+<h4 id="层级"><a href="#层级" class="headerlink" title="层级"></a>层级</h4><p>1.当某个元素属性不明显，无法直接定位时，可以先找其父元素</p>
+<p>2.找到父元素后，向下一个层级就能定位到该元素</p>
+<h4 id="索引"><a href="#索引" class="headerlink" title="索引"></a>索引</h4><p>1.某元素标签和另一元素标签一样，且无法通过层级定位时，属于同父元素</p>
+<p>2.同父元素的元素存在顺序，用索引定位</p>
+<h4 id="逻辑运算"><a href="#逻辑运算" class="headerlink" title="逻辑运算"></a>逻辑运算</h4><p>1.xpath可以对多个属性进行逻辑运算，支持与（and）、或（or）、非（not）</p>
+<h4 id="模糊匹配"><a href="#模糊匹配" class="headerlink" title="模糊匹配"></a>模糊匹配</h4><p>1.xpath可以对元素进行模糊匹配</p>
+<h3 id="CSS定位"><a href="#CSS定位" class="headerlink" title="CSS定位"></a>CSS定位</h3><script>
         document.querySelectorAll('.github-emoji')
           .forEach(el => {
             if (!el.dataset.src) { return; }
@@ -1225,7 +1269,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">4.6k</span>&nbsp;字
+                class="white-color">5k</span>&nbsp;字
             
             
             
