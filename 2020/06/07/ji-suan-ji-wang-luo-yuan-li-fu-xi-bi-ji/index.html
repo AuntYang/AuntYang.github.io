@@ -309,7 +309,7 @@
 <script src="/libs/cryptojs/crypto-js.min.js"></script>
 <script>
     (function() {
-        let pwd = '';
+        let pwd = '5a4f77d09a9b2832e2e548152026ceb71b9bcea7d2cadf4b44cc8d23c428001d';
         if (pwd && pwd.length > 0) {
             if (pwd !== CryptoJS.SHA256(prompt('请输入访问本文章的密码')).toString(CryptoJS.enc.Hex)) {
                 alert('密码错误，将返回主页！');
@@ -442,12 +442,33 @@
             <div class="row tag-cate">
                 <div class="col s7">
                     
-                          <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
-                          </div>
+                    <div class="article-tag">
+                        
+                            <a href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E5%8E%9F%E7%90%86/">
+                                <span class="chip bg-color">计算机网络原理</span>
+                            </a>
+                        
+                            <a href="/tags/%E5%A4%8D%E4%B9%A0/">
+                                <span class="chip bg-color">复习</span>
+                            </a>
+                        
+                            <a href="/tags/%E8%80%83%E7%A0%94/">
+                                <span class="chip bg-color">考研</span>
+                            </a>
+                        
+                    </div>
                     
                 </div>
                 <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/source/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E5%8E%9F%E7%90%86/" class="post-category">
+                                计算机网络原理
+                            </a>
+                        
+                    </div>
                     
                 </div>
             </div>
@@ -470,14 +491,14 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    26k
+                    25.9k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    92 分
+                    91 分
                 </div>
                 
 
@@ -492,13 +513,7 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>title: 计算机网络原理复习笔记<br>date: 2020-06-07 20:37:00<br>author: auntyang<br>top: true<br>toc: true<br>password: 5a4f77d09a9b2832e2e548152026ceb71b9bcea7d2cadf4b44cc8d23c428001d<br>mathjax: true<br>summary: 计算机网络原理复习总纲，提炼自谢希仁版网络原理。个人使用，总结不容易。<br>categories: 计算机网络原理<br>tags: </p>
-<ul>
-<li>计算机网络原理</li>
-<li>复习</li>
-<li>考研<br>reprintPolicy: pay</li>
-</ul>
-<p>第一章考小题、第五章主要考拥塞控制、第六章名词解释<br>串行通信和并行通信<br>MAC地址那块分清楚单播、广播、多播，及应用场合，什么时候封装MAC帧<br>一定要知道交换表怎么生成<br>第三章把作业弄明白<br>IP协议簇和网络中间设备的区别、IP数据报格式及首部检验和计算、分片、协议字段值的表格记下来<br>子网划分（重要）<br>例题4-4、CIDR（4-27）、ICMP记一下概念<br>第四章（比重50%）：路由转发、分片、RIP和OSPF的实现、<strong>多看看题</strong><br>路由器构成不考，看看就行<br>0压缩怎么实现、多播<br>概念题：VPN、NAT、MPLS<br>接口与网段的关系（4-55）<br>常用协议对应的端口号<br>TCP：为什么要三次握手及握手过程<br>套接字：UDP二元组<br>TCP格式以及概念的意思，可靠传输不是考点<br>填空+</p>
+                <p>第一章考小题、第五章主要考拥塞控制、第六章名词解释<br>串行通信和并行通信<br>MAC地址那块分清楚单播、广播、多播，及应用场合，什么时候封装MAC帧<br>一定要知道交换表怎么生成<br>第三章把作业弄明白<br>IP协议簇和网络中间设备的区别、IP数据报格式及首部检验和计算、分片、协议字段值的表格记下来<br>子网划分（重要）<br>例题4-4、CIDR（4-27）、ICMP记一下概念<br>第四章（比重50%）：路由转发、分片、RIP和OSPF的实现、<strong>多看看题</strong><br>路由器构成不考，看看就行<br>0压缩怎么实现、多播<br>概念题：VPN、NAT、MPLS<br>接口与网段的关系（4-55）<br>常用协议对应的端口号<br>TCP：为什么要三次握手及握手过程<br>套接字：UDP二元组<br>TCP格式以及概念的意思，可靠传输不是考点<br>填空+</p>
 <h1 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h1><h2 id="计算机网络定义及特点"><a href="#计算机网络定义及特点" class="headerlink" title="计算机网络定义及特点"></a>计算机网络定义及特点</h2><h3 id="网络定义"><a href="#网络定义" class="headerlink" title="网络定义"></a>网络定义</h3><p>泛指把人或物互联在一起的而形成的系统</p>
 <p>网络的逻辑结构（拓扑结构）</p>
 <h3 id="三大类网络"><a href="#三大类网络" class="headerlink" title="三大类网络"></a>三大类网络</h3><p><strong>电信网络</strong>：提供电话、电报及传真等服务</p>
@@ -1070,40 +1085,12 @@
 
     <div class="reprint" id="reprint-statement">
         
-            <div class="reprint__author">
-                <span class="reprint-meta" style="font-weight: bold;">
-                    <i class="fas fa-user">
-                        文章作者:
-                    </i>
-                </span>
-                <span class="reprint-info">
-                    <a href="/about" rel="external nofollow noreferrer">auntyang</a>
-                </span>
-            </div>
-            <div class="reprint__type">
-                <span class="reprint-meta" style="font-weight: bold;">
-                    <i class="fas fa-link">
-                        文章链接:
-                    </i>
-                </span>
-                <span class="reprint-info">
-                    <a href="https://auntyang.tk/2020/06/07/ji-suan-ji-wang-luo-yuan-li-fu-xi-bi-ji/">https://auntyang.tk/2020/06/07/ji-suan-ji-wang-luo-yuan-li-fu-xi-bi-ji/</a>
-                </span>
-            </div>
-            <div class="reprint__notice">
-                <span class="reprint-meta" style="font-weight: bold;">
-                    <i class="fas fa-copyright">
-                        版权声明:
-                    </i>
-                </span>
-                <span class="reprint-info">
-                    本博客所有文章除特別声明外，均采用
-                    <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a>
-                    许可协议。转载请注明来源
-                    <a href="/about" target="_blank">auntyang</a>
-                    !
-                </span>
-            </div>
+            <i class="fas fa-exclamation-circle"></i>
+            请联系作者
+            <span class="reprint-info">
+                <a href="https://auntyang.tk" rel="external nofollow noreferrer">auntyang</a>
+            </span>
+            付费转载。
         
     </div>
 
@@ -1124,7 +1111,19 @@
                 <div class="post-meta__tag-list" style="display: inline-block;">
                     
                         <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
+                            
+                                <a href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E5%8E%9F%E7%90%86/">
+                                    <span class="chip bg-color">计算机网络原理</span>
+                                </a>
+                            
+                                <a href="/tags/%E5%A4%8D%E4%B9%A0/">
+                                    <span class="chip bg-color">复习</span>
+                                </a>
+                            
+                                <a href="/tags/%E8%80%83%E7%A0%94/">
+                                    <span class="chip bg-color">考研</span>
+                                </a>
+                            
                         </div>
                     
                 </div>
@@ -1307,7 +1306,7 @@
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            title: 计算机网络原理复习笔记date: 2020-06-07 20:37:00author: auntyangtop: truetoc: truepassword: 5a4f77d09a9b2832e2e548152026ceb71
+                            计算机网络原理复习总纲，提炼自谢希仁版网络原理。个人使用，总结不容易。
                         
                     </div>
                     <div class="publish-info">
@@ -1316,13 +1315,33 @@
                             </span>
                         <span class="publish-author">
                             
-                            <i class="fas fa-user fa-fw"></i>
-                            auntyang
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/source/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E5%8E%9F%E7%90%86/" class="post-category">
+                                    计算机网络原理
+                                </a>
+                            
                             
                         </span>
                     </div>
                 </div>
 
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E5%8E%9F%E7%90%86/">
+                        <span class="chip bg-color">计算机网络原理</span>
+                    </a>
+                    
+                    <a href="/tags/%E5%A4%8D%E4%B9%A0/">
+                        <span class="chip bg-color">复习</span>
+                    </a>
+                    
+                    <a href="/tags/%E8%80%83%E7%A0%94/">
+                        <span class="chip bg-color">考研</span>
+                    </a>
+                    
+                </div>
                 
             </div>
         </div>
@@ -1547,6 +1566,13 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
 
 </main>
 
+
+<script src="https://cdn.bootcss.com/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<script>
+    MathJax.Hub.Config({
+        tex2jax: {inlineMath: [['$', '$'], ['\(', '\)']]}
+    });
+</script>
 
 
 
