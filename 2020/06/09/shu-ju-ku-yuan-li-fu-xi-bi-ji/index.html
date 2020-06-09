@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="web自动化测试（python+selenium）, 小准子_Code">
+    <meta name="keywords" content="数据库原理复习笔记, 小准子_Code">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>web自动化测试（python+selenium） | 小准子_Code</title>
+    <title>数据库原理复习笔记 | 小准子_Code</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -309,7 +309,7 @@
 <script src="/libs/cryptojs/crypto-js.min.js"></script>
 <script>
     (function() {
-        let pwd = '';
+        let pwd = '4ec7c53222c8a758c722e2111541035ce700d5ae7bd0898c5f1b1a743e6450fd';
         if (pwd && pwd.length > 0) {
             if (pwd !== CryptoJS.SHA256(prompt('请输入访问本文章的密码')).toString(CryptoJS.enc.Hex)) {
                 alert('密码错误，将返回主页！');
@@ -322,12 +322,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/18.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/5.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">web自动化测试（python+selenium）</h1>
+                    <h1 class="description center-align post-title">数据库原理复习笔记</h1>
                 </div>
             </div>
         </div>
@@ -444,20 +444,16 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/Web/">
-                                <span class="chip bg-color">Web</span>
+                            <a href="/tags/%E5%A4%8D%E4%B9%A0/">
+                                <span class="chip bg-color">复习</span>
                             </a>
                         
-                            <a href="/tags/%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95/">
-                                <span class="chip bg-color">自动化测试</span>
+                            <a href="/tags/%E8%80%83%E7%A0%94/">
+                                <span class="chip bg-color">考研</span>
                             </a>
                         
-                            <a href="/tags/python/">
-                                <span class="chip bg-color">python</span>
-                            </a>
-                        
-                            <a href="/tags/selenium%E5%BA%93/">
-                                <span class="chip bg-color">selenium库</span>
+                            <a href="/tags/%E6%95%B0%E6%8D%AE%E5%BA%93%E5%8E%9F%E7%90%86/">
+                                <span class="chip bg-color">数据库原理</span>
                             </a>
                         
                     </div>
@@ -468,8 +464,8 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/source/categories/Web/" class="post-category">
-                                Web
+                            <a href="/source/categories/%E6%95%B0%E6%8D%AE%E5%BA%93%E5%8E%9F%E7%90%86/" class="post-category">
+                                数据库原理
                             </a>
                         
                     </div>
@@ -481,28 +477,28 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2020-05-18
+                    2020-06-09
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2020-05-23
+                    2020-06-09
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    1.5k
+                    5k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    6 分
+                    17 分
                 </div>
                 
 
@@ -517,169 +513,74 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="环境配置"><a href="#环境配置" class="headerlink" title="环境配置"></a>环境配置</h2><h3 id="Python安装"><a href="#Python安装" class="headerlink" title="Python安装"></a>Python安装</h3><h4 id="Windows"><a href="#Windows" class="headerlink" title="Windows"></a>Windows</h4><p><a href="https://www.python.org/" target="_blank" rel="noopener">https://www.python.org/</a></p>
-<h4 id="Linux"><a href="#Linux" class="headerlink" title="Linux"></a>Linux</h4><h5 id="下载文件"><a href="#下载文件" class="headerlink" title="下载文件"></a>下载文件</h5><pre class=" language-bash"><code class="language-bash"><span class="token function">wget</span> https://www.python.org/ftp/python/3.6.8/Python-3.6.8.tar.xz</code></pre>
-<h5 id="进行安装"><a href="#进行安装" class="headerlink" title="进行安装"></a>进行安装</h5><pre class=" language-bash"><code class="language-bash">　　　　<span class="token function">tar</span> xf Python-3.7.1.tar.xz
-　　　　<span class="token function">cd</span> Python-3.7.1
-　　　　yum -y <span class="token function">install</span> gcc-* openssl-* libffi-devel sqlite-devel
-　　　　./configure --enable-optimizations --with-openssl<span class="token operator">=</span>/usr/bin/openssl
-　　　　<span class="token function">make</span> -j4
-　　　　<span class="token function">make</span> <span class="token function">install</span>
-　　　　默认安装路径：/usr/local/lib/python3.7</code></pre>
-<h5 id="更改安装源"><a href="#更改安装源" class="headerlink" title="更改安装源"></a>更改安装源</h5><pre class=" language-bash"><code class="language-bash">pip3 config <span class="token keyword">set</span> global.index-url https://pypi.tuna.tsinghua.edu.cn/simple</code></pre>
-<h5 id="升级pip"><a href="#升级pip" class="headerlink" title="升级pip"></a>升级pip</h5><pre class=" language-bash"><code class="language-bash">pip3 <span class="token function">install</span> --upgrade pip</code></pre>
-<h5 id="安装虚拟环境工具"><a href="#安装虚拟环境工具" class="headerlink" title="安装虚拟环境工具"></a>安装虚拟环境工具</h5><pre class=" language-bash"><code class="language-bash">pip3 <span class="token function">install</span> virtualenv</code></pre>
-<h5 id="创建虚拟环境"><a href="#创建虚拟环境" class="headerlink" title="创建虚拟环境"></a>创建虚拟环境</h5><pre class=" language-bash"><code class="language-bash">virtualenv web01</code></pre>
-<h5 id="切换到虚拟环境"><a href="#切换到虚拟环境" class="headerlink" title="切换到虚拟环境"></a>切换到虚拟环境</h5><pre class=" language-bash"><code class="language-bash"><span class="token function">source</span> web01/bin/activate</code></pre>
-<h5 id="退出虚拟环境"><a href="#退出虚拟环境" class="headerlink" title="退出虚拟环境"></a>退出虚拟环境</h5><pre class=" language-bash"><code class="language-bash">　　　deactivate</code></pre>
-<h3 id="Selenium"><a href="#Selenium" class="headerlink" title="Selenium"></a>Selenium</h3><h4 id="检查"><a href="#检查" class="headerlink" title="检查"></a>检查</h4><p>打开dos窗口输入：</p>
-<pre class=" language-bash"><code class="language-bash">pip</code></pre>
-<p>正常应显示以下内容：</p>
-<pre class=" language-bash"><code class="language-bash">Usage:
-  pip <span class="token operator">&lt;</span>command<span class="token operator">></span> <span class="token punctuation">[</span>options<span class="token punctuation">]</span>
-
-Commands:
-  <span class="token function">install</span>                     Install packages.
-  download                    Download packages.
-  uninstall                   Uninstall packages.
-  freeze                      Output installed packages <span class="token keyword">in</span> requirements format.
-  list                        List installed packages.
-  show                        Show information about installed packages.
-  check                       Verify installed packages have compatible dependencies.
-  config                      Manage local and global configuration.
-  search                      Search PyPI <span class="token keyword">for</span> packages.
-  wheel                       Build wheels from your requirements.
-  <span class="token function">hash</span>                        Compute hashes of package archives.
-  completion                  A helper <span class="token function">command</span> used <span class="token keyword">for</span> <span class="token function">command</span> completion.
-  <span class="token function">help</span>                        Show <span class="token function">help</span> <span class="token keyword">for</span> commands.
-
-General Options:
-  -h, --help                  Show help.
-  --isolated                  Run pip <span class="token keyword">in</span> an isolated mode, ignoring environment variables and user configuration.
-  -v, --verbose               Give <span class="token function">more</span> output. Option is additive, and can be used up to 3 times.
-  -V, --version               Show version and exit.
-  -q, --quiet                 Give <span class="token function">less</span> output. Option is additive, and can be used up to 3 <span class="token function">times</span> <span class="token punctuation">(</span>corresponding to
-                              WARNING, ERROR, and CRITICAL logging levels<span class="token punctuation">)</span>.
-  --log <span class="token operator">&lt;</span>path<span class="token operator">></span>                Path to a verbose appending log.
-  --proxy <span class="token operator">&lt;</span>proxy<span class="token operator">></span>             Specify a proxy <span class="token keyword">in</span> the form <span class="token punctuation">[</span>user:passwd@<span class="token punctuation">]</span>proxy.server:port.
-  --retries <span class="token operator">&lt;</span>retries<span class="token operator">></span>         Maximum number of retries each connection should attempt <span class="token punctuation">(</span>default 5 times<span class="token punctuation">)</span>.
-  --timeout <span class="token operator">&lt;</span>sec<span class="token operator">></span>             Set the socket <span class="token function">timeout</span> <span class="token punctuation">(</span>default 15 seconds<span class="token punctuation">)</span>.
-  --exists-action <span class="token operator">&lt;</span>action<span class="token operator">></span>    Default action when a path already exists: <span class="token punctuation">(</span>s<span class="token punctuation">)</span>witch, <span class="token punctuation">(</span>i<span class="token punctuation">)</span>gnore, <span class="token punctuation">(</span>w<span class="token punctuation">)</span>ipe, <span class="token punctuation">(</span>b<span class="token punctuation">)</span>ackup,
-                              <span class="token punctuation">(</span>a<span class="token punctuation">)</span>bort<span class="token punctuation">)</span>.
-  --trusted-host <span class="token operator">&lt;</span>hostname<span class="token operator">></span>   Mark this host as trusted, even though it does not have valid or any HTTPS.
-  --cert <span class="token operator">&lt;</span>path<span class="token operator">></span>               Path to alternate CA bundle.
-  --client-cert <span class="token operator">&lt;</span>path<span class="token operator">></span>        Path to SSL client certificate, a single <span class="token function">file</span> containing the private key and the
-                              certificate <span class="token keyword">in</span> PEM format.
-  --cache-dir <span class="token operator">&lt;</span>dir<span class="token operator">></span>           Store the cache data <span class="token keyword">in</span> <span class="token operator">&lt;</span>dir<span class="token operator">></span>.
-  --no-cache-dir              Disable the cache.
-  --disable-pip-version-check
-                              Don't periodically check PyPI to determine whether a new version of pip is available <span class="token keyword">for</span>
-                              download. Implied with --no-index.
-  --no-color                  Suppress colored output</code></pre>
-<h4 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h4><p>dos输入在线安装selenium指令：</p>
-<pre class=" language-bash"><code class="language-bash">pip <span class="token function">install</span> selenium<span class="token operator">==</span>2.53.6</code></pre>
-<h4 id="验证安装"><a href="#验证安装" class="headerlink" title="验证安装"></a>验证安装</h4><p>确保已经安装Firefox/Chrome/Ie浏览器中的一个</p>
-<p>以Firefox为例（Firefox请安装46以下的版本），打开dos窗口输入指令：</p>
-<pre class=" language-bash"><code class="language-bash">python
-from selenium <span class="token function">import</span> webdriver
-webdriver.Firefox<span class="token punctuation">(</span><span class="token punctuation">)</span></code></pre>
-<p>如果Firefox浏览器被调用启动，则表示selenium安装成功，其他浏览器请查阅“浏览器驱动”</p>
-<h4 id="浏览器驱动"><a href="#浏览器驱动" class="headerlink" title="浏览器驱动"></a>浏览器驱动</h4><h5 id="Firefox"><a href="#Firefox" class="headerlink" title="Firefox"></a>Firefox</h5><p>请勿安装47以上的版本（selenium2不兼容47以上版本）</p>
-<p>firefox历年版本的官方镜像地址：<br><a href="https://download-installer.cdn.mozilla.net/pub/firefox/releases/" target="_blank" rel="noopener">https://download-installer.cdn.mozilla.net/pub/firefox/releases/</a> </p>
-<h5 id="Chrome"><a href="#Chrome" class="headerlink" title="Chrome"></a>Chrome</h5><p>selenium启动Chrome浏览器需要安装驱动包，不同的Chrome浏览器版本号对应的驱动文件版本号也不同，若不匹配，则无法启动。</p>
-<p>查看Chrome版本号？</p>
-<p>浏览器内：设置-&gt;关于-&gt;版本号</p>
-<p>浏览器外：打开Chrome安装文件夹</p>
-<p>Chrome浏览器chromedriver各版本驱动大全，下载地址：<br><a href="http://chromedriver.storage.googleapis.com/index.html" target="_blank" rel="noopener">http://chromedriver.storage.googleapis.com/index.html</a></p>
-<p>下载驱动成功后，确保chromedriver.exe文件放置于path路径下，我之前将环境变量配置到了python根目录，所以一般将chromedriver.exe放置于python安装的根目录。</p>
-<h5 id="IE"><a href="#IE" class="headerlink" title="IE"></a>IE</h5><p>IE浏览器的IEdriver各版本驱动大全，下载地址：<br><a href="http://selenium-release.storage.googleapis.com/index.html" target="_blank" rel="noopener">http://selenium-release.storage.googleapis.com/index.html</a></p>
-<h2 id="selenium之webdriver框架"><a href="#selenium之webdriver框架" class="headerlink" title="selenium之webdriver框架"></a>selenium之webdriver框架</h2><h3 id="webdriver-API"><a href="#webdriver-API" class="headerlink" title="webdriver API"></a>webdriver API</h3><pre class=" language-python"><code class="language-python"><span class="token comment" spellcheck="true"># 导入webdriver模块</span>
-<span class="token keyword">from</span> selenium <span class="token keyword">import</span> webdriver
-
-<span class="token comment" spellcheck="true"># 导入计时器模块</span>
-<span class="token keyword">import</span> time
-
-<span class="token comment" spellcheck="true"># 打开Chrome浏览器</span>
-<span class="token comment" spellcheck="true"># 其他浏览器替换浏览器名即可</span>
-driver <span class="token operator">=</span> webdriver<span class="token punctuation">.</span>Chrome<span class="token punctuation">(</span><span class="token punctuation">)</span>
-
-<span class="token comment" spellcheck="true"># 使用webdriver模块api导入网址</span>
-driver<span class="token punctuation">.</span>get<span class="token punctuation">(</span><span class="token string">"https://auntyang.tk"</span><span class="token punctuation">)</span>
-
-<span class="token comment" spellcheck="true"># 计时器6s等待时间，一些异常报错可能就是因为没有在语句下设置等待时间</span>
-<span class="token comment" spellcheck="true"># time模块的单位是s（秒），参数可以是小数也可以是整数</span>
-time<span class="token punctuation">.</span>sleep<span class="token punctuation">(</span><span class="token number">6</span><span class="token punctuation">)</span>
-
-<span class="token comment" spellcheck="true"># 截屏保存到指定目录，参数格式：保存路径+文件名称+后缀</span>
-driver<span class="token punctuation">.</span>get_screenshot_as_file<span class="token punctuation">(</span><span class="token string">"D:\\test.jgp"</span><span class="token punctuation">)</span>
-
-<span class="token comment" spellcheck="true"># 设置指定浏览器窗口尺寸</span>
-driver<span class="token punctuation">.</span>set_window_size<span class="token punctuation">(</span><span class="token number">540</span><span class="token punctuation">,</span> <span class="token number">960</span><span class="token punctuation">)</span>
-<span class="token comment" spellcheck="true"># 设置浏览器窗口最大化</span>
-driver<span class="token punctuation">.</span>maximize_window<span class="token punctuation">(</span><span class="token punctuation">)</span>
-
-<span class="token comment" spellcheck="true"># 上一页，相当于浏览器左上角的左箭头按钮</span>
-driver<span class="token punctuation">.</span>back<span class="token punctuation">(</span><span class="token punctuation">)</span>
-<span class="token comment" spellcheck="true"># 下一页，相当于浏览器左上角的右箭头按钮</span>
-driver<span class="token punctuation">.</span>forward<span class="token punctuation">(</span><span class="token punctuation">)</span>
-
-<span class="token comment" spellcheck="true"># 使用webdriver模块api进行刷新</span>
-<span class="token comment" spellcheck="true"># 相当于浏览器输入框后面的刷新按钮</span>
-driver<span class="token punctuation">.</span>refresh<span class="token punctuation">(</span><span class="token punctuation">)</span>
-
-<span class="token comment" spellcheck="true"># 结束浏览器进程</span>
-driver<span class="token punctuation">.</span>quit<span class="token punctuation">(</span><span class="token punctuation">)</span>
-<span class="token comment" spellcheck="true"># 关闭当前窗口</span>
-driver<span class="token punctuation">.</span>close<span class="token punctuation">(</span><span class="token punctuation">)</span>
-</code></pre>
-<h3 id="元素定位"><a href="#元素定位" class="headerlink" title="元素定位"></a>元素定位</h3><p>webdriver框架提供了18种元素定位方法，前8种通过元素属性定位，后10种通过xpan和css定位</p>
-<pre class=" language-python"><code class="language-python"><span class="token comment" spellcheck="true">#id定位：</span>
-find_element_by_id<span class="token punctuation">(</span>self<span class="token punctuation">,</span> id_<span class="token punctuation">)</span>
-<span class="token comment" spellcheck="true">#name定位：</span>
-find_element_by_name<span class="token punctuation">(</span>self<span class="token punctuation">,</span> name<span class="token punctuation">)</span>
-<span class="token comment" spellcheck="true">#class定位：</span>
-find_element_by_class_name<span class="token punctuation">(</span>self<span class="token punctuation">,</span> name<span class="token punctuation">)</span>
-<span class="token comment" spellcheck="true">#tag定位：</span>
-find_element_by_tag_name<span class="token punctuation">(</span>self<span class="token punctuation">,</span> name<span class="token punctuation">)</span>
-<span class="token comment" spellcheck="true">#link定位：</span>
-find_element_by_link_text<span class="token punctuation">(</span>self<span class="token punctuation">,</span> link_text<span class="token punctuation">)</span>
-<span class="token comment" spellcheck="true">#partial_link定位</span>
-find_element_by_partial_link_text<span class="token punctuation">(</span>self<span class="token punctuation">,</span> link_text<span class="token punctuation">)</span>
-<span class="token comment" spellcheck="true">#xpath定位：</span>
-find_element_by_xpath<span class="token punctuation">(</span>self<span class="token punctuation">,</span> xpath<span class="token punctuation">)</span>
-<span class="token comment" spellcheck="true">#css定位：</span>
-find_element_by_css_selector<span class="token punctuation">(</span>self<span class="token punctuation">,</span> css_selector）</code></pre>
-<p>复数形式：</p>
-<pre class=" language-python"><code class="language-python"><span class="token comment" spellcheck="true">#id复数定位</span>
-find_elements_by_id<span class="token punctuation">(</span>self<span class="token punctuation">,</span> id_<span class="token punctuation">)</span>
-<span class="token comment" spellcheck="true">#name复数定位</span>
-find_elements_by_name<span class="token punctuation">(</span>self<span class="token punctuation">,</span> name<span class="token punctuation">)</span>
-<span class="token comment" spellcheck="true">#class复数定位</span>
-find_elements_by_class_name<span class="token punctuation">(</span>self<span class="token punctuation">,</span> name<span class="token punctuation">)</span>
-<span class="token comment" spellcheck="true">#tag复数定位</span>
-find_elements_by_tag_name<span class="token punctuation">(</span>self<span class="token punctuation">,</span> name<span class="token punctuation">)</span>
-<span class="token comment" spellcheck="true">#link复数定位</span>
-find_elements_by_link_text<span class="token punctuation">(</span>self<span class="token punctuation">,</span> text<span class="token punctuation">)</span>
-<span class="token comment" spellcheck="true">#partial_link复数定位</span>
-find_elements_by_partial_link_text<span class="token punctuation">(</span>self<span class="token punctuation">,</span> link_text<span class="token punctuation">)</span>
-<span class="token comment" spellcheck="true">#xpath复数定位</span>
-find_elements_by_xpath<span class="token punctuation">(</span>self<span class="token punctuation">,</span> xpath<span class="token punctuation">)</span>
-<span class="token comment" spellcheck="true">#css复数定位</span>
-find_elements_by_css_selector<span class="token punctuation">(</span>self<span class="token punctuation">,</span> css_selector<span class="token punctuation">)</span></code></pre>
-<p>参数化方法：</p>
-<pre class=" language-python"><code class="language-python">find_element<span class="token punctuation">(</span>self<span class="token punctuation">,</span> by<span class="token operator">=</span><span class="token string">'id'</span><span class="token punctuation">,</span> value<span class="token operator">=</span>None<span class="token punctuation">)</span>
-find_elements<span class="token punctuation">(</span>self<span class="token punctuation">,</span> by<span class="token operator">=</span><span class="token string">'id'</span><span class="token punctuation">,</span> value<span class="token operator">=</span>None<span class="token punctuation">)</span></code></pre>
-<h3 id="xpath定位"><a href="#xpath定位" class="headerlink" title="xpath定位"></a>xpath定位</h3><h4 id="标签"><a href="#标签" class="headerlink" title="标签"></a>标签</h4><p>1.有时候同一个属性，同名的比较多，这时候可以通过标签筛选下，定位更准一点<br>2.如果不想制定标签名称，可以用*号表示任意标签<br>3.如果想制定具体某个标签，就可以直接写标签名称</p>
-<h4 id="层级"><a href="#层级" class="headerlink" title="层级"></a>层级</h4><p>1.当某个元素属性不明显，无法直接定位时，可以先找其父元素</p>
-<p>2.找到父元素后，向下一个层级就能定位到该元素</p>
-<h4 id="索引"><a href="#索引" class="headerlink" title="索引"></a>索引</h4><p>1.某元素标签和另一元素标签一样，且无法通过层级定位时，属于同父元素</p>
-<p>2.同父元素的元素存在顺序，用索引定位</p>
-<h4 id="逻辑运算"><a href="#逻辑运算" class="headerlink" title="逻辑运算"></a>逻辑运算</h4><p>1.xpath可以对多个属性进行逻辑运算，支持与（and）、或（or）、非（not）</p>
-<h4 id="模糊匹配"><a href="#模糊匹配" class="headerlink" title="模糊匹配"></a>模糊匹配</h4><p>1.xpath可以对元素进行模糊匹配</p>
-<h4 id="小测试"><a href="#小测试" class="headerlink" title="小测试"></a>小测试</h4><p>编写脚本，打开百度首页，输入关键字“robotframework”，点击搜索</p>
-<p>结果如下图所示：</p>
-<p><img src="https://img-blog.csdnimg.cn/20200523164846936.gif" alt="Web自动化测试"></p>
-<h3 id="CSS定位"><a href="#CSS定位" class="headerlink" title="CSS定位"></a>CSS定位</h3><script>
+                <h1 id="数据库概述"><a href="#数据库概述" class="headerlink" title="数据库概述"></a>数据库概述</h1><h2 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h2><p>数据库是数据管理的最新技术</p>
+<p>数据库技术一般包含<strong>数据管理</strong>和<strong>数据处理</strong>两部分</p>
+<p>数据库系统<br>本质上是一个用计算机存储数据的系统<br>除了保存数据外，还提供对数据进行各种管理和处理：<br>        1.安全管理<br>        2.数据共享<br>        3.数据查询</p>
+<h2 id="基本概念"><a href="#基本概念" class="headerlink" title="基本概念"></a>基本概念</h2><h3 id="数据"><a href="#数据" class="headerlink" title="数据"></a>数据</h3><p><strong>数据</strong>是数据库中存储的基本对象<br>数据可以定义为：<strong>数据是描述事物的符号记录</strong><br>数据需要经过解释才能明确其表达的含义<br>数据和解释不可分割</p>
+<pre><code>- 数据的解释是对数据的说明
+- 数据的含义称为数据的语义</code></pre><h3 id="数据库"><a href="#数据库" class="headerlink" title="数据库"></a>数据库</h3><p>数据库（Database）是存放数据的仓库<br>永久存储在计算机存储设备上<br>按一定格式存储<br>是有<strong>组织</strong>的、<strong>可共享</strong>的大量数据的集合</p>
+<h3 id="数据库管理系统"><a href="#数据库管理系统" class="headerlink" title="数据库管理系统"></a>数据库管理系统</h3><p>Database Management System——DBMS<br>数据库中的数据被统一管理，合理组织，任何对数据的操作都由数据库管理系统DBMS完成。<br>是一个专门用于实现对数据进行管理和维护的<strong>系统软件</strong><br><img src="https://i.loli.net/2020/06/09/N4HdMuUnK8OLboW.png" alt="数据库管理系统"></p>
+<p>数据库管理系统主要功能<br>        1.数据库的建立与维护<br>        2.数据定义<br>        3.数据组织、存储和管理<br>        4.数据操作<br>        5.事物的管理和运行</p>
+<h3 id="数据库系统"><a href="#数据库系统" class="headerlink" title="数据库系统"></a>数据库系统</h3><p>一般由数据库、数据库管理系统（及相关实用工具）、应用程序、数据库管理员组成<br><img src="https://i.loli.net/2020/06/09/DowxunLChbfG9tW.png" alt="数据库系统"></p>
+<h2 id="数据库技术的发展"><a href="#数据库技术的发展" class="headerlink" title="数据库技术的发展"></a>数据库技术的发展</h2><h3 id="手工管理阶段"><a href="#手工管理阶段" class="headerlink" title="手工管理阶段"></a>手工管理阶段</h3><h3 id="文件管理阶段"><a href="#文件管理阶段" class="headerlink" title="文件管理阶段"></a>文件管理阶段</h3><p>文件方式管理数据的缺点<br>        1.编写应用程序不方便<br>        2.数据冗余不可避免<br>        3.应用程序依赖性<br>        4.不支持对文件的并发访问<br>        5.数据间联系弱<br>        6.难以按用户视图表示数据<br>        7.无安全控制功能 </p>
+<p><img src="https://i.loli.net/2020/06/09/dgqyPZQ7OI4vLiJ.png" alt="文件管理阶段 "></p>
+<h3 id="数据库管理系统-1"><a href="#数据库管理系统-1" class="headerlink" title="数据库管理系统"></a>数据库管理系统</h3><p>数据库管理的优点<br>        1.相互关联的数据的集合<br>        2.较少的数据冗余<br>        3.程序与数据相互独立<br>        4.保证数据的安全、可靠<br>        5.最大限度地保证数据的正确性<br>        6.数据可以并发使用并能保证一致性</p>
+<p><img src="https://i.loli.net/2020/06/09/4WwjcA5YCQ1slHG.png" alt="数据库操作模式"></p>
+<h2 id="数据库的结构"><a href="#数据库的结构" class="headerlink" title="数据库的结构"></a>数据库的结构</h2><p>考察数据库结构有不同的层次或不同的角度。</p>
+<ul>
+<li>从<strong>数据库管理角度</strong>看，数据库通常采用三级模式结构。这是数据库管理系统内部的系统结构。</li>
+<li>从<strong>数据库最终用户角度</strong>看，数据库的结构分为集中式结构、文件服务器结构、客户/服务器结构等。这是数据库的外部结构。</li>
+</ul>
+<h3 id="模式的基本概念"><a href="#模式的基本概念" class="headerlink" title="模式的基本概念"></a>模式的基本概念</h3><p><strong>数据模型</strong>（组织层数据模型）是描述数据的组织形式<br><strong>模式</strong>是用给定的数据模型对具体数据的描述<br><strong>模式</strong>是数据库中全体数据的逻辑结构和特征的描述，它仅仅涉及“型”的描述，不涉及具体的值<br><strong>关系模式</strong>是关系的“型”或元组的结构共性的描述，实际上对应的是关系表的表头<br><strong>模式</strong>的一个具体值称为模式的一个<strong>实例</strong>。<br>如表中的每一行数据就是一个具体实例。<br>模式是相对稳定的，实例是相对变动的。<br><img src="https://i.loli.net/2020/06/09/rzkl3SJfungyXOj.png" alt="关系模式"></p>
+<p>三级模式结构<br><img src="https://i.loli.net/2020/06/09/1uwrcJs7AWCdF5U.png" alt="三级模式结构"><br>关系数据库中的<strong>模式一定是关系的</strong>，在该层可见的实体是关系的表和关系的操作符。<br><strong>外模式</strong>也是关系的，它们的内容来自模式<br><strong>内模式</strong>不是关系的，它是数据的物理存储方式。</p>
+<p>外模式<br>也称为用户模式、子模式。<br>用户对现实系统中感兴趣整体的局部数据结构的描述。<br>是DB整体数据结构的子集或局部重构。<br>用外模式定义语言表达。例，对RDB，定义视图结构。<br>是保证数据库安全的一个措施。 </p>
+<p>内模式<br>也称为存储模式。<br>是对整个数据库的底层表示。<br>描述了数据的存储结构，比如：<br>        1.数据的组织与存储方式<br>        2.索引按什么方式组织<br>        3.是否加密等<br>但不涉及物理记录的形式。</p>
+<p>模式<br>也称为逻辑模式或模式，是数据库中<strong>全体数据</strong>的逻辑结构和特征的描述，是<strong>所有用户</strong>的公共数据描述。<br>是数据库系统结构的<strong>中间层</strong>。<br>不涉及数据的物理存储细节和硬件环境，<br>与具体的应用程序、应用开发工具和环境无关。<br>模式实际上是数据库数据在逻辑级上的视图。<br>一个数据库只有一种模式。<br>不涉及存储记录对列、索引、指针或其他存储的访问细节。</p>
+<p>模式映像与数据独立性<br>数据库系统的三级模式是对数据的三个抽象级别，<br>它把数据的具体组织留给DBMS管理，使用户能逻辑地、抽象地处理数据，<br>而不必关心数据在计算机中的具体表示方式与存储方式。</p>
+<p>两个映像<br>为了能够在内部实现这三个抽象层次的联系和转换，数据库管理系统在三级模式之间提供了两层映象：<br>        1.外模式/模式映象<br>            当模式改变时，可用外模式/模式定义语句，调整外模式/模式映象定义，从而保持外模式不变。<br>            *<em>数据和程序逻辑独立（概念独立） *</em></p>
+<p>​        2.模式/内模式映象<br>​            当存储结构改变时，可（由DBA）用内模式定义语句，调整内模式定义，从而保持模式不变。<br>​            *<em>数据和程序物理独立（存储独立） *</em></p>
+<p>物理独立性<br>指当数据的存储位置或存储结构发生变化时，不影响应用程序的特性。</p>
+<p>逻辑独立性<br>指当表达现实世界的信息内容发生变化时，如：<br>        1.增加信息<br>        2.删除无用信息等<br>不影响应用程序的特性。</p>
+<p>非独立性<br>在使用文件管理数据时，应用程序常常是数据依赖的，<br>也就是说数据的物理表示方式和有关的存取技术都要在应用程序中考虑，<br>而且，有关物理表示的知识和访问技术直接体现在应用程序的代码中。</p>
+<h2 id="数据库与计算思维（自查）"><a href="#数据库与计算思维（自查）" class="headerlink" title="数据库与计算思维（自查）"></a>数据库与计算思维（自查）</h2><h1 id="数据模型"><a href="#数据模型" class="headerlink" title="数据模型"></a>数据模型</h1><p>现实世界的数据是散乱无章的，散乱的数据不利于人们对其进行有效的管理和处理。<br>因此，必须把现实世界的数据按照一定的格式组织起来，以方便对其进行操作和使用。<br>在用数据库技术管理数据时，数据被按照一定的格式组织起来，比如二维表结构，以使数据能够被更高效地管理和处理。</p>
+<p>描述事物的符号记录称为<strong>数据</strong>。<br>将从数据中获得的有意义的内容称为<strong>信息</strong>。<br>数据有一定的格式，这些格式的规定是数据的语法，而数据的含义是数据的语义。<br>数据是信息存在的一种形式，只有通过解释或处理才能成为有用的信息。<br><img src="https://i.loli.net/2020/06/09/3UQkmEDYr1y2sWS.png" alt="数据与解释"></p>
+<h3 id="数据的静态特征"><a href="#数据的静态特征" class="headerlink" title="数据的静态特征"></a>数据的静态特征</h3><p>​        1.数据的基本结构<br>​        2.数据间的联系<br>​        3.数据取值范围约束</p>
+<h3 id="数据的动态特征"><a href="#数据的动态特征" class="headerlink" title="数据的动态特征"></a>数据的动态特征</h3><p>指对数据可以进行的操作以及操作规则。<br>对数据库数据的操作主要有<br>        1.查询数据<br>        2.更改数据：插入、删除和更新<br>一般将对数据的静态特征和动态特征的描述称为数据模型三要素</p>
+<p>计算机中的模型是对事物、对象、过程等客观系统中感兴趣的内容的模拟和抽象表达，是理解系统的思维工具<br>数据模型(data model)也是一种模型，它是对现实世界数据特征的抽象。<br>数据库管理系统是基于某种数据模型对数据进行组织的，因此，了解数据模型的基本概念是学习数据库知识的基础。<br>在数据库领域中，数据模型用于表达现实世界中的对象，即将现实世界中杂乱的信息用一种规范的、形象化的方式表达出来。</p>
+<p>数据模型即要面向现实世界，又要面向机器世界，因此需满足三个要求:<br>        1.能够真实地模拟现实世界<br>        2.容易被人们理解<br>        3.能够方便地在计算机上实现</p>
+<p>数据模型实际上是模型化数据和信息的工具。根据模型应用的不同目的，可以将模型分为两大类：<br>        1.<strong>概念层数据模型</strong>（概念模型），从数据的语义视角来抽取模型，是按用户的观点来对数据和信息进行建模。<br>            从数据的应用语义视角来抽取现实世界中有价值的数据并按用户的观点对数据进行建模。<br>            主要用在数据库的设计阶段，<br>            与具体的数据库管理系统无关，<br>            与具体的实现方式无关。<br>        2.<strong>组织层数据模型</strong>（组织模型）。从数据的组织层次来描述数据。<br>            从数据的组织方式来描述数据。主要有：<br>                    1.层次模型<br>                    2.网状模型<br>                    3.关系模型<br>                    4.对象-关系模型<br>            是从计算机系统的观点对数据进行建模，<br>            与所使用的数据库管理系统有关。<br><img src="https://i.loli.net/2020/06/09/So4Drw6svWnqlbF.png" alt="数据模型"></p>
+<h3 id="概念层数据模型"><a href="#概念层数据模型" class="headerlink" title="概念层数据模型"></a>概念层数据模型</h3><h4 id="基本概念-1"><a href="#基本概念-1" class="headerlink" title="基本概念"></a>基本概念</h4><p>概念层数据模型是指抽象现实系统中有应用价值的元素及其关联关系，反映现实系统中有应用价值的信息结构，并且不依赖于数据的组织层数据模型。<br>用于对信息世界建模，是现实世界到信息世界的<strong>第一层抽象</strong>，是数据库设计人员进行数据库设计的工具，也是数据库设计人员和业务领域的用户之间进行交流的工具。</p>
+<p>概念层数据模型应该：<br>        1.具有较强的语义表达能力<br>        2.能够方便、直接地表达应用中的各种语义知识<br>        3.简单、清晰，易于被用户理解<br>是面向用户、面向现实世界的数据模型，与具体的DBMS无关。<br>常用概念模型：<strong>实体-联系模型</strong>、<strong>语义对象模型</strong></p>
+<h4 id="实体-联系模型（E-R）"><a href="#实体-联系模型（E-R）" class="headerlink" title="实体-联系模型（E-R）"></a>实体-联系模型（E-R）</h4><p>由P. P. S. Chen于1976年提出，即通常所说的E-R方法。<br>这种方法由于简单、实用，因此得到了广泛的应用，也是目前描述信息结构最常用的方法。<br>实体-联系方法使用的工具称为<strong>E-R图</strong>，也把这种描述结果称为<strong>E-R模型</strong>。</p>
+<h5 id="实体"><a href="#实体" class="headerlink" title="实体"></a>实体</h5><p>具有公共性质的可相互区分的现实世界对象的集合。例如：学生、课程、职工<br>在E-R图中用矩形框表示具体的实体，把实体名写在框内。</p>
+<p>实体中每个具体的记录值（一行数据），称为实体的一个<strong>实例</strong>。<br>有些书也将实体称为<strong>实体集</strong>或<strong>实体类型</strong>，而将每行具体的记录称为<strong>实体</strong><br><img src="https://i.loli.net/2020/06/09/3fptnANsFVyHlmG.png" alt="实体与实例"></p>
+<h5 id="属性"><a href="#属性" class="headerlink" title="属性"></a>属性</h5><p>描述实体或者联系的性质或特征的数据项。</p>
+<p>标识属性<br>能够唯一标识实体的一个属性或最小的一组属性（称为属性集或属性组）称为实体的标识属性，称为实体的码。<br>例如，“学号”就是学生实体的码。</p>
+<p>属性的表示方式<br>用圆角矩形或椭圆框表示，框内写上属性名，并用连线连到相应实体。<br><img src="https://i.loli.net/2020/06/09/Y1VWPuncsKOpygd.png" alt="属性的表示方式"></p>
+<h5 id="联系"><a href="#联系" class="headerlink" title="联系"></a>联系</h5><p>联系是数据之间的关联集合，是客观存在的应用语义链 。<br>实体内部的联系：一个实体内属性之间的联系。比如职工中的职工号和此职工的部门经理号<br>实体之间的联系：不同实体之间的联系。比如课程和学生实体之间存在选课联系。</p>
+<p>联系的表示方式<br>实体之间的联系用菱形框表示，框内写上联系名，并用连线与有关的实体相连。<br><img src="https://i.loli.net/2020/06/09/uzkeMgG7ywH6hY5.png" alt="联系的表示方式"></p>
+<p>联系的种类：<br>1.一对一联系(1:1)</p>
+<p>如果实体A中的每个实例在实体B中至多有一个（也可以没有）实例与之关联，反之亦然，则称实体A与实体B具有一对一联系，记作：1:1<br>部门和正经理（假设一个部门只有一个正经理，一个人只当一个部门的经理）、系和正系主任（假设一个系只有一个正主任，一个人只当一个系的主任）都是一对一联系。 </p>
+<p>2.一对多联系(1:n)</p>
+<p>如果实体A与实体B之间存在联系，并且对于实体A中的一个实例，实体B中有多个实例与之对应；而对实体B中的任意一个实例，在实体A中都只有一个实例与之对应，则称实体A到实体B的联系是一对多的，记为1 : n<br>有部门和职工两个实体，并且有语义：一个部门可以有多名职工，但是一个职工只在一个部门工作。则部门和职工之间的联系是一对多的，我们把这种联系命名为工作。</p>
+<p>3.多对多联系(m:n)</p>
+<p>如果实体A与实体B之间存在联系，并且对于实体A中的一个实例，实体B中有多个实例与之对应；而对实体B中的一个实例，在实体A中也有多个实例与之对应，则称实体A到实体B的联系是多对多的，记为m : n 。<br>有学生和课程两个实体，并有语义：一个学生可以修多门课程，一门课程可以被多个学生修。那么学生和课程之间的联系就是多对多的，我们把这种联系命名为选课。</p>
+<p>联系说明<br>一对一联系是一对多联系的特例，而一对多联系又是多对多联系的特例。<br>实体之间联系的种类与<strong>语义</strong>直接相关。<br>例如，部门和经理：<br>        1.如果一个部门只有一个经理，一个人只担任一个部门的经理，则部门和经理之间是一对一联系。<br>        2.如果一个部门可以有多个经理，而一个人只担任一个部门的经理，则部门和经理之间就是一对多联系。<br>        3.如果一个部门可以有多个经理，而且一个人也可以担任多个部门的经理，则部门和经理之间就是多对多联系。<br><img src="https://i.loli.net/2020/06/09/eaMLRE8xtyhFVmu.png" alt=""></p>
+<h3 id="组织层数据模型"><a href="#组织层数据模型" class="headerlink" title="组织层数据模型"></a>组织层数据模型</h3><p>组织层数据模型是从数据的组织形式的角度来描述信息。<br>在数据库技术的发展过程中用到的组织层数据模型主要有：<br>        1.层次模型（Hierarchical Model）<br>        2.网状模型（Network Model）<br>        3.关系模型（Relational Model）<br>        4.面向对象模型（Object Oriented Model）</p>
+<h4 id="层次数据模型"><a href="#层次数据模型" class="headerlink" title="层次数据模型"></a>层次数据模型</h4><p>是数据库管理系统中最早出现的数据模型。<br>层次数据库管理系统采用层次模型作为数据的组织方式。<br>层次数据库管理系统的典型代表是IBM公司的IMS，是IBM1968年推出的第一个大型商用数据库管理系统。</p>
+<p>用树形结构表示实体和实体之间的联系。<br>现实世界中许多实体之间的联系本身就呈现出一种自然的层次关系，如：<br>    -行政机构<br>    -家族关系</p>
+<p>构成层次模型的树由结点和连线组成<br>        1.结点表示实体，结点中的项表示实体的属性<br>        2.连线表示相连的两个实体间的联系，这种联系是一对多的。<br>通常把表示“一”的实体放在上方，称为<strong>父结点</strong><br>把表示“多”的实体放在下方，称为<strong>子结点</strong><br>将不包含任何子结点的结点称为<strong>叶结点</strong><br><img src="https://i.loli.net/2020/06/09/gY8JkKhiAr52DqV.png" alt="层次模型示意图"></p>
+<p>层次模型的限制<br>可以方便的表示一对多的联系。但有以下两点限制：<br>        1.有且仅有一个结点无父结点，这个结点即为树的<strong>根</strong>；<br>        2.其他结点有且仅有一个父结点。</p>
+<p>层次模型的基本特点<br>任何一个给定的记录值只有从层次模型的根部开始按路径查看时，才能明确其含义，任何子结点都不能脱离父结点而存在。<br><img src="https://i.loli.net/2020/06/09/uWt8mMUliNsBVQw.png" alt="层次模型的基本特点"></p>
+<p>层次模型的局限性<br>只能表示一对多的联系，不能直接表示多对多联系。<br>如果把多对多联系转换为一对多联系，会出现一个子结点有多个父结点的情况。</p>
+<p>解决办法<br>把一个层次模型分解为两个层次模型<br><img src="https://i.loli.net/2020/06/09/lsiVShCOcZp94jW.png" alt=""></p>
+<h4 id="网状数据模型"><a href="#网状数据模型" class="headerlink" title="网状数据模型"></a>网状数据模型</h4><p>如果去掉层次模型中的两点限制，即<br>        1.允许一个以上的结点无父结点，<br>        2.每个结点可以有多个父结点，<br>便构成了网状模型。<br>用<strong>图</strong>形结构表示实体和实体之间的联系。<br><img src="https://i.loli.net/2020/06/09/WzkNHfCBeOo7Dda.png" alt="网状模型示例"><br><img src="https://i.loli.net/2020/06/09/9fyRax1gAzNeBLV.png" alt="网状模型示意图"></p>
+<p>网状模型限制<br>网状数据模型可以直接表示多对多联系。但实现起来太复杂。<br>因此一些支持网状模型的数据库管理系统，对多对多联系还是进行了限制<br>例如，网状模型的典型代表CODASYL就只支持一对多联系。</p>
+<h4 id="关系数据模型"><a href="#关系数据模型" class="headerlink" title="关系数据模型"></a>关系数据模型</h4><p>关系数据模型是目前<strong>最重要的一种数据模型</strong>，<br>关系数据库就是采用关系数据模型作为数据的组织方式。<br>关系数据模型源于数学，它把数据看成是二维表中的元素，而这个二维表在关系数据库中就称为<strong>关系</strong>。</p>
+<p>关系数据模型的数据结构<br>用关系（表格数据）表示实体和实体之间的联系的模型就称为<strong>关系数据模型</strong>。<br>在关系数据模型中，实体本身以及实体和实体之间的联系都用关系来表示，实体之间的联系不再通过指针来实现。<br><img src="https://i.loli.net/2020/06/09/o1urYxQI6EfZpNG.png" alt="关系模型示例"></p>
+<p>在关系数据库中，记录值仅仅构成关系，关系之间的联系是靠语义相同的字段（称为<strong>连接字段</strong>）值表达的。<br>例如，要查询“刘晨”的考试成绩，首先要在“学生”关系中得到“刘晨”的学号值，然后根据这个学号值再在“选课”关系中找出该学生的所有考试记录值。<br><img src="https://i.loli.net/2020/06/09/noQ4rRhbFLma8iN.png" alt="示例"></p>
+<p>关系模型的好处<br>关系数据模型易于设计、实现、维护和使用，<br>它与层次数据模型和网状数据模型的最根本区别是，关系数据模型不依赖于导航式的数据访问系统，数据结构的变化不会影响对数据的访问。</p>
+<h1 id="关系数据模型-1"><a href="#关系数据模型-1" class="headerlink" title="关系数据模型"></a>关系数据模型</h1><h1 id="SQL语言"><a href="#SQL语言" class="headerlink" title="SQL语言"></a>SQL语言</h1><h1 id="查询处理与优化"><a href="#查询处理与优化" class="headerlink" title="查询处理与优化"></a>查询处理与优化</h1><h1 id="数据库的存储"><a href="#数据库的存储" class="headerlink" title="数据库的存储"></a>数据库的存储</h1><h1 id="数据库安全与保护"><a href="#数据库安全与保护" class="headerlink" title="数据库安全与保护"></a>数据库安全与保护</h1><h1 id="实体关系模型"><a href="#实体关系模型" class="headerlink" title="实体关系模型"></a>实体关系模型</h1><h1 id="关系规范化理论"><a href="#关系规范化理论" class="headerlink" title="关系规范化理论"></a>关系规范化理论</h1><h1 id="数据库设计"><a href="#数据库设计" class="headerlink" title="数据库设计"></a>数据库设计</h1><script>
         document.querySelectorAll('.github-emoji')
           .forEach(el => {
             if (!el.dataset.src) { return; }
@@ -705,40 +606,12 @@ find_elements<span class="token punctuation">(</span>self<span class="token punc
 
     <div class="reprint" id="reprint-statement">
         
-            <div class="reprint__author">
-                <span class="reprint-meta" style="font-weight: bold;">
-                    <i class="fas fa-user">
-                        文章作者:
-                    </i>
-                </span>
-                <span class="reprint-info">
-                    <a href="/about" rel="external nofollow noreferrer">auntyang</a>
-                </span>
-            </div>
-            <div class="reprint__type">
-                <span class="reprint-meta" style="font-weight: bold;">
-                    <i class="fas fa-link">
-                        文章链接:
-                    </i>
-                </span>
-                <span class="reprint-info">
-                    <a href="https://auntyang.tk/2020/05/18/web-zi-dong-hua-ce-shi/">https://auntyang.tk/2020/05/18/web-zi-dong-hua-ce-shi/</a>
-                </span>
-            </div>
-            <div class="reprint__notice">
-                <span class="reprint-meta" style="font-weight: bold;">
-                    <i class="fas fa-copyright">
-                        版权声明:
-                    </i>
-                </span>
-                <span class="reprint-info">
-                    本博客所有文章除特別声明外，均采用
-                    <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a>
-                    许可协议。转载请注明来源
-                    <a href="/about" target="_blank">auntyang</a>
-                    !
-                </span>
-            </div>
+            <i class="fas fa-exclamation-circle"></i>
+            请联系作者
+            <span class="reprint-info">
+                <a href="https://auntyang.tk" rel="external nofollow noreferrer">auntyang</a>
+            </span>
+            付费转载。
         
     </div>
 
@@ -760,20 +633,16 @@ find_elements<span class="token punctuation">(</span>self<span class="token punc
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/Web/">
-                                    <span class="chip bg-color">Web</span>
+                                <a href="/tags/%E5%A4%8D%E4%B9%A0/">
+                                    <span class="chip bg-color">复习</span>
                                 </a>
                             
-                                <a href="/tags/%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95/">
-                                    <span class="chip bg-color">自动化测试</span>
+                                <a href="/tags/%E8%80%83%E7%A0%94/">
+                                    <span class="chip bg-color">考研</span>
                                 </a>
                             
-                                <a href="/tags/python/">
-                                    <span class="chip bg-color">python</span>
-                                </a>
-                            
-                                <a href="/tags/selenium%E5%BA%93/">
-                                    <span class="chip bg-color">selenium库</span>
+                                <a href="/tags/%E6%95%B0%E6%8D%AE%E5%BA%93%E5%8E%9F%E7%90%86/">
+                                    <span class="chip bg-color">数据库原理</span>
                                 </a>
                             
                         </div>
@@ -941,29 +810,88 @@ find_elements<span class="token punctuation">(</span>self<span class="token punc
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/2020/05/21/ji-suan-ji-wang-luo-yuan-li-shi-yan-11/">
+                <a href="/2020/06/09/shu-ju-ku-yuan-li-fu-xi-bi-ji/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/7.jpg" class="responsive-img" alt="路由器RIP动态路由配置">
+                        <img src="/medias/featureimages/5.jpg" class="responsive-img" alt="数据库原理复习笔记">
                         
-                        <span class="card-title">路由器RIP动态路由配置</span>
+                        <span class="card-title">数据库原理复习笔记</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            掌握RIP协议的配置方法、掌握查看通过动态路由协议RIP学习产生的路由、熟悉广域网线缆的链接方式
+                            数据库原理复习笔记总纲，个人总结，个人使用。
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2020-05-21
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-06-09
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/source/categories/%E6%95%B0%E6%8D%AE%E5%BA%93%E5%8E%9F%E7%90%86/" class="post-category">
+                                    数据库原理
+                                </a>
+                            
+                            
                         </span>
+                    </div>
+                </div>
+
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/%E5%A4%8D%E4%B9%A0/">
+                        <span class="chip bg-color">复习</span>
+                    </a>
+                    
+                    <a href="/tags/%E8%80%83%E7%A0%94/">
+                        <span class="chip bg-color">考研</span>
+                    </a>
+                    
+                    <a href="/tags/%E6%95%B0%E6%8D%AE%E5%BA%93%E5%8E%9F%E7%90%86/">
+                        <span class="chip bg-color">数据库原理</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2020/06/07/ji-suan-ji-wang-luo-yuan-li-fu-xi-bi-ji/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/11.jpg" class="responsive-img" alt="计算机网络原理复习笔记">
+                        
+                        <span class="card-title">计算机网络原理复习笔记</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            计算机网络原理复习总纲，提炼自谢希仁版网络原理。个人使用，总结不容易。
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-06-07
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
@@ -979,65 +907,16 @@ find_elements<span class="token punctuation">(</span>self<span class="token punc
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E5%AE%9E%E9%AA%8C/">
-                        <span class="chip bg-color">实验</span>
+                    <a href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E5%8E%9F%E7%90%86/">
+                        <span class="chip bg-color">计算机网络原理</span>
                     </a>
                     
-                    <a href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/">
-                        <span class="chip bg-color">计算机网络</span>
+                    <a href="/tags/%E5%A4%8D%E4%B9%A0/">
+                        <span class="chip bg-color">复习</span>
                     </a>
                     
-                </div>
-                
-            </div>
-        </div>
-        
-        
-        <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge right-badge text-color">
-                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
-            </div>
-            <div class="card">
-                <a href="/2020/05/17/linux-gen-mu-lu-xiang-jie/">
-                    <div class="card-image">
-                        
-                        
-                        <img src="/medias/featureimages/23.jpg" class="responsive-img" alt="Linux根目录详解">
-                        
-                        <span class="card-title">Linux根目录详解</span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary block-with-text">
-                        
-                            用思维导图的方式总结了Linux系统根目录下各个文件夹作用。
-                        
-                    </div>
-                    <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-05-17
-                            </span>
-                        <span class="publish-author">
-                            
-                            <i class="fas fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/source/categories/Linux/" class="post-category">
-                                    Linux
-                                </a>
-                            
-                            
-                        </span>
-                    </div>
-                </div>
-                
-                <div class="card-action article-tags">
-                    
-                    <a href="/tags/%E6%80%9D%E7%BB%B4%E5%AF%BC%E5%9B%BE/">
-                        <span class="chip bg-color">思维导图</span>
-                    </a>
-                    
-                    <a href="/tags/Linux%E6%96%87%E4%BB%B6/">
-                        <span class="chip bg-color">Linux文件</span>
+                    <a href="/tags/%E8%80%83%E7%A0%94/">
+                        <span class="chip bg-color">考研</span>
                     </a>
                     
                 </div>
@@ -1212,6 +1091,13 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
 
 </main>
 
+
+<script src="https://cdn.bootcss.com/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<script>
+    MathJax.Hub.Config({
+        tex2jax: {inlineMath: [['$', '$'], ['\(', '\)']]}
+    });
+</script>
 
 
 
