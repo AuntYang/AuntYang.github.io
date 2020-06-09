@@ -309,7 +309,7 @@
 <script src="/libs/cryptojs/crypto-js.min.js"></script>
 <script>
     (function() {
-        let pwd = '5a4f77d09a9b2832e2e548152026ceb71b9bcea7d2cadf4b44cc8d23c428001d';
+        let pwd = '';
         if (pwd && pwd.length > 0) {
             if (pwd !== CryptoJS.SHA256(prompt('请输入访问本文章的密码')).toString(CryptoJS.enc.Hex)) {
                 alert('密码错误，将返回主页！');
@@ -442,33 +442,12 @@
             <div class="row tag-cate">
                 <div class="col s7">
                     
-                    <div class="article-tag">
-                        
-                            <a href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E5%8E%9F%E7%90%86/">
-                                <span class="chip bg-color">计算机网络原理</span>
-                            </a>
-                        
-                            <a href="/tags/%E5%A4%8D%E4%B9%A0/">
-                                <span class="chip bg-color">复习</span>
-                            </a>
-                        
-                            <a href="/tags/%E8%80%83%E7%A0%94/">
-                                <span class="chip bg-color">考研</span>
-                            </a>
-                        
-                    </div>
+                          <div class="article-tag">
+                            <span class="chip bg-color">无标签</span>
+                          </div>
                     
                 </div>
                 <div class="col s5 right-align">
-                    
-                    <div class="post-cate">
-                        <i class="fas fa-bookmark fa-fw icon-category"></i>
-                        
-                            <a href="/source/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E5%8E%9F%E7%90%86/" class="post-category">
-                                计算机网络原理
-                            </a>
-                        
-                    </div>
                     
                 </div>
             </div>
@@ -484,21 +463,21 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2020-06-08
+                    2020-06-09
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    20.3k
+                    26k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    71 分
+                    92 分
                 </div>
                 
 
@@ -513,7 +492,13 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>第一章考小题、第五章主要考拥塞控制、第六章名词解释<br>串行通信和并行通信<br>MAC地址那块分清楚单播、广播、多播，及应用场合，什么时候封装MAC帧<br>一定要知道交换表怎么生成<br>第三章把作业弄明白<br>IP协议簇和网络中间设备的区别、IP数据报格式及首部检验和计算、分片、协议字段值的表格记下来<br>子网划分（重要）<br>例题4-4、CIDR（4-27）、ICMP记一下概念<br>第四章（比重50%）：路由转发、分片、RIP和OSPF的实现、<strong>多看看题</strong><br>路由器构成不考，看看就行<br>0压缩怎么实现、多播<br>概念题：VPN、NAT、MPLS<br>接口与网段的关系（4-55）<br>常用协议对应的端口号<br>TCP：为什么要三次握手及握手过程<br>套接字：UDP二元组<br>TCP格式以及概念的意思，可靠传输不是考点<br>填空+</p>
+                <p>title: 计算机网络原理复习笔记<br>date: 2020-06-07 20:37:00<br>author: auntyang<br>top: true<br>toc: true<br>password: 5a4f77d09a9b2832e2e548152026ceb71b9bcea7d2cadf4b44cc8d23c428001d<br>mathjax: true<br>summary: 计算机网络原理复习总纲，提炼自谢希仁版网络原理。个人使用，总结不容易。<br>categories: 计算机网络原理<br>tags: </p>
+<ul>
+<li>计算机网络原理</li>
+<li>复习</li>
+<li>考研<br>reprintPolicy: pay</li>
+</ul>
+<p>第一章考小题、第五章主要考拥塞控制、第六章名词解释<br>串行通信和并行通信<br>MAC地址那块分清楚单播、广播、多播，及应用场合，什么时候封装MAC帧<br>一定要知道交换表怎么生成<br>第三章把作业弄明白<br>IP协议簇和网络中间设备的区别、IP数据报格式及首部检验和计算、分片、协议字段值的表格记下来<br>子网划分（重要）<br>例题4-4、CIDR（4-27）、ICMP记一下概念<br>第四章（比重50%）：路由转发、分片、RIP和OSPF的实现、<strong>多看看题</strong><br>路由器构成不考，看看就行<br>0压缩怎么实现、多播<br>概念题：VPN、NAT、MPLS<br>接口与网段的关系（4-55）<br>常用协议对应的端口号<br>TCP：为什么要三次握手及握手过程<br>套接字：UDP二元组<br>TCP格式以及概念的意思，可靠传输不是考点<br>填空+</p>
 <h1 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h1><h2 id="计算机网络定义及特点"><a href="#计算机网络定义及特点" class="headerlink" title="计算机网络定义及特点"></a>计算机网络定义及特点</h2><h3 id="网络定义"><a href="#网络定义" class="headerlink" title="网络定义"></a>网络定义</h3><p>泛指把人或物互联在一起的而形成的系统</p>
 <p>网络的逻辑结构（拓扑结构）</p>
 <h3 id="三大类网络"><a href="#三大类网络" class="headerlink" title="三大类网络"></a>三大类网络</h3><p><strong>电信网络</strong>：提供电话、电报及传真等服务</p>
@@ -980,8 +965,86 @@
 <p>星形以太网 10BASE-T<br><img src="https://i.loli.net/2020/06/08/P6DbJyTKIEuvoaX.png" alt="星形以太网 10BASE-T"><br>使用无屏蔽双绞线，采用星形拓扑。<br>每个站需要用两对双绞线，分别用于发送和接收。<br>双绞线的两端使用 RJ-45 插头。<br>集线器使用了大规模集成电路芯片，因此集线器的可靠性提高。<br>10BASE-T 的通信距离稍短，每个站到集线器的距离不超过 100m。</p>
 <p>10BASE-T 以太网在局域网中的统治地位<br>这种 10 Mbit/s 速率的无屏蔽双绞线星形网的出现，既降低了成本，又提高了可靠性。 具有很高的性价比。<br>10BASE-T 双绞线以太网的出现，是局域网发展史上的一个非常重要的里程碑，它为以太网在局域网中的统治地位奠定了牢固的基础。<br>从此以太网的拓扑就从总线形变为更加方便的星形网络，而以太网也就在局域网中占据了统治地位。 </p>
 <h4 id="集线器（HUB）特点"><a href="#集线器（HUB）特点" class="headerlink" title="集线器（HUB）特点"></a>集线器（HUB）特点</h4><p>集线器是使用电子器件来模拟实际电缆线的工作，因此整个系统仍然像一个传统的以太网那样运行。<br><strong>使用集线器的以太网在逻辑上仍是一个总线网，各工作站使用的还是 CSMA/CD 协议，并共享逻辑上的总线。</strong><br>集线器很像一个多接口的转发器，<strong>工作在物理层</strong>。<br>集线器采用了专门的芯片，进行自适应串音回波抵消，减少了近端串音。</p>
-<h3 id="以太网的信道利用率"><a href="#以太网的信道利用率" class="headerlink" title="以太网的信道利用率"></a>以太网的信道利用率</h3><p>多个站在以太网上同时工作就可能会发生碰撞。<br>当发生碰撞时，信道资源实际上是被浪费了。因此，当扣除碰撞所造成的信道损失后，<strong>以太网总的信道利用率并不能达到 100%。</strong><br>假设 是以太网单程端到端传播时延。则争用期长度为 2 ，即端到端传播时延的两倍。检测到碰撞后不发送干扰信号。<br>设帧长为 L (bit)，数据发送速率为 C (bit/s)，则帧的发送时间为  T0 = L/C (s)。 </p>
-<h3 id="以太网的-MAC-层"><a href="#以太网的-MAC-层" class="headerlink" title="以太网的 MAC 层"></a>以太网的 MAC 层</h3><h2 id="扩展以太网"><a href="#扩展以太网" class="headerlink" title="扩展以太网"></a>扩展以太网</h2><h2 id="高速以太网"><a href="#高速以太网" class="headerlink" title="高速以太网"></a>高速以太网</h2><script>
+<h3 id="以太网的信道利用率"><a href="#以太网的信道利用率" class="headerlink" title="以太网的信道利用率"></a>以太网的信道利用率</h3><p>多个站在以太网上同时工作就可能会发生碰撞。<br>当发生碰撞时，信道资源实际上是被浪费了。因此，当扣除碰撞所造成的信道损失后，<strong>以太网总的信道利用率并不能达到 100%。</strong><br>假设:<br>$$<br>\tau<br>$$<br> 是以太网单程端到端传播时延。则争用期长度为<br>$$<br>2\tau<br>$$<br>即端到端传播时延的两倍。检测到碰撞后不发送干扰信号。<br>设帧长为 L (bit)，数据发送速率为 C (bit/s)，则帧的发送时间为  :<br>$$<br>T_0 = L/C (s)。<br>$$<br><strong>以太网信道被占用的情况</strong><br>一个站在发送帧时出现了碰撞。经过一个争用期:<br>$$<br>2\tau<br>$$<br>后，可能又出现了碰撞。这样经过若干个争用期后，一个站发送成功了。假定发送帧需要的时间是 T0。<br>注意到，成功发送一个帧需要占用信道的时间是<br>$$<br>T_0 + \tau<br>$$<br>比这个帧的发送时间要多一个单程端到端时延:<br>$$<br>\tau<br>$$<br>这是因为当一个站发送完最后一个比特时，这个比特还要在以太网上传播。<br>在最极端的情况下，发送站在传输媒体的一端，而比特在媒体上传输到另一端所需的时间是:<br>$$<br>\tau<br>$$</p>
+<h4 id="参数a与利用率"><a href="#参数a与利用率" class="headerlink" title="参数a与利用率"></a>参数a与利用率</h4><p>$$<br>要提高以太网的信道利用率，就必须减小\tau与 T_0 之比。<br>在以太网中定义了参数 a ，它是以太网单程端到端时延\tau与帧的发送时间 T_0 之比：<br>$$</p>
+<p><img src="https://i.loli.net/2020/06/09/gLbpVFSjMcY16G5.png" alt="参数a与利用率"></p>
+<p>a → 0，表示一发生碰撞就立即可以检测出来， 并立即停止发送，因而信道利用率很高。<br>a 越大，表明争用期所占的比例增大，每发生一次碰撞就浪费许多信道资源，使得信道利用率明显降低。 </p>
+<p>对以太网参数a的要求<br>为提高利用率，以太网的参数 a 的值应当<strong>尽可能小</strong>些。<br>对以太网参数 a 的要求是：<br>$$<br>1.当数据率一定时，以太网的连线的长度受到限制，否则\tau的数值会太大。<br>\<br>2.以太网的帧长不能太短，否则 T_0 的值会太小，使 a 值太大。<br>$$</p>
+<h4 id="信道利用率的最大值"><a href="#信道利用率的最大值" class="headerlink" title="信道利用率的最大值"></a>信道利用率的最大值</h4><p>在理想化的情况下，以太网上的各站发送数据都不会产生碰撞（这显然已经不是 CSMA/CD，而是需要使用一种特殊的调度方法），即总线一旦空闲就有某一个站立即发送数据。<br>$$<br>发送一帧占用线路的时间是 T_0 +\tau，而帧本身的发送时间是 T_0。于是，我们可计算出理想情况下的极限信道利用率 S_{max} 为：<br>$$<br><img src="https://i.loli.net/2020/06/09/xzfdKcm6YoT9hiU.png" alt="信道利用率的最大值"></p>
+<p>只有当参数 a 远小于 1 才能得到尽可能高的极限信道利用率。<br>据统计，当以太网的利用率达到 30% 时就已经处于重载的情况。很多的网络容量被网上的碰撞消耗掉了。</p>
+<h3 id="以太网的-MAC-层"><a href="#以太网的-MAC-层" class="headerlink" title="以太网的 MAC 层"></a>以太网的 MAC 层</h3><h4 id="MAC层的硬件地址"><a href="#MAC层的硬件地址" class="headerlink" title="MAC层的硬件地址"></a>MAC层的硬件地址</h4><p>在局域网中，<strong>硬件地址</strong>又称为<strong>物理地址</strong>，或** MAC 地址**。<br>802 标准所说的“地址”严格地讲应当是每一个站的“名字”或标识符。<br>但鉴于大家都早已习惯了将这种 48 位的“名字”称为“地址”，所以本书也采用这种习惯用法，尽管这种说法并不太严格。</p>
+<p>请注意，如果连接在局域网上的主机或路由器安装有多个适配器，那么这样的主机或路由器就有多个“地址”。更准确些说，这种 48 位“地址”应当是某个接口的标识符。</p>
+<h5 id="48-位的-MAC-地址"><a href="#48-位的-MAC-地址" class="headerlink" title="48 位的 MAC 地址"></a>48 位的 MAC 地址</h5><p>IEEE 802 标准规定 MAC 地址字段可采用 6 字节 ( 48位) 或 2 字节 ( 16 位) 这两种中的一种。<br>IEEE 的注册管理机构 RA 负责向厂家分配地址字段 6 个字节中的前三个字节 (即高位 24 位)，称为组织唯一标识符。<br>地址字段 6 个字节中的后三个字节 (即低位 24 位) 由厂家自行指派，称为扩展唯一标识符，必须保证生产出的适配器没有重复地址。</p>
+<p><img src="https://i.loli.net/2020/06/09/iPeoYlDkUM8Rvcq.png" alt="48 位的 MAC 地址"></p>
+<p>一个地址块可以生成 224 个不同的地址。这种 48 位地址称为 MAC-48，它的通用名称是 EUI-48。<br>生产适配器时，6 字节的 MAC 地址已被固化在适配器的 ROM，因此，MAC 地址也叫做<strong>硬件地址</strong> (hardware address) 或<strong>物理地址</strong>。<br>“MAC 地址”实际上就是适配器地址或适配器标识符 EUI-48。</p>
+<p>单站地址、组地址、广播地址<br>IEEE 规定地址字段的第一字节的最低位为 I/G 位。I/G 表示 Individual / Group。<br>当 I/G 位 = 0 时，地址字段表示一个<strong>单站地址</strong>。<br>当 I/G 位 = 1 时，表示<strong>组地址</strong>，用来进行<strong>多播</strong>（以前曾译为组播）。此时，IEEE 只分配地址字段前三个字节中的 23 位。<br>当 I/G 位分别为 0 和 1 时，一个地址块可分别生成 223 个单个站地址和 223 个组地址。<br>所有 48 位都为 1 时，为广播地址。只能作为目的地址使用。</p>
+<p>全球管理与本地管理<br>IEEE 把地址字段第一字节的最低第 2 位规定为 G/L 位，表示 Global / Local。<br>当 G/L 位 = 0 时，是全球管理（保证在全球没有相同的地址），厂商向 IEEE 购买的 OUI 都属于全球管理。<br>当 G/L 位 = 1 时， 是本地管理，这时用户可任意分配网络上的地址。</p>
+<h5 id="适配器检查-MAC-地址"><a href="#适配器检查-MAC-地址" class="headerlink" title="适配器检查 MAC 地址"></a>适配器检查 MAC 地址</h5><p>适配器从网络上每收到一个 MAC 帧就首先用硬件检查 MAC 帧中的 MAC 地址。<br>        1.如果是发往本站的帧则收下，然后再进行其他的处理。<br>        2.否则就将此帧丢弃，不再进行其他的处理。<br>“发往本站的帧”包括以下三种帧：<br>        1.单播 (unicast) 帧（一对一）<br>        2.广播 (broadcast) 帧（一对全体）<br>        3.多播 (multicast) 帧（一对多）<br>所有的适配器都至少能够识别前两种帧，即<strong>能够识别单播地址和广播地址</strong>。<br>有的适配器可用编程方法识别多播地址。<br><strong>只有目的地址才能使用广播地址和多播地址</strong>。<br>以*<em>混杂方式 *</em>(promiscuous mode) 工作的以太网适配器只要“听到”有帧在以太网上传输就都接收下来。</p>
+<h4 id="MAC帧的格式"><a href="#MAC帧的格式" class="headerlink" title="MAC帧的格式"></a>MAC帧的格式</h4><p>常用的以太网 MAC 帧格式有两种标准：<br>        1.DIX Ethernet V2 标准<br>        2.IEEE 的 802.3 标准<br>最常用的 MAC 帧是<strong>以太网 V2 的格式</strong>。</p>
+<h5 id="以太网V2帧格式"><a href="#以太网V2帧格式" class="headerlink" title="以太网V2帧格式"></a>以太网V2帧格式</h5><p><img src="https://i.loli.net/2020/06/09/C57bEqVlI1MJOa3.png" alt="以太网 V2 的 MAC 帧格式"></p>
+<p><img src="https://i.loli.net/2020/06/09/BTMNI6p8ancgREq.png" alt="以太网 V2 的 MAC 帧格式"></p>
+<p><img src="https://i.loli.net/2020/06/09/YocWNHsx2ivVb1K.png" alt="以太网 V2 的 MAC 帧格式"></p>
+<p><img src="https://i.loli.net/2020/06/09/UfbwYvX9iG7gR2r.png" alt="以太网 V2 的 MAC 帧格式"></p>
+<p><img src="https://i.loli.net/2020/06/09/tQN6PF12eSDlMKz.png" alt="以太网 V2 的 MAC 帧格式"></p>
+<p><img src="https://i.loli.net/2020/06/09/lNSjhx5JU3RMsqH.png" alt="以太网 V2 的 MAC 帧格式"></p>
+<p><img src="https://i.loli.net/2020/06/09/Ynah3IybBkd7EtX.png" alt="以太网 V2 的 MAC 帧格式"></p>
+<p>无效的MAC帧</p>
+<p>数据字段的长度与长度字段的值不一致<br>帧的长度不是整数个字节<br>用收到的帧检验序列 FCS 查出有差错<br>数据字段的长度不在 46 ~ 1500 字节之间<br>有效的 MAC 帧长度为 64 ~ 1518 字节之间</p>
+<p>对于检查出的无效 MAC 帧就简单地丢弃。以太网不负责重传丢弃的帧。 </p>
+<h5 id="IEEE-802-3-MAC-帧格式"><a href="#IEEE-802-3-MAC-帧格式" class="headerlink" title="IEEE 802.3 MAC 帧格式"></a>IEEE 802.3 MAC 帧格式</h5><p>与以太网 V2 MAC 帧格式相似，区别在于：<br>    IEEE 802.3 规定的 MAC 帧的第三个字段是“长度 / 类型”。<br>            1.当这个字段值大于 0x0600 时（相当于十进制的 1536）.就表示“类型”。这样的帧和以太网 V2 MAC 帧完全一样。<br>            2.当这个字段值小于 0x0600 时才表示“长度”。<br>    当“长度/类型”字段值小于 0x0600 时，数据字段必须装入上面的逻辑链路控制 LLC 子层的 LLC 帧。</p>
+<p>现在市场上流行的都是以太网 V2 的 MAC 帧，但大家也常常把它称为 IEEE 802.3 标准的 MAC 帧。</p>
+<h5 id="帧间最小间隔"><a href="#帧间最小间隔" class="headerlink" title="帧间最小间隔"></a>帧间最小间隔</h5><p>帧间最小间隔为<br>$$<br> 9.6 \mu s<br>$$<br>相当于 96 bit 的发送时间。<br>$$<br>一个站在检测到总线开始空闲后，还要等待 9.6 \mu s 才能再次发送数据。<br>$$<br>这样做是为了使刚刚收到数据帧的站的接收缓存来得及清理，做好接收下一帧的准备。 </p>
+<p>这样做是为了使刚刚收到数据帧的站的接收缓存来得及清理，做好接收下一帧的准备。 </p>
+<h2 id="扩展以太网"><a href="#扩展以太网" class="headerlink" title="扩展以太网"></a>扩展以太网</h2><h3 id="在物理层扩展以太网"><a href="#在物理层扩展以太网" class="headerlink" title="在物理层扩展以太网"></a>在物理层扩展以太网</h3><h4 id="使用光纤扩展"><a href="#使用光纤扩展" class="headerlink" title="使用光纤扩展"></a>使用光纤扩展</h4><p>主机使用光纤（通常是一对光纤）和一对光纤调制解调器连接到集线器。<br>很容易使主机和几公里以外的集线器相连接。<br><img src="https://i.loli.net/2020/06/09/J6FhYZq7PaVNpAB.png" alt="使用光纤扩展以太网"></p>
+<h4 id="使用集线器扩展"><a href="#使用集线器扩展" class="headerlink" title="使用集线器扩展"></a>使用集线器扩展</h4><p>将多个以太网段连成更大的、多级星形结构的以太网。<br><img src="https://i.loli.net/2020/06/09/hDacBHKYwA4j2kO.png" alt="使用集线器扩展以太网"></p>
+<p>用集线器扩展以太网优缺点<br><strong>优点</strong><br>        1.使原来属于不同碰撞域的以太网上的计算机能够进行跨碰撞域的通信。<br>        2.扩大了以太网覆盖的地理范围。<br><strong>缺点</strong><br>        1.碰撞域增大了，但总的吞吐量并未提高。<br>        2.如果不同的碰撞域使用不同的数据率，那么就不能用集线器将它们互连起来。 </p>
+<h4 id="碰撞域"><a href="#碰撞域" class="headerlink" title="碰撞域"></a>碰撞域</h4><p><strong>碰撞域</strong>（collision domain）又称为冲突域，是指网络中一个站点发出的帧会与其他站点发出的帧产生碰撞或冲突的那部分网络。<br>碰撞域越大，发生碰撞的概率越高。<br><img src="https://i.loli.net/2020/06/09/brpOs3zvKIQkASc.png" alt="碰撞域"></p>
+<h3 id="在数据链路层扩展以太网"><a href="#在数据链路层扩展以太网" class="headerlink" title="在数据链路层扩展以太网"></a>在数据链路层扩展以太网</h3><p>扩展以太网更常用的方法是在数据链路层进行。<br>早期使用<strong>网桥</strong>，现在使用<strong>以太网交换机</strong>。<br><img src="https://i.loli.net/2020/06/09/CbYtDRSvl5agjPG.png" alt="在数据链路层扩展以太网"></p>
+<h4 id="网桥"><a href="#网桥" class="headerlink" title="网桥"></a>网桥</h4><p><strong>网桥工作在数据链路层</strong>。<br>它根据 MAC 帧的目的地址对收到的帧进行<strong>转发</strong>和<strong>过滤</strong>。<br>当网桥收到一个帧时，并不是向所有的接口转发此帧，而是先检查此帧的目的 MAC 地址，然后再确定将该帧转发到哪一个接口，或把它丢弃。 </p>
+<h4 id="以太网交换机"><a href="#以太网交换机" class="headerlink" title="以太网交换机"></a>以太网交换机</h4><p>1990 年问世的交换式集线器 (switching hub) 可明显地提高以太网的性能。<br>交换式集线器常称为<strong>以太网交换机</strong> (switch) 或第二层交换机 (L2 switch)，强调这种交换机工作在数据链路层。</p>
+<h5 id="以太网交换机的特点"><a href="#以太网交换机的特点" class="headerlink" title="以太网交换机的特点"></a>以太网交换机的特点</h5><p>以太网交换机实质上就是一个<strong>多接口的网桥</strong>。通常都有十几个或更多的接口。<br>每个接口都直接与一个单台主机或另一个以太网交换机相连，并且一般都工作在<strong>全双工方式</strong>。<br>以太网交换机具<strong>有并行性</strong>。能同时连通多对接口，使多对主机能同时通信。<br>相互通信的主机都是独占传输媒体，无碰撞地传输数据。<br><img src="https://i.loli.net/2020/06/09/a1KfU4ZtykXLzjR.png" alt="相互通信的主机都是独占传输媒体"></p>
+<p>以太网交换机的<strong>接口有存储器</strong>，能在输出端口繁忙时把到来的帧进行缓存。<br>以太网交换机是一种<strong>即插即用设备</strong>，其内部的帧<strong>交换表</strong>（又称为地址表）是通过<strong>自学习算法</strong>自动地逐渐建立起来的。<br>以太网交换机使用了<strong>专用的交换结构芯片</strong>，用硬件转发，其转发速率要比使用软件转发的网桥快很多。<br>以太网交换机的性能远远超过普通的集线器，而且价格并不贵。</p>
+<h5 id="以太网交换机的优点"><a href="#以太网交换机的优点" class="headerlink" title="以太网交换机的优点"></a>以太网交换机的优点</h5><p>用户独享带宽，增加了总容量。<br><img src="https://i.loli.net/2020/06/09/zYWyaT21HUNJpRS.png" alt="用户独享带宽，增加了总容量"></p>
+<p>从共享总线以太网转到交换式以太网时，所有接入设备的软件和硬件、适配器等都不需要做任何改动。<br>以太网交换机一般都具有多种速率的接口，方便了各种不同情况的用户。</p>
+<h5 id="以太网交换机的交换方式"><a href="#以太网交换机的交换方式" class="headerlink" title="以太网交换机的交换方式"></a>以太网交换机的交换方式</h5><h6 id="存储转发方式"><a href="#存储转发方式" class="headerlink" title="存储转发方式"></a>存储转发方式</h6><p>把整个数据帧先缓存后再进行处理。</p>
+<h6 id="直通-cut-through-方式"><a href="#直通-cut-through-方式" class="headerlink" title="直通 (cut-through) 方式"></a>直通 (cut-through) 方式</h6><p>接收数据帧的同时就<strong>立即按数据帧的目的 MAC 地址决定该帧的转发接口</strong>，因而提高了帧的转发速度。<br><strong>缺点</strong>是它不检查差错就直接将帧转发出去，因此有可能也将一些无效帧转发给其他的站。</p>
+<p>在某些情况下，仍需要采用基于软件的存储转发方式进行交换，例如，当需要进行线路速率匹配、协议转换或差错检测时。</p>
+<h5 id="以太网交换机的自学习功能-重要"><a href="#以太网交换机的自学习功能-重要" class="headerlink" title="以太网交换机的自学习功能(重要)"></a>以太网交换机的自学习功能(重要)</h5><p>以太网交换机运行自学习算法自动维护交换表。<br><img src="https://i.loli.net/2020/06/09/ZWcrHFVjnkie8JG.png" alt="以太网交换机的自学习功能"><br><img src="https://i.loli.net/2020/06/09/LeYv6Bm4MjiAonl.png" alt="以太网交换机的自学习功能"><br><img src="https://i.loli.net/2020/06/09/ivwxAkJaU8Nb41q.png" alt="以太网交换机的自学习功能"><br><img src="https://i.loli.net/2020/06/09/GWd9NVKfsH3XrkB.png" alt="以太网交换机的自学习功能"><br><img src="https://i.loli.net/2020/06/09/3iTdSK4YvjlUgqf.png" alt="以太网交换机的自学习功能"></p>
+<p>以太网交换机的这种自学习方法使得以太网交换机能够即插即用，不必人工进行配置，因此非常方便。</p>
+<p>交换机自学习和转发帧的步骤归纳<br><img src="https://i.loli.net/2020/06/09/MCcygIZBko5wLPp.png" alt="交换机自学习和转发帧的步骤归纳"></p>
+<p>理解以太网交换机的自学习功能<br><img src="https://i.loli.net/2020/06/09/N7PYwpEJdrMBU5x.png" alt="image-20200609090644860"><br><img src="https://i.loli.net/2020/06/09/FoHWMmJQqcOy925.png" alt="以太网交换机的自学习功能"></p>
+<p>以太网交换机自学习功能要避免交换机产生回路，在交换表还是空白时，若存在回路，转发帧会一直在回路中循环，消耗网络资源。</p>
+<p>交换机使用了生成树协议<br>IEEE 802.1D 标准制定了一个<strong>生成树协议 STP ** (Spanning Tree Protocol)。<br>其</strong>要点<strong>是：</strong>不改变<strong>网络的实际拓扑，但在逻辑上则切断某些链路，使得从一台主机到所有其他主机的路径是</strong>无环路的树状结构**，从而消除了兜圈子现象，解决回路问题。<br><img src="https://i.loli.net/2020/06/09/kyx6sOeZwr37Dmd.png" alt="生成树协议 STP "></p>
+<h4 id="从总线以太网到星形以太网"><a href="#从总线以太网到星形以太网" class="headerlink" title="从总线以太网到星形以太网"></a>从总线以太网到星形以太网</h4><p>早期，以太网采用无源的总线结构。<br>现在，采用以太网交换机的星形结构成为以太网的首选拓扑。<br>总线以太网使用 CSMA/CD 协议，以半双工方式工作。<br>以太网交换机不使用共享总线，没有碰撞问题，因此不使用 CSMA/CD 协议，以全双工方式工作。但<strong>仍然采用以太网的帧结构</strong>。<br><img src="https://i.loli.net/2020/06/09/8t2Wj4Vrk7aeFRX.png" alt="从总线以太网到星形以太网"></p>
+<p>局域网存在的问题<br>        1.扩展性<br>        2.安全性<br>        3.可管理性 等</p>
+<p>总线以太网 和 10Base_T 星形以太网</p>
+<p>所有计算机都处于同一个<strong>碰撞域</strong>（或冲突域）中和同一个<strong>广播域</strong>中。<br><img src="https://i.loli.net/2020/06/09/lnDbrCsteYLBf3p.png" alt="总线以太网 和 10Base_T 星形以太网"><br><img src="https://i.loli.net/2020/06/09/msHhCkvXWdFgtNj.png" alt="总线以太网 和 10Base_T 星形以太网"></p>
+<p>广播域（broadcast domain）：指这样一部分网络，其中任何一台设备发出的广播通信都能被该部分网络中的所有其他设备所接收。</p>
+<p>采用以太网交换机的星形以太网</p>
+<p>每个接口都处于一个<strong>独立的碰撞域</strong>（或冲突域）中，但所有计算机都处于<strong>同一个广播域</strong>中。<br><img src="https://i.loli.net/2020/06/09/cfZW9bgkmezNrUw.png" alt="采用以太网交换机的星形以太网"><br><img src="https://i.loli.net/2020/06/09/z5tlH8VG1uhBsCN.png" alt="采用以太网交换机的星形以太网"></p>
+<h3 id="虚拟局域网（重要）"><a href="#虚拟局域网（重要）" class="headerlink" title="虚拟局域网（重要）"></a>虚拟局域网（重要）</h3><p>利用以太网交换机可以很方便地实现虚拟局域网 VLAN (Virtual LAN)。<br>IEEE 802.1Q 对虚拟局域网 VLAN 的<strong>定义</strong>：<br><strong>虚拟局域网 VLAN</strong> 是由一些局域网网段构成的与物理位置无关的逻辑组，而这些网段具有某些共同的需求。每一个 VLAN 的帧都有一个明确的标识符，指明发送这个帧的计算机是属于哪一个 VLAN。<br><strong>虚拟局域网其实只是局域网给用户提供的一种服务，而并不是一种新型局域网。</strong><br>由于虚拟局域网是用户和网络资源的逻辑组合，因此可按照需要将有关设备和资源非常方便地重新组合，使用户从不同的服务器或数据库中存取所需的资源。<br><img src="https://i.loli.net/2020/06/09/DjrCNoMut8ISa1w.png" alt="虚拟局域网 VLAN"><br><img src="https://i.loli.net/2020/06/09/VlJ59KZD84aqNPr.png" alt="虚拟局域网 VLAN"><br><img src="https://i.loli.net/2020/06/09/xeaLN2DAU7mbWvo.png" alt="虚拟局域网 VLAN"><br><img src="https://i.loli.net/2020/06/09/YTZMQAuD9z8yL73.png" alt="虚拟局域网 VLAN"><br><img src="https://i.loli.net/2020/06/09/1yfmiu62qbgPxOr.png" alt="虚拟局域网 VLAN"></p>
+<p>虚拟局域网（VLAN）技术具有以下<strong>主要优点</strong>：<br>        1.改善了性能<br>        2.简化了管理<br>        3.降低了成本<br>        4.改善了安全性</p>
+<p>划分虚拟局域网的方法<br>        1.基于交换机端口<br>                最简单、也是最常用的方法。<br>                属于在第一层划分虚拟局域网的方法。<br>                <strong>缺点</strong>：不允许用户移动。</p>
+<p>​        2.基于计算机网卡的MAC地址<br>​                根据用户计算机的MAC地址划分虚拟局域网。<br>​                属于在第二层划分虚拟局域网的方法。<br>​                允许用户移动。<br>​                <strong>缺点</strong>：需要输入和管理大量的MAC地址。如果用户的MAC地址改变了，则需要管理员重新配置VLAN。</p>
+<p>​        3.基于协议类型<br>​                根据以太网帧的第三个字段“类型”字段确定该类型的协议属于哪一个虚拟局域网。<br>​                属于在第二层划分虚拟局域网的方法。</p>
+<p>​        4.基于IP子网地址<br>​                根据以太网帧的第三个字段“类型”字段和IP分组首部中的源 IP 地址字段确定该 IP 分组属于哪一个虚拟局域网。<br>​                属于在第三层划分虚拟局域网的方法。</p>
+<p>​        5.基于高层应用或服务<br>​                根据高层应用或服务、或者它们的组合划分虚拟局域网。<br>​                更加灵活，但更加复杂。</p>
+<p>虚拟局域网使用的以太网帧格式<br>IEEE 批准了 802.3ac 标准，该标准定义了以太网的帧格式的扩展，以支持虚拟局域网。<br>虚拟局域网协议允许在以太网的帧格式中插入一个4字节的标识符，称为 <strong>VLAN 标记</strong> (tag)，用来指明该帧属于哪一个虚拟局域网。<br>插入VLAN标记得出的帧称为 802.1Q 帧或带标记的以太网帧。<br><img src="https://i.loli.net/2020/06/09/oFSm6i5hXZLqAtW.png" alt="虚拟局域网使用的以太网帧格式"><br><img src="https://i.loli.net/2020/06/09/njwRFLegJfVEYr8.png" alt="虚拟局域网使用的以太网帧格式"></p>
+<h2 id="高速以太网"><a href="#高速以太网" class="headerlink" title="高速以太网"></a>高速以太网</h2><h3 id="100BASE-T-以太网"><a href="#100BASE-T-以太网" class="headerlink" title="100BASE-T 以太网"></a>100BASE-T 以太网</h3><p><strong>速率达到或超过 100 Mbit/s 的以太网称为高速以太网</strong>。<br>100BASE-T 在双绞线上传送 100 Mbit/s 基带信号的星形拓扑以太网，仍使用 IEEE 802.3 的 CSMA/CD 协议。<br>100BASE-T 以太网又称为<strong>快速以太网</strong> (Fast Ethernet)。<br>1995 年IEEE已把 100BASE-T 的快速以太网定为正式标准，其代号为 IEEE 802.3u。</p>
+<p>100BASE-T 以太网的特点<br>可在全双工方式下工作而无冲突发生。<strong>在全双工方式下工作时，不使用 CSMA/CD 协议</strong>。<br><strong>MAC 帧格式仍然是 802.3 标准规定的</strong>。<br><strong>保持最短帧长不变，但将一个网段的最大电缆长度减小到 100 米</strong>。<br>$$<br>帧间时间间隔从原来的 9.6 \mu s 改为现在的 0.96 \mu s<br>$$<br> 100 Mbit/s 以太网的三种不同的物理层标准<br>100BASE-TX<br>        1.使用 2 对 UTP 5 类线 或 屏蔽双绞线 STP。<br>        2.网段最大程度：100 米。<br>100BASE-T4<br>        1.使用 4 对 UTP 3 类线 或 5 类线。<br>        2.网段最大程度：100 米。<br>100BASE-FX<br>        1.使用 2 对光纤。<br>        2.网段最大程度：2000 米。</p>
+<h3 id="吉比特以太网"><a href="#吉比特以太网" class="headerlink" title="吉比特以太网"></a>吉比特以太网</h3><p>允许在 1 Gbit/s 下以全双工和半双工两种方式工作。<br>使用 IEEE 802.3 协议规定的帧格式。<br><strong>在半双工方式下使用 CSMA/CD 协议，全双工方式不使用 CSMA/CD 协议</strong>。<br>与 10BASE-T 和 100BASE-T 技术向后兼容。</p>
+<p>吉比特以太网可用作现有网络的主干网，也可在高带宽（高速率）的应用场合中。</p>
+<p>吉比特以太网的物理层<br>使用两种成熟的技术：一种来自现有的以太网，另一种则是美国国家标准协会 ANSI 制定的光纤通道 FC  (Fiber Channel)。<br><img src="https://i.loli.net/2020/06/09/HwBpR1bxtWGmvzf.png" alt="吉比特以太网的物理层标准"></p>
+<p>半双工方式工作的吉比特以太网<br>吉比特以太网工作在半双工方式时，就必须进行碰撞检测。<br>为保持 64 字节最小帧长度，以及 100 米的网段的最大长度，吉比特以太网增加了两个功能：<br>        1.载波延伸 (carrier extension)<br>            使最短帧长仍为 64 字节（这样可以保持兼容性），同时将争用时间增大为 512 字节。<br>            凡发送的 MAC 帧长不足 512 字节时，就用一些特殊字符填充在帧的后面，使MAC 帧的发送长度增大到 512 字节。            接收端在收到以太网的 MAC 帧后，要将所填充的特殊字符删除后才向高层交付。<br><img src="https://i.loli.net/2020/06/09/49ZKaM2YrnPBNgV.png" alt="载波延伸"></p>
+<p>​        2.分组突发 (packet bursting)<br>​            当很多短帧要发送时，第一个短帧要采用载波延伸方法进行填充，随后的一些短帧则可一个接一个地发送，只需留            有必要的帧间最小间隔即可。这样就形成可一串分组的突发，直到达到 1500 字节或稍多一些为止。<br><img src="https://i.loli.net/2020/06/09/52lAtKbTQDzuC13.png" alt="分组突发"></p>
+<p>全双工方式工作的吉比特以太网<br>当吉比特以太网工作在全双工方式时（即通信双方可同时进行发送和接收数据），<strong>不使用载波延伸和分组突发</strong>。</p>
+<h3 id="10-吉比特以太网-10GE-和更快的以太网"><a href="#10-吉比特以太网-10GE-和更快的以太网" class="headerlink" title="10 吉比特以太网 (10GE) 和更快的以太网"></a>10 吉比特以太网 (10GE) 和更快的以太网</h3><p>10 吉比特以太网（10GE）并非把吉比特以太网的速率简单地提高到 10 倍，其主要特点有：<br>        1.与 10 Mbit/s、100 Mbit/s 和 1 Gbit/s 以太网的帧格式完全相同。<br>        2.保留了 802.3 标准规定的以太网最小和最大帧长，便于升级。<br>        3.不再使用铜线而只使用光纤作为传输媒体。<br>        4.<strong>只工作在全双工方式</strong>，因此没有争用问题，也不使用 CSMA/CD 协议。 </p>
+<p>10 吉比特以太网的物理层<br><img src="https://i.loli.net/2020/06/09/y73aotmCdbS5Tu9.png" alt="10GE物理层标准"></p>
+<p>40GE/100GE 的物理层<br><img src="https://i.loli.net/2020/06/09/SCbEOKcwqsJP8DA.png" alt="40GE/100GE 的物理层标准"></p>
+<p>端到端的以太网传输<br>以太网的工作范围已经从局域网（校园网、企业网）扩大到城域网和广域网，从而<strong>实现了端到端的以太网传输</strong>。<br>这种工作方式的好处有：<br>        1.技术成熟<br>        2.互操作性很好<br>        3.在广域网中使用以太网时价格便宜<br>        4.采用统一的以太网帧格式，简化了操作和管理。</p>
+<h3 id="使用以太网进行宽带接入"><a href="#使用以太网进行宽带接入" class="headerlink" title="使用以太网进行宽带接入"></a>使用以太网进行宽带接入</h3><p>IEEE 在 2001 年初成立了 802.3 EFM 工作组，专门研究高速以太网的宽带接入技术问题。<br>以太网宽带接入具有以下特点：<br>        1.可以提供双向的宽带通信。<br>        2.可以根据用户对带宽的需求灵活地进行带宽升级。<br>        3.可以实现端到端的以太网传输,中间不需要再进行帧格式的转换。这就提高了数据的传输效率且降低了传输的成本。<br>        4.但是不支持用户身份鉴别。</p>
+<p>PPPoE<br>PPPoE (PPP over Ethernet) 的意思是“在以太网上运行 PPP”，它把 PPP 协议与以太网协议结合起来 —— 将 PPP 帧再封装到以太网中来传输。<br>现在的光纤宽带接入 FTTx 都要使用 PPPoE 的方式进行接入。在 PPPoE 弹出的窗口中键入在网络运营商购买的用户名和密码，就可以进行宽带上网了。<br>利用 ADSL 进行宽带上网时，从用户个人电脑到家中的 ADSL 调制解调器之间，也是使用 RJ-45 和 5 类线（即以太网使用的网线）进行连接<br>的，并且也是使用 PPPoE 弹出的窗口进行拨号连接的。</p>
+<h1 id="网络层"><a href="#网络层" class="headerlink" title="网络层"></a>网络层</h1><h2 id="网络层提供的两种服务"><a href="#网络层提供的两种服务" class="headerlink" title="网络层提供的两种服务"></a>网络层提供的两种服务</h2><h2 id="网际协议IP"><a href="#网际协议IP" class="headerlink" title="网际协议IP"></a>网际协议IP</h2><h2 id="划分子网和构造超网"><a href="#划分子网和构造超网" class="headerlink" title="划分子网和构造超网"></a>划分子网和构造超网</h2><h2 id="网际控制报文协议ICMP"><a href="#网际控制报文协议ICMP" class="headerlink" title="网际控制报文协议ICMP"></a>网际控制报文协议ICMP</h2><h2 id="互联网的路由选择协议"><a href="#互联网的路由选择协议" class="headerlink" title="互联网的路由选择协议"></a>互联网的路由选择协议</h2><h2 id="IPv6"><a href="#IPv6" class="headerlink" title="IPv6"></a>IPv6</h2><h2 id="IP多播"><a href="#IP多播" class="headerlink" title="IP多播"></a>IP多播</h2><h2 id="虚拟专用网VPN和网络地址转换NAT"><a href="#虚拟专用网VPN和网络地址转换NAT" class="headerlink" title="虚拟专用网VPN和网络地址转换NAT"></a>虚拟专用网VPN和网络地址转换NAT</h2><h2 id="多协议标记交换MPLS"><a href="#多协议标记交换MPLS" class="headerlink" title="多协议标记交换MPLS"></a>多协议标记交换MPLS</h2><script>
         document.querySelectorAll('.github-emoji')
           .forEach(el => {
             if (!el.dataset.src) { return; }
@@ -1007,12 +1070,40 @@
 
     <div class="reprint" id="reprint-statement">
         
-            <i class="fas fa-exclamation-circle"></i>
-            请联系作者
-            <span class="reprint-info">
-                <a href="https://auntyang.tk" rel="external nofollow noreferrer">auntyang</a>
-            </span>
-            付费转载。
+            <div class="reprint__author">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-user">
+                        文章作者:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="/about" rel="external nofollow noreferrer">auntyang</a>
+                </span>
+            </div>
+            <div class="reprint__type">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-link">
+                        文章链接:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="https://auntyang.tk/2020/06/07/ji-suan-ji-wang-luo-yuan-li-fu-xi-bi-ji/">https://auntyang.tk/2020/06/07/ji-suan-ji-wang-luo-yuan-li-fu-xi-bi-ji/</a>
+                </span>
+            </div>
+            <div class="reprint__notice">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-copyright">
+                        版权声明:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    本博客所有文章除特別声明外，均采用
+                    <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a>
+                    许可协议。转载请注明来源
+                    <a href="/about" target="_blank">auntyang</a>
+                    !
+                </span>
+            </div>
         
     </div>
 
@@ -1033,19 +1124,7 @@
                 <div class="post-meta__tag-list" style="display: inline-block;">
                     
                         <div class="article-tag">
-                            
-                                <a href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E5%8E%9F%E7%90%86/">
-                                    <span class="chip bg-color">计算机网络原理</span>
-                                </a>
-                            
-                                <a href="/tags/%E5%A4%8D%E4%B9%A0/">
-                                    <span class="chip bg-color">复习</span>
-                                </a>
-                            
-                                <a href="/tags/%E8%80%83%E7%A0%94/">
-                                    <span class="chip bg-color">考研</span>
-                                </a>
-                            
+                            <span class="chip bg-color">无标签</span>
                         </div>
                     
                 </div>
@@ -1228,7 +1307,7 @@
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            计算机网络原理复习总纲，提炼自谢希仁版网络原理。个人使用，总结不容易。
+                            title: 计算机网络原理复习笔记date: 2020-06-07 20:37:00author: auntyangtop: truetoc: truepassword: 5a4f77d09a9b2832e2e548152026ceb71
                         
                     </div>
                     <div class="publish-info">
@@ -1237,33 +1316,13 @@
                             </span>
                         <span class="publish-author">
                             
-                            <i class="fas fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/source/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E5%8E%9F%E7%90%86/" class="post-category">
-                                    计算机网络原理
-                                </a>
-                            
+                            <i class="fas fa-user fa-fw"></i>
+                            auntyang
                             
                         </span>
                     </div>
                 </div>
 
-                
-                <div class="card-action article-tags">
-                    
-                    <a href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E5%8E%9F%E7%90%86/">
-                        <span class="chip bg-color">计算机网络原理</span>
-                    </a>
-                    
-                    <a href="/tags/%E5%A4%8D%E4%B9%A0/">
-                        <span class="chip bg-color">复习</span>
-                    </a>
-                    
-                    <a href="/tags/%E8%80%83%E7%A0%94/">
-                        <span class="chip bg-color">考研</span>
-                    </a>
-                    
-                </div>
                 
             </div>
         </div>
@@ -1489,13 +1548,6 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
 </main>
 
 
-<script src="https://cdn.bootcss.com/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-<script>
-    MathJax.Hub.Config({
-        tex2jax: {inlineMath: [['$', '$'], ['\(', '\)']]}
-    });
-</script>
-
 
 
     <footer class="page-footer bg-color">
@@ -1560,7 +1612,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">26.3k</span>&nbsp;字
+                class="white-color">32k</span>&nbsp;字
             
             
             
