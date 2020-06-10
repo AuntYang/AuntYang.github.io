@@ -309,7 +309,7 @@
 <script src="/libs/cryptojs/crypto-js.min.js"></script>
 <script>
     (function() {
-        let pwd = '';
+        let pwd = '4ec7c53222c8a758c722e2111541035ce700d5ae7bd0898c5f1b1a743e6450fd';
         if (pwd && pwd.length > 0) {
             if (pwd !== CryptoJS.SHA256(prompt('请输入访问本文章的密码')).toString(CryptoJS.enc.Hex)) {
                 alert('密码错误，将返回主页！');
@@ -442,12 +442,33 @@
             <div class="row tag-cate">
                 <div class="col s7">
                     
-                          <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
-                          </div>
+                    <div class="article-tag">
+                        
+                            <a href="/tags/%E5%A4%8D%E4%B9%A0/">
+                                <span class="chip bg-color">复习</span>
+                            </a>
+                        
+                            <a href="/tags/%E8%80%83%E7%A0%94/">
+                                <span class="chip bg-color">考研</span>
+                            </a>
+                        
+                            <a href="/tags/%E6%95%B0%E6%8D%AE%E5%BA%93%E5%8E%9F%E7%90%86/">
+                                <span class="chip bg-color">数据库原理</span>
+                            </a>
+                        
+                    </div>
                     
                 </div>
                 <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/source/categories/%E6%95%B0%E6%8D%AE%E5%BA%93%E5%8E%9F%E7%90%86/" class="post-category">
+                                数据库原理
+                            </a>
+                        
+                    </div>
                     
                 </div>
             </div>
@@ -470,7 +491,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    19.3k
+                    19.2k
                 </div>
                 
 
@@ -492,13 +513,7 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>title: 数据库原理复习笔记<br>date: 2020-06-09 17:23:00<br>author: auntyang<br>top: true<br>toc: true<br>password: 4ec7c53222c8a758c722e2111541035ce700d5ae7bd0898c5f1b1a743e6450fd<br>mathjax: true<br>summary: 数据库原理复习笔记总纲，个人总结，个人使用。<br>categories: 数据库原理<br>tags: </p>
-<ul>
-<li>数据库原理</li>
-<li>复习</li>
-<li>考研<br>reprintPolicy: pay</li>
-</ul>
-<h1 id="数据库概述"><a href="#数据库概述" class="headerlink" title="数据库概述"></a>数据库概述</h1><h2 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h2><p>数据库是数据管理的最新技术</p>
+                <h1 id="数据库概述"><a href="#数据库概述" class="headerlink" title="数据库概述"></a>数据库概述</h1><h2 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h2><p>数据库是数据管理的最新技术</p>
 <p>数据库技术一般包含<strong>数据管理</strong>和<strong>数据处理</strong>两部分</p>
 <p>数据库系统<br>本质上是一个用计算机存储数据的系统<br>除了保存数据外，还提供对数据进行各种管理和处理：<br>        1.安全管理<br>        2.数据共享<br>        3.数据查询</p>
 <h2 id="基本概念"><a href="#基本概念" class="headerlink" title="基本概念"></a>基本概念</h2><h3 id="数据"><a href="#数据" class="headerlink" title="数据"></a>数据</h3><p><strong>数据</strong>是数据库中存储的基本对象<br>数据可以定义为：<strong>数据是描述事物的符号记录</strong><br>数据需要经过解释才能明确其表达的含义<br>数据和解释不可分割</p>
@@ -1312,40 +1327,12 @@ AVG（<span class="token operator">&lt;</span>列名<span class="token operator"
 
     <div class="reprint" id="reprint-statement">
         
-            <div class="reprint__author">
-                <span class="reprint-meta" style="font-weight: bold;">
-                    <i class="fas fa-user">
-                        文章作者:
-                    </i>
-                </span>
-                <span class="reprint-info">
-                    <a href="/about" rel="external nofollow noreferrer">auntyang</a>
-                </span>
-            </div>
-            <div class="reprint__type">
-                <span class="reprint-meta" style="font-weight: bold;">
-                    <i class="fas fa-link">
-                        文章链接:
-                    </i>
-                </span>
-                <span class="reprint-info">
-                    <a href="https://auntyang.tk/2020/06/09/shu-ju-ku-yuan-li-fu-xi-bi-ji/">https://auntyang.tk/2020/06/09/shu-ju-ku-yuan-li-fu-xi-bi-ji/</a>
-                </span>
-            </div>
-            <div class="reprint__notice">
-                <span class="reprint-meta" style="font-weight: bold;">
-                    <i class="fas fa-copyright">
-                        版权声明:
-                    </i>
-                </span>
-                <span class="reprint-info">
-                    本博客所有文章除特別声明外，均采用
-                    <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a>
-                    许可协议。转载请注明来源
-                    <a href="/about" target="_blank">auntyang</a>
-                    !
-                </span>
-            </div>
+            <i class="fas fa-exclamation-circle"></i>
+            请联系作者
+            <span class="reprint-info">
+                <a href="https://auntyang.tk" rel="external nofollow noreferrer">auntyang</a>
+            </span>
+            付费转载。
         
     </div>
 
@@ -1366,7 +1353,19 @@ AVG（<span class="token operator">&lt;</span>列名<span class="token operator"
                 <div class="post-meta__tag-list" style="display: inline-block;">
                     
                         <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
+                            
+                                <a href="/tags/%E5%A4%8D%E4%B9%A0/">
+                                    <span class="chip bg-color">复习</span>
+                                </a>
+                            
+                                <a href="/tags/%E8%80%83%E7%A0%94/">
+                                    <span class="chip bg-color">考研</span>
+                                </a>
+                            
+                                <a href="/tags/%E6%95%B0%E6%8D%AE%E5%BA%93%E5%8E%9F%E7%90%86/">
+                                    <span class="chip bg-color">数据库原理</span>
+                                </a>
+                            
                         </div>
                     
                 </div>
@@ -1549,7 +1548,7 @@ AVG（<span class="token operator">&lt;</span>列名<span class="token operator"
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            title: 数据库原理复习笔记date: 2020-06-09 17:23:00author: auntyangtop: truetoc: truepassword: 4ec7c53222c8a758c722e2111541035ce70
+                            数据库原理复习笔记总纲，个人总结，个人使用。
                         
                     </div>
                     <div class="publish-info">
@@ -1558,13 +1557,33 @@ AVG（<span class="token operator">&lt;</span>列名<span class="token operator"
                             </span>
                         <span class="publish-author">
                             
-                            <i class="fas fa-user fa-fw"></i>
-                            auntyang
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/source/categories/%E6%95%B0%E6%8D%AE%E5%BA%93%E5%8E%9F%E7%90%86/" class="post-category">
+                                    数据库原理
+                                </a>
+                            
                             
                         </span>
                     </div>
                 </div>
 
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/%E5%A4%8D%E4%B9%A0/">
+                        <span class="chip bg-color">复习</span>
+                    </a>
+                    
+                    <a href="/tags/%E8%80%83%E7%A0%94/">
+                        <span class="chip bg-color">考研</span>
+                    </a>
+                    
+                    <a href="/tags/%E6%95%B0%E6%8D%AE%E5%BA%93%E5%8E%9F%E7%90%86/">
+                        <span class="chip bg-color">数据库原理</span>
+                    </a>
+                    
+                </div>
                 
             </div>
         </div>
@@ -1793,6 +1812,13 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
 
 </main>
 
+
+<script src="https://cdn.bootcss.com/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<script>
+    MathJax.Hub.Config({
+        tex2jax: {inlineMath: [['$', '$'], ['\(', '\)']]}
+    });
+</script>
 
 
 
