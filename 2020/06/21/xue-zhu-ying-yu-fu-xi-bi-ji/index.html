@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="web自动化测试（python+selenium）, 小准子_Code">
+    <meta name="keywords" content="学术英语复习笔记, 小准子_Code">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>web自动化测试（python+selenium） | 小准子_Code</title>
+    <title>学术英语复习笔记 | 小准子_Code</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -309,7 +309,7 @@
 <script src="/libs/cryptojs/crypto-js.min.js"></script>
 <script>
     (function() {
-        let pwd = '';
+        let pwd = '3f347fb9de8b352cd7c9103246ec660976a83eb3383dc305037207e263d6ffa9';
         if (pwd && pwd.length > 0) {
             if (pwd !== CryptoJS.SHA256(prompt('请输入访问本文章的密码')).toString(CryptoJS.enc.Hex)) {
                 alert('密码错误，将返回主页！');
@@ -322,12 +322,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/18.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/20.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">web自动化测试（python+selenium）</h1>
+                    <h1 class="description center-align post-title">学术英语复习笔记</h1>
                 </div>
             </div>
         </div>
@@ -444,20 +444,16 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/Web/">
-                                <span class="chip bg-color">Web</span>
+                            <a href="/tags/%E5%A4%8D%E4%B9%A0/">
+                                <span class="chip bg-color">复习</span>
                             </a>
                         
-                            <a href="/tags/%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95/">
-                                <span class="chip bg-color">自动化测试</span>
+                            <a href="/tags/%E8%80%83%E7%A0%94/">
+                                <span class="chip bg-color">考研</span>
                             </a>
                         
-                            <a href="/tags/python/">
-                                <span class="chip bg-color">python</span>
-                            </a>
-                        
-                            <a href="/tags/selenium%E5%BA%93/">
-                                <span class="chip bg-color">selenium库</span>
+                            <a href="/tags/%E5%AD%A6%E6%9C%AF%E8%8B%B1%E8%AF%AD/">
+                                <span class="chip bg-color">学术英语</span>
                             </a>
                         
                     </div>
@@ -468,8 +464,8 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/source/categories/Web/" class="post-category">
-                                Web
+                            <a href="/source/categories/%E5%AD%A6%E6%9C%AF%E8%8B%B1%E8%AF%AD/" class="post-category">
+                                学术英语
                             </a>
                         
                     </div>
@@ -481,28 +477,28 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2020-05-18
+                    2020-06-21
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2020-05-23
+                    2020-06-21
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    1.5k
+                    3.4k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    6 分
+                    17 分
                 </div>
                 
 
@@ -517,169 +513,381 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="环境配置"><a href="#环境配置" class="headerlink" title="环境配置"></a>环境配置</h2><h3 id="Python安装"><a href="#Python安装" class="headerlink" title="Python安装"></a>Python安装</h3><h4 id="Windows"><a href="#Windows" class="headerlink" title="Windows"></a>Windows</h4><p><a href="https://www.python.org/" target="_blank" rel="noopener">https://www.python.org/</a></p>
-<h4 id="Linux"><a href="#Linux" class="headerlink" title="Linux"></a>Linux</h4><h5 id="下载文件"><a href="#下载文件" class="headerlink" title="下载文件"></a>下载文件</h5><pre class=" language-bash"><code class="language-bash"><span class="token function">wget</span> https://www.python.org/ftp/python/3.6.8/Python-3.6.8.tar.xz</code></pre>
-<h5 id="进行安装"><a href="#进行安装" class="headerlink" title="进行安装"></a>进行安装</h5><pre class=" language-bash"><code class="language-bash">　　　　<span class="token function">tar</span> xf Python-3.7.1.tar.xz
-　　　　<span class="token function">cd</span> Python-3.7.1
-　　　　yum -y <span class="token function">install</span> gcc-* openssl-* libffi-devel sqlite-devel
-　　　　./configure --enable-optimizations --with-openssl<span class="token operator">=</span>/usr/bin/openssl
-　　　　<span class="token function">make</span> -j4
-　　　　<span class="token function">make</span> <span class="token function">install</span>
-　　　　默认安装路径：/usr/local/lib/python3.7</code></pre>
-<h5 id="更改安装源"><a href="#更改安装源" class="headerlink" title="更改安装源"></a>更改安装源</h5><pre class=" language-bash"><code class="language-bash">pip3 config <span class="token keyword">set</span> global.index-url https://pypi.tuna.tsinghua.edu.cn/simple</code></pre>
-<h5 id="升级pip"><a href="#升级pip" class="headerlink" title="升级pip"></a>升级pip</h5><pre class=" language-bash"><code class="language-bash">pip3 <span class="token function">install</span> --upgrade pip</code></pre>
-<h5 id="安装虚拟环境工具"><a href="#安装虚拟环境工具" class="headerlink" title="安装虚拟环境工具"></a>安装虚拟环境工具</h5><pre class=" language-bash"><code class="language-bash">pip3 <span class="token function">install</span> virtualenv</code></pre>
-<h5 id="创建虚拟环境"><a href="#创建虚拟环境" class="headerlink" title="创建虚拟环境"></a>创建虚拟环境</h5><pre class=" language-bash"><code class="language-bash">virtualenv web01</code></pre>
-<h5 id="切换到虚拟环境"><a href="#切换到虚拟环境" class="headerlink" title="切换到虚拟环境"></a>切换到虚拟环境</h5><pre class=" language-bash"><code class="language-bash"><span class="token function">source</span> web01/bin/activate</code></pre>
-<h5 id="退出虚拟环境"><a href="#退出虚拟环境" class="headerlink" title="退出虚拟环境"></a>退出虚拟环境</h5><pre class=" language-bash"><code class="language-bash">　　　deactivate</code></pre>
-<h3 id="Selenium"><a href="#Selenium" class="headerlink" title="Selenium"></a>Selenium</h3><h4 id="检查"><a href="#检查" class="headerlink" title="检查"></a>检查</h4><p>打开dos窗口输入：</p>
-<pre class=" language-bash"><code class="language-bash">pip</code></pre>
-<p>正常应显示以下内容：</p>
-<pre class=" language-bash"><code class="language-bash">Usage:
-  pip <span class="token operator">&lt;</span>command<span class="token operator">></span> <span class="token punctuation">[</span>options<span class="token punctuation">]</span>
-
-Commands:
-  <span class="token function">install</span>                     Install packages.
-  download                    Download packages.
-  uninstall                   Uninstall packages.
-  freeze                      Output installed packages <span class="token keyword">in</span> requirements format.
-  list                        List installed packages.
-  show                        Show information about installed packages.
-  check                       Verify installed packages have compatible dependencies.
-  config                      Manage local and global configuration.
-  search                      Search PyPI <span class="token keyword">for</span> packages.
-  wheel                       Build wheels from your requirements.
-  <span class="token function">hash</span>                        Compute hashes of package archives.
-  completion                  A helper <span class="token function">command</span> used <span class="token keyword">for</span> <span class="token function">command</span> completion.
-  <span class="token function">help</span>                        Show <span class="token function">help</span> <span class="token keyword">for</span> commands.
-
-General Options:
-  -h, --help                  Show help.
-  --isolated                  Run pip <span class="token keyword">in</span> an isolated mode, ignoring environment variables and user configuration.
-  -v, --verbose               Give <span class="token function">more</span> output. Option is additive, and can be used up to 3 times.
-  -V, --version               Show version and exit.
-  -q, --quiet                 Give <span class="token function">less</span> output. Option is additive, and can be used up to 3 <span class="token function">times</span> <span class="token punctuation">(</span>corresponding to
-                              WARNING, ERROR, and CRITICAL logging levels<span class="token punctuation">)</span>.
-  --log <span class="token operator">&lt;</span>path<span class="token operator">></span>                Path to a verbose appending log.
-  --proxy <span class="token operator">&lt;</span>proxy<span class="token operator">></span>             Specify a proxy <span class="token keyword">in</span> the form <span class="token punctuation">[</span>user:passwd@<span class="token punctuation">]</span>proxy.server:port.
-  --retries <span class="token operator">&lt;</span>retries<span class="token operator">></span>         Maximum number of retries each connection should attempt <span class="token punctuation">(</span>default 5 times<span class="token punctuation">)</span>.
-  --timeout <span class="token operator">&lt;</span>sec<span class="token operator">></span>             Set the socket <span class="token function">timeout</span> <span class="token punctuation">(</span>default 15 seconds<span class="token punctuation">)</span>.
-  --exists-action <span class="token operator">&lt;</span>action<span class="token operator">></span>    Default action when a path already exists: <span class="token punctuation">(</span>s<span class="token punctuation">)</span>witch, <span class="token punctuation">(</span>i<span class="token punctuation">)</span>gnore, <span class="token punctuation">(</span>w<span class="token punctuation">)</span>ipe, <span class="token punctuation">(</span>b<span class="token punctuation">)</span>ackup,
-                              <span class="token punctuation">(</span>a<span class="token punctuation">)</span>bort<span class="token punctuation">)</span>.
-  --trusted-host <span class="token operator">&lt;</span>hostname<span class="token operator">></span>   Mark this host as trusted, even though it does not have valid or any HTTPS.
-  --cert <span class="token operator">&lt;</span>path<span class="token operator">></span>               Path to alternate CA bundle.
-  --client-cert <span class="token operator">&lt;</span>path<span class="token operator">></span>        Path to SSL client certificate, a single <span class="token function">file</span> containing the private key and the
-                              certificate <span class="token keyword">in</span> PEM format.
-  --cache-dir <span class="token operator">&lt;</span>dir<span class="token operator">></span>           Store the cache data <span class="token keyword">in</span> <span class="token operator">&lt;</span>dir<span class="token operator">></span>.
-  --no-cache-dir              Disable the cache.
-  --disable-pip-version-check
-                              Don't periodically check PyPI to determine whether a new version of pip is available <span class="token keyword">for</span>
-                              download. Implied with --no-index.
-  --no-color                  Suppress colored output</code></pre>
-<h4 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h4><p>dos输入在线安装selenium指令：</p>
-<pre class=" language-bash"><code class="language-bash">pip <span class="token function">install</span> selenium<span class="token operator">==</span>2.53.6</code></pre>
-<h4 id="验证安装"><a href="#验证安装" class="headerlink" title="验证安装"></a>验证安装</h4><p>确保已经安装Firefox/Chrome/Ie浏览器中的一个</p>
-<p>以Firefox为例（Firefox请安装46以下的版本），打开dos窗口输入指令：</p>
-<pre class=" language-bash"><code class="language-bash">python
-from selenium <span class="token function">import</span> webdriver
-webdriver.Firefox<span class="token punctuation">(</span><span class="token punctuation">)</span></code></pre>
-<p>如果Firefox浏览器被调用启动，则表示selenium安装成功，其他浏览器请查阅“浏览器驱动”</p>
-<h4 id="浏览器驱动"><a href="#浏览器驱动" class="headerlink" title="浏览器驱动"></a>浏览器驱动</h4><h5 id="Firefox"><a href="#Firefox" class="headerlink" title="Firefox"></a>Firefox</h5><p>请勿安装47以上的版本（selenium2不兼容47以上版本）</p>
-<p>firefox历年版本的官方镜像地址：<br><a href="https://download-installer.cdn.mozilla.net/pub/firefox/releases/" target="_blank" rel="noopener">https://download-installer.cdn.mozilla.net/pub/firefox/releases/</a> </p>
-<h5 id="Chrome"><a href="#Chrome" class="headerlink" title="Chrome"></a>Chrome</h5><p>selenium启动Chrome浏览器需要安装驱动包，不同的Chrome浏览器版本号对应的驱动文件版本号也不同，若不匹配，则无法启动。</p>
-<p>查看Chrome版本号？</p>
-<p>浏览器内：设置-&gt;关于-&gt;版本号</p>
-<p>浏览器外：打开Chrome安装文件夹</p>
-<p>Chrome浏览器chromedriver各版本驱动大全，下载地址：<br><a href="http://chromedriver.storage.googleapis.com/index.html" target="_blank" rel="noopener">http://chromedriver.storage.googleapis.com/index.html</a></p>
-<p>下载驱动成功后，确保chromedriver.exe文件放置于path路径下，我之前将环境变量配置到了python根目录，所以一般将chromedriver.exe放置于python安装的根目录。</p>
-<h5 id="IE"><a href="#IE" class="headerlink" title="IE"></a>IE</h5><p>IE浏览器的IEdriver各版本驱动大全，下载地址：<br><a href="http://selenium-release.storage.googleapis.com/index.html" target="_blank" rel="noopener">http://selenium-release.storage.googleapis.com/index.html</a></p>
-<h2 id="selenium之webdriver框架"><a href="#selenium之webdriver框架" class="headerlink" title="selenium之webdriver框架"></a>selenium之webdriver框架</h2><h3 id="webdriver-API"><a href="#webdriver-API" class="headerlink" title="webdriver API"></a>webdriver API</h3><pre class=" language-python"><code class="language-python"><span class="token comment" spellcheck="true"># 导入webdriver模块</span>
-<span class="token keyword">from</span> selenium <span class="token keyword">import</span> webdriver
-
-<span class="token comment" spellcheck="true"># 导入计时器模块</span>
-<span class="token keyword">import</span> time
-
-<span class="token comment" spellcheck="true"># 打开Chrome浏览器</span>
-<span class="token comment" spellcheck="true"># 其他浏览器替换浏览器名即可</span>
-driver <span class="token operator">=</span> webdriver<span class="token punctuation">.</span>Chrome<span class="token punctuation">(</span><span class="token punctuation">)</span>
-
-<span class="token comment" spellcheck="true"># 使用webdriver模块api导入网址</span>
-driver<span class="token punctuation">.</span>get<span class="token punctuation">(</span><span class="token string">"https://auntyang.tk"</span><span class="token punctuation">)</span>
-
-<span class="token comment" spellcheck="true"># 计时器6s等待时间，一些异常报错可能就是因为没有在语句下设置等待时间</span>
-<span class="token comment" spellcheck="true"># time模块的单位是s（秒），参数可以是小数也可以是整数</span>
-time<span class="token punctuation">.</span>sleep<span class="token punctuation">(</span><span class="token number">6</span><span class="token punctuation">)</span>
-
-<span class="token comment" spellcheck="true"># 截屏保存到指定目录，参数格式：保存路径+文件名称+后缀</span>
-driver<span class="token punctuation">.</span>get_screenshot_as_file<span class="token punctuation">(</span><span class="token string">"D:\\test.jgp"</span><span class="token punctuation">)</span>
-
-<span class="token comment" spellcheck="true"># 设置指定浏览器窗口尺寸</span>
-driver<span class="token punctuation">.</span>set_window_size<span class="token punctuation">(</span><span class="token number">540</span><span class="token punctuation">,</span> <span class="token number">960</span><span class="token punctuation">)</span>
-<span class="token comment" spellcheck="true"># 设置浏览器窗口最大化</span>
-driver<span class="token punctuation">.</span>maximize_window<span class="token punctuation">(</span><span class="token punctuation">)</span>
-
-<span class="token comment" spellcheck="true"># 上一页，相当于浏览器左上角的左箭头按钮</span>
-driver<span class="token punctuation">.</span>back<span class="token punctuation">(</span><span class="token punctuation">)</span>
-<span class="token comment" spellcheck="true"># 下一页，相当于浏览器左上角的右箭头按钮</span>
-driver<span class="token punctuation">.</span>forward<span class="token punctuation">(</span><span class="token punctuation">)</span>
-
-<span class="token comment" spellcheck="true"># 使用webdriver模块api进行刷新</span>
-<span class="token comment" spellcheck="true"># 相当于浏览器输入框后面的刷新按钮</span>
-driver<span class="token punctuation">.</span>refresh<span class="token punctuation">(</span><span class="token punctuation">)</span>
-
-<span class="token comment" spellcheck="true"># 结束浏览器进程</span>
-driver<span class="token punctuation">.</span>quit<span class="token punctuation">(</span><span class="token punctuation">)</span>
-<span class="token comment" spellcheck="true"># 关闭当前窗口</span>
-driver<span class="token punctuation">.</span>close<span class="token punctuation">(</span><span class="token punctuation">)</span>
-</code></pre>
-<h3 id="元素定位"><a href="#元素定位" class="headerlink" title="元素定位"></a>元素定位</h3><p>webdriver框架提供了18种元素定位方法，前8种通过元素属性定位，后10种通过xpan和css定位</p>
-<pre class=" language-python"><code class="language-python"><span class="token comment" spellcheck="true">#id定位：</span>
-find_element_by_id<span class="token punctuation">(</span>self<span class="token punctuation">,</span> id_<span class="token punctuation">)</span>
-<span class="token comment" spellcheck="true">#name定位：</span>
-find_element_by_name<span class="token punctuation">(</span>self<span class="token punctuation">,</span> name<span class="token punctuation">)</span>
-<span class="token comment" spellcheck="true">#class定位：</span>
-find_element_by_class_name<span class="token punctuation">(</span>self<span class="token punctuation">,</span> name<span class="token punctuation">)</span>
-<span class="token comment" spellcheck="true">#tag定位：</span>
-find_element_by_tag_name<span class="token punctuation">(</span>self<span class="token punctuation">,</span> name<span class="token punctuation">)</span>
-<span class="token comment" spellcheck="true">#link定位：</span>
-find_element_by_link_text<span class="token punctuation">(</span>self<span class="token punctuation">,</span> link_text<span class="token punctuation">)</span>
-<span class="token comment" spellcheck="true">#partial_link定位</span>
-find_element_by_partial_link_text<span class="token punctuation">(</span>self<span class="token punctuation">,</span> link_text<span class="token punctuation">)</span>
-<span class="token comment" spellcheck="true">#xpath定位：</span>
-find_element_by_xpath<span class="token punctuation">(</span>self<span class="token punctuation">,</span> xpath<span class="token punctuation">)</span>
-<span class="token comment" spellcheck="true">#css定位：</span>
-find_element_by_css_selector<span class="token punctuation">(</span>self<span class="token punctuation">,</span> css_selector）</code></pre>
-<p>复数形式：</p>
-<pre class=" language-python"><code class="language-python"><span class="token comment" spellcheck="true">#id复数定位</span>
-find_elements_by_id<span class="token punctuation">(</span>self<span class="token punctuation">,</span> id_<span class="token punctuation">)</span>
-<span class="token comment" spellcheck="true">#name复数定位</span>
-find_elements_by_name<span class="token punctuation">(</span>self<span class="token punctuation">,</span> name<span class="token punctuation">)</span>
-<span class="token comment" spellcheck="true">#class复数定位</span>
-find_elements_by_class_name<span class="token punctuation">(</span>self<span class="token punctuation">,</span> name<span class="token punctuation">)</span>
-<span class="token comment" spellcheck="true">#tag复数定位</span>
-find_elements_by_tag_name<span class="token punctuation">(</span>self<span class="token punctuation">,</span> name<span class="token punctuation">)</span>
-<span class="token comment" spellcheck="true">#link复数定位</span>
-find_elements_by_link_text<span class="token punctuation">(</span>self<span class="token punctuation">,</span> text<span class="token punctuation">)</span>
-<span class="token comment" spellcheck="true">#partial_link复数定位</span>
-find_elements_by_partial_link_text<span class="token punctuation">(</span>self<span class="token punctuation">,</span> link_text<span class="token punctuation">)</span>
-<span class="token comment" spellcheck="true">#xpath复数定位</span>
-find_elements_by_xpath<span class="token punctuation">(</span>self<span class="token punctuation">,</span> xpath<span class="token punctuation">)</span>
-<span class="token comment" spellcheck="true">#css复数定位</span>
-find_elements_by_css_selector<span class="token punctuation">(</span>self<span class="token punctuation">,</span> css_selector<span class="token punctuation">)</span></code></pre>
-<p>参数化方法：</p>
-<pre class=" language-python"><code class="language-python">find_element<span class="token punctuation">(</span>self<span class="token punctuation">,</span> by<span class="token operator">=</span><span class="token string">'id'</span><span class="token punctuation">,</span> value<span class="token operator">=</span>None<span class="token punctuation">)</span>
-find_elements<span class="token punctuation">(</span>self<span class="token punctuation">,</span> by<span class="token operator">=</span><span class="token string">'id'</span><span class="token punctuation">,</span> value<span class="token operator">=</span>None<span class="token punctuation">)</span></code></pre>
-<h3 id="xpath定位"><a href="#xpath定位" class="headerlink" title="xpath定位"></a>xpath定位</h3><h4 id="标签"><a href="#标签" class="headerlink" title="标签"></a>标签</h4><p>1.有时候同一个属性，同名的比较多，这时候可以通过标签筛选下，定位更准一点<br>2.如果不想制定标签名称，可以用*号表示任意标签<br>3.如果想制定具体某个标签，就可以直接写标签名称</p>
-<h4 id="层级"><a href="#层级" class="headerlink" title="层级"></a>层级</h4><p>1.当某个元素属性不明显，无法直接定位时，可以先找其父元素</p>
-<p>2.找到父元素后，向下一个层级就能定位到该元素</p>
-<h4 id="索引"><a href="#索引" class="headerlink" title="索引"></a>索引</h4><p>1.某元素标签和另一元素标签一样，且无法通过层级定位时，属于同父元素</p>
-<p>2.同父元素的元素存在顺序，用索引定位</p>
-<h4 id="逻辑运算"><a href="#逻辑运算" class="headerlink" title="逻辑运算"></a>逻辑运算</h4><p>1.xpath可以对多个属性进行逻辑运算，支持与（and）、或（or）、非（not）</p>
-<h4 id="模糊匹配"><a href="#模糊匹配" class="headerlink" title="模糊匹配"></a>模糊匹配</h4><p>1.xpath可以对元素进行模糊匹配</p>
-<h4 id="小测试"><a href="#小测试" class="headerlink" title="小测试"></a>小测试</h4><p>编写脚本，打开百度首页，输入关键字“robotframework”，点击搜索</p>
-<p>结果如下图所示：</p>
-<p><img src="https://img-blog.csdnimg.cn/20200523164846936.gif" alt="Web自动化测试"></p>
-<h3 id="CSS定位"><a href="#CSS定位" class="headerlink" title="CSS定位"></a>CSS定位</h3><script>
+                <h1 id="Text5"><a href="#Text5" class="headerlink" title="Text5"></a>Text5</h1><p>Litigable [‘lɪtɪɡəbl]: a. 可诉讼的，可作诉讼标的</p>
+<p>Pot: n. 赌注总额</p>
+<p>Specter[‘spɛktɚ]: n. 恶兆</p>
+<p>For good or ill: 不管结果如何</p>
+<p>Mob: n. 暴民，乱民</p>
+<p>Uplift: v. 使高涨、振奋</p>
+<p>Shrinkage: n 收缩，减少，降低</p>
+<p>Dispossessed[,dɪspə’zɛst]: a. 被夺走的，被剥夺的</p>
+<p>Displace: v. t. 取代，代替</p>
+<p>Barter[‘bɑːtə]: v. 交换</p>
+<p>Canal[kə’næl]: n. 运河</p>
+<p>Ranching [‘ræntʃɪŋ]: n. 牧场经营</p>
+<p>Bushel [‘bʊʃ(ə)l]:. c. 蒲式耳（在美国=35.24 升）</p>
+<p>Plough [plaʊ]/ plow: n. 犁</p>
+<p>Sow [səʊ]: v. t. 播种</p>
+<p>Harvester: n. 收割机</p>
+<p>Superfluous [sjuː ‘pɜːflʊəs;]: a. 多余的</p>
+<p>Raw: a. 未加工过的，天然的</p>
+<p>Handcraft [‘hæn(d)krɑːft]: v. t. 用手工制作</p>
+<p>Deskill  降低…的技术要求,使非技能化 </p>
+<p>Undercut: v. t. 逐渐削弱，逐渐破坏</p>
+<p>Elder: n. 长者，长辈</p>
+<p>Turn the / a corner: 好转，有起色</p>
+<p> superfluous  多余的 more than is needed, desired, or required</p>
+<p>moan  抱怨，悲叹 a groan or an utterance expressing pain or disapproval</p>
+<p>craftsman  手艺人 a creator of great skill in the manual arts</p>
+<p>biomedical 生物医学的relating to the activities and applications of science to clinical medicine</p>
+<p>dispossessed无依无靠的physically or spiritually homeless or deprived of security</p>
+<p>manufacture 制造，生产the act of making something(a product from raw materials</p>
+<p>Unemploy 解雇，失业 lay off</p>
+<p>shrinkage收缩，减低process or result of becoming less or smaller</p>
+<p>entertainer表演者a person who tries to please or amuse</p>
+<p>deskill使 降低技能化remove or reduce the need for skill in a job, usually by changing to machinery</p>
+<p>1 electric power   automation   (自动化) equipment</p>
+<p>2 occupational  (职业的) disease</p>
+<p>3 illegal      immigrant     (移民)</p>
+<p>4 Music can     uplift   (振奋) your spirits.</p>
+<p>5 result in substantial population      displacement        (  转移)</p>
+<p>6 the        hand-crafted      (手工制作的) furniture</p>
+<p>7 He has     ranched     (在牧场工作) in the north for 20 years.</p>
+<p>8 eat      nutritious     (有营养的) food</p>
+<p>9 be     involved     (卷入) in the trouble</p>
+<p>10 a new      assembly      (装配) line</p>
+<p>11      yield  (屈服) to the enemy</p>
+<p>12 make      incredible      (难以置信的) progress</p>
+<p>13 unrealistic      optimism     (乐观)</p>
+<p>14 in recent    mob    (暴徒) violence</p>
+<p>15 get     professional   (专业的) help</p>
+<p>16 the luggage should be    labelled   (加上标签)</p>
+<p>17 financial    analyst     (分析员)  </p>
+<p>18 trade    surplus      (盈余)</p>
+<p>19 attack on pearl     harbor    (海港)</p>
+<p>20 a professional      columnist      (专栏作家)</p>
+<p>21 the      virtual   (事实上的) manager of the business</p>
+<p>22 underestimate the strength of the    revolutionary    (革命的) forces</p>
+<p>23 untie the   lace    (鞋带) and take off your shoes</p>
+<p>24 They are trying to      undercut     (削弱) his authority</p>
+<p>25    barter     (交换) furs for guns</p>
+<p>26 a(n)      litigable     (可诉讼的) case</p>
+<p>27 raise the     specter     (恐惧) of oil crisis</p>
+<p>28   sift   (仔细翻看) through her purse</p>
+<p>29 He has got a(n)    pot   (大量的) of money.</p>
+<table>
+<thead>
+<tr>
+<th>agriculture</th>
+<th>analyst</th>
+<th>assembly</th>
+<th>automation</th>
+<th>barter</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>bushel</td>
+<td>columnist</td>
+<td>displacement</td>
+<td>document</td>
+<td>handcrafted</td>
+</tr>
+<tr>
+<td>harbor</td>
+<td>immigrant</td>
+<td>incredibly</td>
+<td>instructor</td>
+<td>involve</td>
+</tr>
+<tr>
+<td>item</td>
+<td>label</td>
+<td>lace</td>
+<td>litigable</td>
+<td>mob</td>
+</tr>
+<tr>
+<td>nutritious</td>
+<td>occupational</td>
+<td>optimism</td>
+<td>pot</td>
+<td>professional</td>
+</tr>
+<tr>
+<td>ranch</td>
+<td>revolutionary</td>
+<td>sift</td>
+<td>specter</td>
+<td>surplus</td>
+</tr>
+<tr>
+<td>undercut</td>
+<td>uplift</td>
+<td>virtual</td>
+<td>yield</td>
+<td></td>
+</tr>
+</tbody></table>
+<h1 id="Text8"><a href="#Text8" class="headerlink" title="Text8"></a>Text8</h1><p>Convergence [kən’vɜːdʒəns]</p>
+<p> n. 会合（倾向），会合点，会聚点</p>
+<p>Devour [dɪ’vaʊə]: v. t. 吞食，耗尽，吞没，席卷</p>
+<p>Light: a. 精致的，轻巧的，灵巧的</p>
+<p>Come of sth: 是…的结果</p>
+<p>I wrote to over twenty companies asking for work, but nothing came of my efforts.</p>
+<p>Micrometer: 微米 1000,000/1 米</p>
+<p>Nano-: 表示“毫微” 1,000,000,000/1</p>
+<p>Nucleus: 原子核</p>
+<p>Element: n. 成分，性质，基本组成部分，要素，（人的）一组，自然环境</p>
+<p>Quantum [‘kwɒntəm]  mechanics [mɪ’kænɪks]</p>
+<p>量子力学</p>
+<p>Surface area: 表面面积</p>
+<p>Erratic [ɪ’rætɪk]: a. 不稳定的，不确定的，不规则的</p>
+<p>Teleport: v. t. 心灵运输（物体、人）,远距离传送</p>
+<p>Tunnel: v. i. 掘隧道，穿透势垒，隧穿</p>
+<p>Bulk [bʌlk]: n. 巨大的体积，大块，大多数</p>
+<p>In bulk: 大量，大批，整体</p>
+<p>Assemble: v. t. 集合，聚集，收集，装配</p>
+<p>Microprocessor [maɪkrə(ʊ)’prəʊsesə]: n. 微处理机</p>
+<p>Franchise [‘fræn(t)ʃaɪz]: n. 公民权，特许经销权</p>
+<p>Replicator[‘rɛplɪketɚ]: n. 复制基因，复制者</p>
+<p>Scopic: a. 观察仪器的，显示器的</p>
+<p>Assembler: n. 装配工，装配器，汇编语言</p>
+<p>按照计划指导，为…制定计划</p>
+<p>Trillion: n. 万亿，兆</p>
+<p>Trillions: 大量，无数</p>
+<p>Gear: n. 齿轮，工具，设备</p>
+<p>Fabricate  [‘fæbrɪkeɪt]: v. t. 制造，组装，创造</p>
+<p>Surgeon: n. 外科医师，军医</p>
+<p>Scalpel [‘skælp(ə)l]: n. 解剖刀</p>
+<p>Airborne [‘eəbɔːn]: a. 升空的，在空中的，在飞行中的</p>
+<p>Bottom-up: a. 从细节到总体的</p>
+<p>Renewable: a. 能源等可再生的</p>
+<p>Drill: v. t. 钻洞，钻孔，钻井勘探</p>
+<p>Hype: n. 大肆的广告宣传；炒作</p>
+<p>Dissipate [‘dɪsɪpeɪt]: v. 消散，逐渐消失</p>
+<p>Build: v. 增长，增强</p>
+<p>Rigorous [‘rɪg(ə)rəs]: a. 仔细的，严密的，严格的</p>
+<p> bring or call together into a group or whole      assemble 聚集</p>
+<p> a specific use to which something is put             application 应用</p>
+<p>a supposition, theory, or opinion arrived at through speculating      speculation推测，思索</p>
+<p>give all your attention and effort to one particular thing            dedicate 投入</p>
+<p>of or relating to an atom or atoms                atomic 原子的</p>
+<p>eat up greedily                devour吞食</p>
+<p>at the very end; finally                eventually</p>
+<p>forming a satisfactory or balanced whole        <strong><em>\</em>complementary补充的，互补的**</strong>    </p>
+<p>decrease in size, extent, or range            diminish 减少，缩小</p>
+<p>of or near the present time            immediate</p>
+<p>1We love the valley in all its      aspects     (方面).</p>
+<p>2 Please     replicate      (折叠) the paper.</p>
+<p>3 The two accidents took place        <strong><em>\</em>simultaneously         (同时地**</strong>)</p>
+<p>4 There was an air of      expectancy        (期望) among the waiting</p>
+<p>5 Article in The Wall Street      <strong><em>\</em>Journ*****</strong>*al*<strong>*     *</strong>*(日报****) leans heavily on</p>
+<p>6 What does it require to be a successful      mechanic       (技工)</p>
+<p>7 Thousands of wounded were brought to the next town where he arrived and there was  practically   (几乎) no medical aid.</p>
+<p>8 A text message confirming the policy number and sale is then sent (自动的)<strong><em>\</em>automatically**</strong></p>
+<p>9 He says the troops will have to launch     <strong><em>\</em>precise    (精确的**</strong>) attack</p>
+<p>10 The trouble was that he never had a(n)     specific     (明确的) aim</p>
+<p>11 Kevin drove       erratically     (不规律地), knocked down several cones, and ran over at least one of the inflatable dolls.</p>
+<p>12 This is a(n)       exclusive    (纯粹的) white residential area.</p>
+<p>13 “Good morning” is a(n)        conventional       (传统的) greeting.</p>
+<p>14 Honesty and kindness are      elements     (基础) of a good life.</p>
+<p>15 I needed a place to fire ceramic        semiconductor         (半导体)</p>
+<p>16 The findings reported its findings in the journal Nature Structural and           <strong><em>\</em>Molecular(分子**</strong>的) Biology.</p>
+<p>17 It is a(n)    vast    (广阔的) desert.</p>
+<p>18 The         appearance    (外貌) of the old house changed.</p>
+<p>19 The dispute has scared away     potential      (潜在的) investors.</p>
+<p>20 This small house is my only      property     (资产).</p>
+<p>21 Do you know how to        <strong><em>\</em>manipulate     (操作**</strong>) a computer?</p>
+<p>22 You are not allowed to      fabricate     (伪造) a certificate.</p>
+<p>23 It is hard to      foresee      (预见) what will happen.</p>
+<p>24 The       substance     (主旨) of his speech was that he was better</p>
+<p>25 Exceptions cannot be made for    individual        (个体).</p>
+<p>26 She then looked at the     reverse    (反面) side of the coin.</p>
+<p>27 They were in         theoretical       (理论上的) harmony.</p>
+<h1 id="Text9"><a href="#Text9" class="headerlink" title="Text9"></a>Text9</h1><p>Jocular [‘dʒɒkjʊlə]: a. 爱开玩笑的</p>
+<p>Geophysics[,dʒiːə(ʊ)’fɪzɪks]: 地球物理学</p>
+<p>Prominent  [‘prɒmɪnənt]: a. 突出的，杰出的</p>
+<p>Magnitude[‘mægnɪtjuːd]: n. 巨大，广大，重要性，量，数值</p>
+<p>Intensity /ɪnˈtensəti/ : n. 强烈，剧烈，强度，烈度</p>
+<p>Amplify[‘æmplɪfaɪ]: v. 增强，扩大</p>
+<p>Arctic /ˈɑːktɪk/: a. 北极的 n. 北极</p>
+<p>Perennial [pə’renɪəl]: a. 终年的，常年的，长期的</p>
+<p>Dramatically  /drəˈmætɪkli/ : adv. 引人注目地，剧烈地</p>
+<p>Shelter  /ˈʃeltə(r)/ : n. 动物的栖息处</p>
+<p>Seal /siːl/ : n. 海豹</p>
+<p>Den  /den/ : n. 兽穴，兽窝，洞穴</p>
+<p>Carry /ˈkæri/ : n. 运载的方法</p>
+<p>Concurrently[ kən’kɝrəntli]: adv. 同时发生地，并存地</p>
+<p>Vegetation[vedʒɪ‘teɪʃ(ə)n]: n. 植物，草木，植被</p>
+<p>Reproduce  /ˌriːprəˈdjuːs/: v. 繁育，使繁殖</p>
+<p>Depletion [dɪ’pliːʃn]: n. 空虚，耗尽，枯竭</p>
+<p>Allergen [‘ælədʒ(ə)n]: n. 过敏源 ，变态反应</p>
+<p>Ongoing: a. 进行中的，不间断的</p>
+<p>Chlorofluorocarbon [‘klɔ:rəu,fluərəu’kɑ:bən]: n. 含氯氟烃</p>
+<p>Gasoline /ˈɡæsəliːn/ : n. 汽油 </p>
+<p>英petrol /ˈpetrəl/ = 美 gasoline</p>
+<p>Hydrocarbon[,haɪdrə(ʊ)’kɑːb(ə)n]: n. 碳氢化合物</p>
+<p>Absorbent [əb’zɔːb(ə)nt; -‘sɔːb-]: a. 能吸收的 n. 吸收剂，吸收物</p>
+<p>Abundant[əˈbʌndənt]: a. 大量的，充足的</p>
+<p>Drastic  /ˈdræstɪk/ : a. 猛烈的</p>
+<p>Asphalt[‘æsfælt]: n. u. 沥青，柏油</p>
+<p>Nitrous[‘naɪtrəs] oxide: n. 一氧化二氮，笑气</p>
+<p>Microbes /‘maɪkrob微生物</p>
+<p>= microorganism  /ˌmaɪkrəʊˈɔːɡənɪzəm/</p>
+<p>Fertilizer[‘fɜːtɪlaɪzə]: n. 肥料</p>
+<p>Fossil  /ˈfɒsl/ fuel : n. 矿物燃料</p>
+<p>Slash[slæʃ] and burn: 刀耕火种  指把草木烧成灰当作肥料；就地挖坑播下种子。 </p>
+<p>Retention [rɪ’tenʃ(ə)n]: n. 保留，留住，保存，存放</p>
+<p>Simulate[‘sɪmjʊleɪt]: v. t. 模拟，模仿</p>
+<p>Verify  /ˈverɪfaɪ/: v. t. 核实，证明</p>
+<p>Brutality[brʊ’tælɪtɪ]: n. 残忍，野蛮，粗暴</p>
+<p>Exposure [ɪk’spəʊʒə]: n. 暴露，经历，接触</p>
+<p>Fusion[‘fjuːʒ(ə)n]: n. 核聚变</p>
+<p>Put forth: 提出，建议，使出，发挥</p>
+<p>Put forth one’s effort 尽力</p>
+<p>Suffocate [‘sʌfəkeɪt]: v. t. 使窒息</p>
+<p>existing or happening at the same time            concurrently 同时发生地</p>
+<p>acting, done or given willingly; not forced or compelled            voluntary</p>
+<p>damage or destruction affecting a large area or a lot of people   devastation破坏</p>
+<p>make or produce something that is not real but has the appearance or feeling of being real    simulate模仿,假冒</p>
+<p>the act of decreasing something marke            depletion消耗</p>
+<p>present in great quantity            abundant</p>
+<p>previous determination as if by destiny or fate        predestination宿命论，预先注定</p>
+<p>the trait of extreme cruelty                brutality 残忍</p>
+<p>the remains (or an impression) of a plant or animal that existed in a past geological age and that has been excavated  /‘ɛkskə,vet/ from the soil                fossil 化石</p>
+<p>greatly and suddenly                dramatically剧烈地</p>
+<p>1 the       magnitude     (巨大) of loss</p>
+<p>2 increase       significantly      (显著地) overnight</p>
+<p>3       atmosphere      (大气) pressure</p>
+<p>4 work with greater    intensity      (紧张)</p>
+<p>5 give     evidence     (证据) in support of a theory</p>
+<p>6 birds     migrating      (迁徙) in winter</p>
+<p>7 speak more    specifically        (明确地) /spəˈsɪfɪkli/ </p>
+<p>8    amplify     (增强) the electric current</p>
+<p>9 a disease of frequent      occurrence        (发生)</p>
+<p>10 be in control of your own     destiny     (命运)</p>
+<p>11 strong       motivation     (动机) to succeed</p>
+<p>12    annual     (年度的) bonus</p>
+<p>13 be     released      (释放) from prison</p>
+<p>14 a(n)     vicious    (恶毒的) enemy to defeat</p>
+<p>15 create a(n)          environmentally      (有关环境方面) safe society</p>
+<p>16    alternate      (交替) between rain and sunshine</p>
+<p>17 the most       prominent     (突出的) feature </p>
+<p>18 his     reaction     (反应) to the news</p>
+<p>19        drastically    (大幅度地) cutting staff</p>
+<p>20 traffic      regulation      (规则)</p>
+<p>21 a(n)    minimal    (最小的) charge for the service</p>
+<p>22      exposure     (暴露) of the body to sunlight</p>
+<p>23     retain    (保持) youthful vigor</p>
+<p>24     compound       (混合) the ingredients</p>
+<p>25 They are free       eventually     (最后).</p>
+<p>26     decline    (谢绝) an invitation</p>
+<p>27 Man is a reasoning     creature     (生物).</p>
+<h1 id="Text-10"><a href="#Text-10" class="headerlink" title="Text 10"></a>Text 10</h1><p>an event or set of events that forms part of a longer series but is considered separately episode 一个事件</p>
+<p>make known the presence or arrival of  herald  /ˈherəld/ 预示来临</p>
+<p>approve and sanction formally  ratify 批准，认可</p>
+<p>marked, prominent, obvious  pronounced明显的</p>
+<p>impossible to refute  irrefutable不可反驳的</p>
+<p>done contrary to or without choice  involuntarily非自愿的</p>
+<p>the force that keeps an object in the same position, or keeps it moving until it is moved or stopped by another force  inertia  /ɪˈnɜːʃə/惯性</p>
+<p>wear down, polish, or sharpen by friction  grind 磨碎</p>
+<p>certain to happen and unable to be avoided or prevented   inevitable必然的</p>
+<p>higher than normal  elevated  提高的</p>
+<p>1   undergo   (经历) a smooth transition</p>
+<p>2 be offered     massive   (大量的) sums to leave</p>
+<p>3    unprecedented       (史无前例的) reforms</p>
+<p>4    runaway   (失控的) inflation</p>
+<p>5 achieve a wide variety of    consensus     (共识)</p>
+<p>6 such a mon will largely   hinder   (阻碍) any move</p>
+<p>7 total farm   output    (产量) for this year</p>
+<p>8 a child’s      concentration span      (注意力集中的时间)</p>
+<p>9 paint a(n)    bleak  (无望的) picture for the future</p>
+<p>10      make a dent    (有点进展) in the work</p>
+<p>11       constantly    (经常地) changing population</p>
+<p>12 complete the project with a (结果)  outcome</p>
+<p>13    play down     (淡化) the significance of the meeting</p>
+<p>14 temperature     variation   (变化) due to solar radiation</p>
+<p>15 skills that are      absolutely    (绝对地) vital </p>
+<p>16     denigrate  (诋毁) his rivals/ˈdenɪɡreɪt/ </p>
+<p>17 Don’t     mess with    (干预) things you don’t know.</p>
+<p>18 windows which admit light but totally    insulate   (隔离</p>
+<p>19 resist the       overwhelming     (无法抗拒的) temptation </p>
+<p>20 witness the results of    savage    (野蛮的) attacks</p>
+<p>21 take actions to help   resolve   (解决) housing problem</p>
+<p>22 create a(n)     gigantic (巨大的) bubble in shares</p>
+<p>23 the system which reduced pollution    output   (输出) to</p>
+<p>24 conditions that vary     dramatically      (戏剧化地) day</p>
+<p>25 ban the use of     sex-selective    (性别选择性的)</p>
+<h1 id="Text-15"><a href="#Text-15" class="headerlink" title="Text 15"></a>Text 15</h1><p>force something to experience something very unpleasant, especially over a long time    <strong><em>\</em>subjec**</strong>t使遭受</p>
+<p>making you feel worried or upset     disturbing 烦扰的</p>
+<p>expressing strong opinions publicly, especially about things that you disagree    vocal直言不讳的<br>go beyond; overcome        exceed 超过，超越<br>illness, especially a slight one     ailment  小病，不安</p>
+<p>of morals or moral questions    ethical 伦理的</p>
+<p>prevent something from having any effect        neutralize抵消，使无效</p>
+<p>assigning some quality or character to a person or thing     attribution赋予 (某品质或特点)</p>
+<p>something that encourages somebody to do something; stimulus     incentive激励；鼓励</p>
+<p>not getting adequate food     underfed营养不良的</p>
+<p>1      genetically   (基因上地) engineering</p>
+<p>2 advantages    outweigh    (比……重要) disadvantages greatly</p>
+<p>3     infrastructure       (基础设施) construction/ˈɪnfrəstrʌktʃə(r)/ </p>
+<p>4     statistics     (统计) analysis</p>
+<p>5 will soon     resolve   (解决) all the difficulties</p>
+<p>6      financial  (金融的) institution</p>
+<p>7     rigorous    (严格的) discipline</p>
+<p>8    spark  (点燃) the flames of revolution</p>
+<p>9 be in     collaboration   (合作) with your partner</p>
+<p>10 a(n)    desperate   (绝望的) cry for help</p>
+<p>   (改变) alter     the bad habit</p>
+<p>12 resources of     cultivable     (可耕种的) land</p>
+<p>13     temper   (缓和) criticism with reason</p>
+<p>14    lobby   (游说……以争取) for the funds</p>
+<p>15 He is at the      leading-edge    (领先地位).</p>
+<p>16 a(n)    array  (一系列) of information</p>
+<p>17 be    deficient    (缺乏的) in nutrition</p>
+<p>18 be   restricted     (限制) to adults</p>
+<p>19       unfounded  (没有根据的) suspicions</p>
+<p>20 Coal can be      converted  (使转变) to gas.</p>
+<p>21 a(n)       devastating   (毁灭性的) hurricane</p>
+<p>22    staple  (主要的) exports of this country</p>
+<p>23     transform   (转变) dream into reality</p>
+<h1 id="Text-19"><a href="#Text-19" class="headerlink" title="Text 19"></a>Text 19</h1><p> the scientific study of people and their societies        anthropology人类学</p>
+<p> trying to appear to be important when it is not in order to be impressive     pretentious做作的</p>
+<p>words used by experts to discuss their subject     jargon 术语</p>
+<p>connected with words or using words     verbal用文字的，口头的</p>
+<p>a set of ideas from which more complicated ideas are developed     framework框架，结构</p>
+<p>written language in its usual form, as opposed to poetry     prose 散文，乏味的</p>
+<p>concerned with the central government of a country         federal 联邦的，同盟的</p>
+<p>the state of being real, true, or based on facts     validity 有效性，可信度</p>
+<p>connected with the subject being discussed         relevance 关联</p>
+<p>a suggested explanation that has not yet been proved to be true.    Hypothesis 假设 </p>
+<p>1      methodical   /məˈθɒdɪkl/  (井井有条的) work</p>
+<p>2 It can  add to  (增添) the value of the housing.</p>
+<p>3     undertake   (承担) full responsibility for the loss</p>
+<p>4 Errors must be   eliminated</p>
+<p>   (消除掉) before you hand in your essay.</p>
+<p>5 Important content should be    highlighted    (强调).</p>
+<p>6 His face    took on   (呈现) a worried look.</p>
+<p>7    sacrifice  (牺牲) one’s health for professional success</p>
+<p>8 hours spent on   editing   (编辑) the book</p>
+<p>9 some     obstacles   (障碍) to its development</p>
+<p>10   dread  (害怕) working after a long holiday</p>
+<p>11 The dispute    grew out   (由发展而来) of an argument.</p>
+<p>12    duplicate    (重复) an experiment</p>
+<p>13 develop the  core  (核心) of people</p>
+<p>14    suppress   (抑制) the body’s immune system</p>
+<p>15 completely      antithetical to     (完全对立的) the ideas</p>
+<p>16     guidelines    (方针) for the treatment</p>
+<p>17 medical     personnel  (全体人员)</p>
+<p>18   detail   (详细介绍) a number of joint initiatives</p>
+<p>19 very    pleasing    (使人快乐的) to the eye</p>
+<p>20 many     rhetorical   (修辞性的) phrases used in his speech</p>
+<p>21    prefer to  (更适合的) walking with bare feet</p>
+<p>22 very    readable   (易懂的) account of their research</p>
+<p>23 You have to learn to     live with   (承受) stress.</p>
+<p>24 The job      made demand on    (需要) my time.</p>
+<p>25 the     underlying    (根本性的) causes for her divorce</p>
+<p>26   set out   (开始着手进行) to rob the bank</p>
+<p>27 Women    make up    (构成) only 10 percent of the workforce.</p>
+<script>
         document.querySelectorAll('.github-emoji')
           .forEach(el => {
             if (!el.dataset.src) { return; }
@@ -705,40 +913,12 @@ find_elements<span class="token punctuation">(</span>self<span class="token punc
 
     <div class="reprint" id="reprint-statement">
         
-            <div class="reprint__author">
-                <span class="reprint-meta" style="font-weight: bold;">
-                    <i class="fas fa-user">
-                        文章作者:
-                    </i>
-                </span>
-                <span class="reprint-info">
-                    <a href="/about" rel="external nofollow noreferrer">auntyang</a>
-                </span>
-            </div>
-            <div class="reprint__type">
-                <span class="reprint-meta" style="font-weight: bold;">
-                    <i class="fas fa-link">
-                        文章链接:
-                    </i>
-                </span>
-                <span class="reprint-info">
-                    <a href="https://auntyang.tk/2020/05/18/web-zi-dong-hua-ce-shi/">https://auntyang.tk/2020/05/18/web-zi-dong-hua-ce-shi/</a>
-                </span>
-            </div>
-            <div class="reprint__notice">
-                <span class="reprint-meta" style="font-weight: bold;">
-                    <i class="fas fa-copyright">
-                        版权声明:
-                    </i>
-                </span>
-                <span class="reprint-info">
-                    本博客所有文章除特別声明外，均采用
-                    <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a>
-                    许可协议。转载请注明来源
-                    <a href="/about" target="_blank">auntyang</a>
-                    !
-                </span>
-            </div>
+            <i class="fas fa-exclamation-circle"></i>
+            请联系作者
+            <span class="reprint-info">
+                <a href="https://auntyang.tk" rel="external nofollow noreferrer">auntyang</a>
+            </span>
+            付费转载。
         
     </div>
 
@@ -760,20 +940,16 @@ find_elements<span class="token punctuation">(</span>self<span class="token punc
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/Web/">
-                                    <span class="chip bg-color">Web</span>
+                                <a href="/tags/%E5%A4%8D%E4%B9%A0/">
+                                    <span class="chip bg-color">复习</span>
                                 </a>
                             
-                                <a href="/tags/%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95/">
-                                    <span class="chip bg-color">自动化测试</span>
+                                <a href="/tags/%E8%80%83%E7%A0%94/">
+                                    <span class="chip bg-color">考研</span>
                                 </a>
                             
-                                <a href="/tags/python/">
-                                    <span class="chip bg-color">python</span>
-                                </a>
-                            
-                                <a href="/tags/selenium%E5%BA%93/">
-                                    <span class="chip bg-color">selenium库</span>
+                                <a href="/tags/%E5%AD%A6%E6%9C%AF%E8%8B%B1%E8%AF%AD/">
+                                    <span class="chip bg-color">学术英语</span>
                                 </a>
                             
                         </div>
@@ -941,50 +1117,56 @@ find_elements<span class="token punctuation">(</span>self<span class="token punc
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/2020/05/21/ji-suan-ji-wang-luo-yuan-li-shi-yan-11/">
+                <a href="/2020/06/21/xue-zhu-ying-yu-fu-xi-bi-ji/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/7.jpg" class="responsive-img" alt="路由器RIP动态路由配置">
+                        <img src="/medias/featureimages/20.jpg" class="responsive-img" alt="学术英语复习笔记">
                         
-                        <span class="card-title">路由器RIP动态路由配置</span>
+                        <span class="card-title">学术英语复习笔记</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            掌握RIP协议的配置方法、掌握查看通过动态路由协议RIP学习产生的路由、熟悉广域网线缆的链接方式
+                            自己总结的老师上课讲的知识点和学术单词，仅供自用，考试所迫。
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2020-05-21
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-06-21
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/source/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E5%8E%9F%E7%90%86/" class="post-category">
-                                    计算机网络原理
+                            <a href="/source/categories/%E5%AD%A6%E6%9C%AF%E8%8B%B1%E8%AF%AD/" class="post-category">
+                                    学术英语
                                 </a>
                             
                             
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E5%AE%9E%E9%AA%8C/">
-                        <span class="chip bg-color">实验</span>
+                    <a href="/tags/%E5%A4%8D%E4%B9%A0/">
+                        <span class="chip bg-color">复习</span>
                     </a>
                     
-                    <a href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/">
-                        <span class="chip bg-color">计算机网络</span>
+                    <a href="/tags/%E8%80%83%E7%A0%94/">
+                        <span class="chip bg-color">考研</span>
+                    </a>
+                    
+                    <a href="/tags/%E5%AD%A6%E6%9C%AF%E8%8B%B1%E8%AF%AD/">
+                        <span class="chip bg-color">学术英语</span>
                     </a>
                     
                 </div>
@@ -998,31 +1180,31 @@ find_elements<span class="token punctuation">(</span>self<span class="token punc
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2020/05/17/linux-gen-mu-lu-xiang-jie/">
+                <a href="/2020/06/09/shu-ju-ku-yuan-li-fu-xi-bi-ji/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/23.jpg" class="responsive-img" alt="Linux根目录详解">
+                        <img src="/medias/featureimages/5.jpg" class="responsive-img" alt="数据库原理复习笔记">
                         
-                        <span class="card-title">Linux根目录详解</span>
+                        <span class="card-title">数据库原理复习笔记</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            用思维导图的方式总结了Linux系统根目录下各个文件夹作用。
+                            数据库原理复习笔记总纲，个人总结，个人使用。
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-05-17
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-06-09
                             </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/source/categories/Linux/" class="post-category">
-                                    Linux
+                            <a href="/source/categories/%E6%95%B0%E6%8D%AE%E5%BA%93%E5%8E%9F%E7%90%86/" class="post-category">
+                                    数据库原理
                                 </a>
                             
                             
@@ -1032,12 +1214,16 @@ find_elements<span class="token punctuation">(</span>self<span class="token punc
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E6%80%9D%E7%BB%B4%E5%AF%BC%E5%9B%BE/">
-                        <span class="chip bg-color">思维导图</span>
+                    <a href="/tags/%E5%A4%8D%E4%B9%A0/">
+                        <span class="chip bg-color">复习</span>
                     </a>
                     
-                    <a href="/tags/Linux%E6%96%87%E4%BB%B6/">
-                        <span class="chip bg-color">Linux文件</span>
+                    <a href="/tags/%E8%80%83%E7%A0%94/">
+                        <span class="chip bg-color">考研</span>
+                    </a>
+                    
+                    <a href="/tags/%E6%95%B0%E6%8D%AE%E5%BA%93%E5%8E%9F%E7%90%86/">
+                        <span class="chip bg-color">数据库原理</span>
                     </a>
                     
                 </div>
