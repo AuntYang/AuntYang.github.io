@@ -4,6 +4,48 @@
   
     
     <entry>
+      <title>WPF学习小记</title>
+      <link href="/2020/09/04/wpf-xue-xi-xiao-ji/"/>
+      <url>/2020/09/04/wpf-xue-xi-xiao-ji/</url>
+      
+        <content type="html"><![CDATA[<h1 id="WPF样式引用及样式存放"><a href="#WPF样式引用及样式存放" class="headerlink" title="WPF样式引用及样式存放"></a>WPF样式引用及样式存放</h1><h2 id="独立的样式文件xmal-类似css"><a href="#独立的样式文件xmal-类似css" class="headerlink" title="独立的样式文件xmal(类似css)"></a>独立的样式文件xmal(类似css)</h2><h2 id="将样式包含在设计界面"><a href="#将样式包含在设计界面" class="headerlink" title="将样式包含在设计界面"></a>将样式包含在设计界面</h2><h2 id="混合使用"><a href="#混合使用" class="headerlink" title="混合使用"></a>混合使用</h2><h2 id="UI界面的路由事件"><a href="#UI界面的路由事件" class="headerlink" title="UI界面的路由事件"></a>UI界面的路由事件</h2><h1 id="WPF主窗体设置"><a href="#WPF主窗体设置" class="headerlink" title="WPF主窗体设置"></a>WPF主窗体设置</h1><p>问题情景：一项目需多窗口，在建立项目时得到的MainWindow.xaml窗口默认为整个程序启动的主窗体，而实际程序编写时MainWindow并不是作为启动的主窗体，此时需要修改配置文件，将需要的窗体修改为程序启动的主窗体。</p><h2 id="APP-xaml文件"><a href="#APP-xaml文件" class="headerlink" title="APP.xaml文件"></a>APP.xaml文件</h2><pre class=" language-xaml"><code class="language-xaml"><Application x:Class="testWpf.App"                                               xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"   xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"    StartupUri="Window2.xaml"> <Application.Resources>    </Application.Resources></Application></code></pre><p>可以在App.xaml文件中设置StartupUri属性来决定哪个窗口是主要窗口</p><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>C#之WPF学习</title>
+      <link href="/2020/07/08/c-zhi-wpf/"/>
+      <url>/2020/07/08/c-zhi-wpf/</url>
+      
+        <content type="html"><![CDATA[<h1 id="WPF界面布局与控件"><a href="#WPF界面布局与控件" class="headerlink" title="WPF界面布局与控件"></a>WPF界面布局与控件</h1><h2 id="WPF界面布局"><a href="#WPF界面布局" class="headerlink" title="WPF界面布局"></a>WPF界面布局</h2><h1 id="WPF样式引用及样式存放"><a href="#WPF样式引用及样式存放" class="headerlink" title="WPF样式引用及样式存放"></a>WPF样式引用及样式存放</h1><h2 id="独立的样式文件xmal-类似css"><a href="#独立的样式文件xmal-类似css" class="headerlink" title="独立的样式文件xmal(类似css)"></a>独立的样式文件xmal(类似css)</h2><h2 id="将样式包含在设计界面"><a href="#将样式包含在设计界面" class="headerlink" title="将样式包含在设计界面"></a>将样式包含在设计界面</h2><h2 id="混合使用"><a href="#混合使用" class="headerlink" title="混合使用"></a>混合使用</h2><h2 id="UI界面的路由事件"><a href="#UI界面的路由事件" class="headerlink" title="UI界面的路由事件"></a>UI界面的路由事件</h2><h1 id="WPF主窗体设置"><a href="#WPF主窗体设置" class="headerlink" title="WPF主窗体设置"></a>WPF主窗体设置</h1><p>问题情景：一项目需多窗口，在建立项目时得到的MainWindow.xaml窗口默认为整个程序启动的主窗体，而实际程序编写时MainWindow并不是作为启动的主窗体，此时需要修改配置文件，将需要的窗体修改为程序启动的主窗体。</p><h2 id="APP-xaml文件"><a href="#APP-xaml文件" class="headerlink" title="APP.xaml文件"></a>APP.xaml文件</h2><pre class=" language-xaml"><code class="language-xaml"><Application x:Class="testWpf.App"                                               xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"   xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"    StartupUri="Window2.xaml"> <Application.Resources>    </Application.Resources></Application></code></pre><p>可以在App.xaml文件中设置StartupUri属性来决定哪个窗口是主要窗口</p><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+      
+      
+      <categories>
+          
+          <category> C# </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> C# </tag>
+            
+            <tag> 物联网大赛 </tag>
+            
+            <tag> WPF </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>学术英语复习笔记</title>
       <link href="/2020/06/21/xue-zhu-ying-yu-fu-xi-bi-ji/"/>
       <url>/2020/06/21/xue-zhu-ying-yu-fu-xi-bi-ji/</url>
