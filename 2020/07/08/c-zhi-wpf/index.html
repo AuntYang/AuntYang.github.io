@@ -491,7 +491,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    222
+                    259
                 </div>
                 
 
@@ -521,6 +521,28 @@ StartupUri="Window2.xaml">
     </Application.Resources>
 </Application></code></pre>
 <p>可以在App.xaml文件中设置StartupUri属性来决定哪个窗口是主要窗口</p>
+<h1 id="WPF中Textbox设置提示文字"><a href="#WPF中Textbox设置提示文字" class="headerlink" title="WPF中Textbox设置提示文字"></a>WPF中Textbox设置提示文字</h1><p>原理是在textbox上遮罩一个Brush，Brush上写提示文字，在Brush接收到聚焦时消失，上代码：</p>
+<pre class=" language-xaml"><code class="language-xaml"><TextBox Width="150" Margin="5">
+    <TextBox.Resources>
+        <VisualBrush x:Key="HintText" TileMode="None" Opacity="0.5" Stretch="None" AlignmentX="Left">
+            <VisualBrush.Visual>
+                <TextBlock FontStyle="Italic" Text="请输入用户名"/>
+            </VisualBrush.Visual>
+        </VisualBrush>
+    </TextBox.Resources>
+    <TextBox.Style>
+        <Style TargetType="TextBox">
+            <Style.Triggers>
+                <Trigger Property="Text" Value="{x:Null}">
+                    <Setter Property="Background" Value="{StaticResource HintText}"/>
+                </Trigger>
+                <Trigger Property="Text" Value="">
+                    <Setter Property="Background" Value="{StaticResource HintText}"/>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+    </TextBox.Style>
+</TextBox></code></pre>
 <script>
         document.querySelectorAll('.github-emoji')
           .forEach(el => {
@@ -779,12 +801,11 @@ StartupUri="Window2.xaml">
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="far fa-dot-circle"></i>&nbsp;本篇
-            </div>
+                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2020/07/08/c-zhi-wpf/">
+                <a href="/2020/09/07/c-wu-lian-wang-xiang-mu-shi-jian-quan-ji/">
                     <div class="card-image">
                         
                         
@@ -796,13 +817,13 @@ StartupUri="Window2.xaml">
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            要为物联网大赛做准备，学习C#语言用云平台提供的api设计Windows程序
+                            大学生物联网应用设计大赛项目实践过程记录，持续更新
                         
                     </div>
                     <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-07-08
-                            </span>
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2020-09-07
+                        </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
@@ -815,7 +836,6 @@ StartupUri="Window2.xaml">
                         </span>
                     </div>
                 </div>
-
                 
                 <div class="card-action article-tags">
                     
@@ -829,6 +849,10 @@ StartupUri="Window2.xaml">
                     
                     <a href="/tags/WPF/">
                         <span class="chip bg-color">WPF</span>
+                    </a>
+                    
+                    <a href="/tags/IOT/">
+                        <span class="chip bg-color">IOT</span>
                     </a>
                     
                 </div>
@@ -1125,7 +1149,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">57.9k</span>&nbsp;字
+                class="white-color">58.8k</span>&nbsp;字
             
             
             
