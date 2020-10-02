@@ -484,21 +484,21 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2020-09-24
+                    2020-10-02
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    2.6k
+                    3.1k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    9 分
+                    10 分
                 </div>
                 
 
@@ -563,8 +563,22 @@
 <p>模拟通信系统的可靠性指标用整个通信系统的输出信噪比来衡量。信噪比是信号的平均功率S与噪声的平均功率N之比。<em>信噪比越高，说明噪声对信号的影响越小。显然，信噪比越高，通信质量就越好</em>。</p>
 <p>输出信噪比一方面与信道内噪声的大小和信号的功率有关，同时又<em>和调制方式有很大关系</em>。例如宽带调频系统的有效性不如调幅系统，但是调频系统的可靠性往往比调幅系统好。</p>
 <h3 id="数字通信系统的性能指标"><a href="#数字通信系统的性能指标" class="headerlink" title="数字通信系统的性能指标"></a>数字通信系统的性能指标</h3><h4 id="有效性指标"><a href="#有效性指标" class="headerlink" title="有效性指标"></a>有效性指标</h4><p>数字通信系统的有效性指标用传输速率和频带利用率来表征。</p>
-<h5 id="1-传输速率"><a href="#1-传输速率" class="headerlink" title="1.传输速率"></a>1.传输速率</h5><p>传输速率有两种表示方式：<br>$$<br>码元传输速率R_B\信息传输速率R_b<br>$$<br>码元传输速率简称传码率，又称符号速率等。它表示单位时间内传输码元的数目，单位是波特（Baud），记为B。</p>
-<p>信息传输速率简称传信率，又称比特率等。它是指系统每秒钟传送的信息量，单位是比特/秒，常用符号“bit/s、bps或b/s”表示<br>$$<br>在N进制下，设信息速率为R_b(bit/s)，码元速率为R_{BN}(Baud)，由于每个码元或符号通常\都含有一定比特的信息量，因此码元速率和信息速率有确定的关系，即:\<br>R_b=R_{BN}H(x)\ \ \ \ \ (bit/s)\<br>式中，H(x)为信源中每个符号所含的平均信息量（熵）。当离散信源的每一符号等概率出现\时，熵有最大值为{log_2N}(bit/符号),信息速率也达到最大，即：\<br>R_b=R_{BN}{log_2N}\ (bit/s)\<br>R_{BN}=\frac{R_b}{log_2N}\ (Baud)<br>$$</p>
+<h5 id="传输速率"><a href="#传输速率" class="headerlink" title="传输速率"></a>传输速率</h5><p>传输速率有三种表示方式：<br>$$<br>码元传输速率R_B\信息传输速率R_b\消息速率R_M<br>$$</p>
+<h6 id="码元传输速率"><a href="#码元传输速率" class="headerlink" title="码元传输速率"></a><strong>码元传输速率</strong></h6><p>简称传码率，又称符号速率等。它表示单位时间内传输码元的数目，单位是波特（Baud），记为B。<br>它表示单位时间内传输码元的数目，单位是波特（Baud），记为B。<br>例如，若1秒内传2400个码元，则传码率为2400B。<br>数字信号有多进制和二进制之分，但码元速率与进制数无关，只与传输的码元长度T有关</p>
+<p><img src="https://i.loli.net/2020/10/02/lADQnE2KjhVryNU.png" alt="符号(码元)传输速率"></p>
+<h6 id="信息传输速率"><a href="#信息传输速率" class="headerlink" title="信息传输速率"></a><strong>信息传输速率</strong></h6><p>简称传信率，又称比特率等。它是指系统每秒钟传送的信息量，单位是比特/秒，常用符号“bit/s、bps或b/s”表示<br>它表示单位时间内传递的平均信息量或比特数<br>$$<br>在N进制下，设信息速率为R_b(bit/s)，码元速率为R_{BN}(Baud)，由于每个码元或符号通常\都含有一定比特的信息量，因此码元速率和信息速率有确定的关系，即:\<br>R_b=R_{BN}H(x)\ \ \ \ \ (bit/s)\<br>式中，H(x)为信源中每个符号所含的平均信息量（熵）。当离散信源的每一符号等概率出现\时，熵有最大值为{log_2N}(bit/符号),信息速率也达到最大，即：\<br>R_b=R_{BN}{log_2N}\ (bit/s)\<br>R_{BN}=\frac{R_b}{log_2N}\ (Baud)<br>$$</p>
+<h6 id="消息速率"><a href="#消息速率" class="headerlink" title="消息速率"></a><strong>消息速率</strong></h6><p>单位时间内传输的消息数目。例如，传输中文文件时，消息速率的单位是“字/秒”</p>
+<h6 id="码元速率与信息速率的关系"><a href="#码元速率与信息速率的关系" class="headerlink" title="码元速率与信息速率的关系"></a>码元速率与信息速率的关系</h6><p>每个码元或符号通常都含有一定bit数的信息量，因此码元速率和信息速率有确定的关系</p>
+<p><img src="https://i.loli.net/2020/10/02/yPuq1p6LjRAflwv.png" alt="码元速率与信息速率的关系"></p>
+<p>H为信源中每个符号所含的平均信息量（熵）<br><strong>M进制、等概率</strong>传输时，熵有最大值，信息速率也达到最大</p>
+<p><img src="https://i.loli.net/2020/10/02/ZrAknGNFxgo9pj7.png" alt="![](https://i.loli.net/2020/10/02/ZrAknGNFxgo9pj7.png)"></p>
+<p>码元速率为1200B<br>采用八进制（M=8）时，信息速率为3600b/s；<br>采用二进制（M=2）时， 信息速率为1200b/s，<br><em>二进制的码元速率和信息速率在数量上相等，有时简称它们为数码率。</em></p>
+<h4 id="可靠性指标"><a href="#可靠性指标" class="headerlink" title="可靠性指标"></a>可靠性指标</h4><h5 id="错误率"><a href="#错误率" class="headerlink" title="错误率"></a>错误率</h5><p>衡量数字通信系统可靠性的指标是差错率， 常用误码率和误信率表示。<br>误码率（码元差错率Pe ）是指发生差错的码元数在传输总码元数中所占的比例，更确切地说，误码率是码元在传输系统中被传错的概率，即</p>
+<p><img src="https://i.loli.net/2020/10/02/z6Wk1lIQCRxGocK.png" alt="误码率"></p>
+<p>误信率（信息差错率Pb ）是指发生差错的比特数在传输总比特数中所占的比例， 即</p>
+<p><img src="https://i.loli.net/2020/10/02/6AWBHUE1yjqcMTl.png" alt="误信率"></p>
+<p>实际中分析误信率（二进制就是误码率），可用</p>
+<p><img src="https://i.loli.net/2020/10/02/Dri6m3KL8IwaSPE.png" alt="实际中分析误信率"><br>Pe与Pb的关系：<br>    二进制—— Pb= Pe<br>    M进制—— Pb&lt; Pe</p>
 <script>
         document.querySelectorAll('.github-emoji')
           .forEach(el => {
@@ -1150,7 +1164,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">62.5k</span>&nbsp;字
+                class="white-color">63k</span>&nbsp;字
             
             
             
