@@ -1007,15 +1007,23 @@ getPassword.password == null;</code></pre>
     </ Button.ToolTip >
 </ Button ></code></pre>
 <p>ToolTipService主要属性</p>
-<p>ToolTipService.InitialShowDelay=”1000”  //获取或设置工具提示打开前的时间长度</p>
-<p>ToolTipService.ShowDuration=”7000” //显示时间</p>
-<p>ToolTipService.BetweenShowDelay=”2000”//获取或设置两个工具提示显示之间的最大时间（第二个工具提示不经延迟即会出现）。</p>
-<p>ToolTipService.Placement=”Right”//工具提示相对原控件打开时的方向，并指定工具提示在与屏幕边界重叠时的行为。</p>
-<p>ToolTipService.PlacementRectangle=”50,0,0,0”//获取或设置相对于其来放置工具提示的矩形区域。</p>
-<p>ToolTipService.HorizontalOffset=”10”//获取或设置由 PlacementRectangle 和 PlacementTarget 属性为工具提示指定的区域的左侧偏移量。</p>
-<p>ToolTipService.VerticalOffset=”20”//获取或设置由 PlacementRectangle 和 PlacementTarget 属性为工具提示指定的区域的顶部距离。</p>
-<p>ToolTipService.HasDropShadow=”False”//获取或设置工具提示是否显示投影效果。</p>
-<p>ToolTipService.IsEnabled=”True”//获取或设置是否显示工具提示。</p>
+<pre class=" language-c#"><code class="language-c#">ToolTipService.InitialShowDelay="1000"  //获取或设置工具提示打开前的时间长度
+
+ToolTipService.ShowDuration="7000" //显示时间
+
+ToolTipService.BetweenShowDelay="2000"//获取或设置两个工具提示显示之间的最大时间（第二个工具提示不经延迟即会出现）。
+
+ToolTipService.Placement="Right"//工具提示相对原控件打开时的方向，并指定工具提示在与屏幕边界重叠时的行为。
+
+ToolTipService.PlacementRectangle="50,0,0,0"//获取或设置相对于其来放置工具提示的矩形区域。
+
+ToolTipService.HorizontalOffset="10"//获取或设置由 PlacementRectangle 和 PlacementTarget 属性为工具提示指定的区域的左侧偏移量。
+
+ToolTipService.VerticalOffset="20"//获取或设置由 PlacementRectangle 和 PlacementTarget 属性为工具提示指定的区域的顶部距离。
+
+ToolTipService.HasDropShadow="False"//获取或设置工具提示是否显示投影效果。
+
+ToolTipService.IsEnabled="True"//获取或设置是否显示工具提示。</code></pre>
 <h2 id="DispatcherTimer线程"><a href="#DispatcherTimer线程" class="headerlink" title="DispatcherTimer线程"></a>DispatcherTimer线程</h2><p>什么是 DispatcherTimer？ DispatcherTimer是一种定时器！</p>
 <pre class=" language-c#"><code class="language-c#">        public MainWindow()
         {
