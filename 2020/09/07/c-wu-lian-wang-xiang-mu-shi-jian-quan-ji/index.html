@@ -488,21 +488,21 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2020-10-07
+                    2020-10-08
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    4.2k
+                    5.9k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    17 分
+                    24 分
                 </div>
                 
 
@@ -535,7 +535,9 @@
 <h2 id="C-数据类型"><a href="#C-数据类型" class="headerlink" title="C#数据类型"></a>C#数据类型</h2><h3 id="值类型"><a href="#值类型" class="headerlink" title="值类型"></a>值类型</h3><p>值类型变量可以直接分配给一个值，值类型直接包含数据。</p>
 <h3 id="引用类型"><a href="#引用类型" class="headerlink" title="引用类型"></a>引用类型</h3><p>引用类型不包含存储在变量中的实际数据，但它们包含对变量的引用。</p>
 <p>换句话说，它们指的是一个内存位置。使用多个变量时，引用类型可以指向一个内存位置。如果内存位置的数据是有一个变量改变的，其他变量会自动反映这种值的变化。<strong>内置的</strong>引用类型有：object、dynamic、string</p>
-<h3 id="指针类型"><a href="#指针类型" class="headerlink" title="指针类型"></a>指针类型</h3><h1 id="InitializeComponent-方法"><a href="#InitializeComponent-方法" class="headerlink" title="InitializeComponent()方法"></a>InitializeComponent()方法</h1><p>InitializeComponent()方法：由系统生成的对窗体界面的定义方法</p>
+<h2 id="Try…Catch…"><a href="#Try…Catch…" class="headerlink" title="Try…Catch…"></a>Try…Catch…</h2><p>1、代码放到try快中（try是c#的关键字）。代码运行是，会尝试执行try块内部的语句，如果么有语句发生异常，这些语句将顺序执行下去。直到全部都完成，但是一旦出现异常就跳出try块，执行catch块中的内容。</p>
+<p>2、try块需要一个或者多个catch块程序捕捉并处理特定类型的异常。</p>
+<h2 id="InitializeComponent-方法"><a href="#InitializeComponent-方法" class="headerlink" title="InitializeComponent()方法"></a>InitializeComponent()方法</h2><p>InitializeComponent()方法：由系统生成的对窗体界面的定义方法</p>
 <pre class=" language-c#"><code class="language-c#">    public MainWindow()
     {
         InitializeComponent();
@@ -546,254 +548,68 @@
 <p>partial 表示以下创建的是分布类代码<br>也就是说 一个类的定义代码 可以写在两个不同的页面<br>Form1.cs和Form1.Designer.cs</p>
 <p>注意：InitializeComponent()方法写在前面和后面是有区别的。InitializeComponent()方法是用来初始化窗体组件的，在InitializeComponent之前，窗体的各个控件还没有进行初始化，比如说窗体上有一个TextBoxUserName，在InitializeComponent之前它还只是一个TextBox类型的变量而已，如果在InitializeComponent之前调用这个TextBox的属性或方法，就会出错。再比如说你拖上取一个TextBox,它放在Form的位置，TextBox的一些属性。包括new 这个TextBox都放在那个函数里面处理的。</p>
 <p>我们可以看一下Form.Designer.cs，在那里找到InitializeComponent方法，您会发现窗体对象的初始化都是在那里做的。</p>
-<h1 id="功能实现小记"><a href="#功能实现小记" class="headerlink" title="功能实现小记"></a>功能实现小记</h1><h2 id="登录文本框判空提示"><a href="#登录文本框判空提示" class="headerlink" title="登录文本框判空提示"></a>登录文本框判空提示</h2><pre class=" language-c#"><code class="language-c#">getUsername.text == null;
-
-getPassword.password == null;</code></pre>
-<h2 id="ToolTip提示控件"><a href="#ToolTip提示控件" class="headerlink" title="ToolTip提示控件"></a>ToolTip提示控件</h2><p>ToolTip控件可以在鼠标移动到某控件上后弹出提示的控件</p>
-<pre class=" language-xaml"><code class="language-xaml"> < Button Content ="Button" HorizontalAlignment ="Left" Margin ="80,58,0,0" VerticalAlignment ="Top" Width ="75">
-            < Button.ToolTip >
-                < ToolTip Placement ="Right">
-                    < TextBlock >
-                    按钮tooltip
-                    </ TextBlock >
-                </ ToolTip >                
-            </ Button.ToolTip >
-        </ Button ></code></pre>
-<p>其中Placement用来确定Tooltip提示框出现的位置。</p>
-<p>对于StackPanel的控件，如下所示：</p>
-<pre class=" language-xaml"><code class="language-xaml"> < StackPanel.ToolTip >
-   < ToolTip Placement ="Center">
-       < TextBlock > 
-           第一个按钮 
-       </ TextBlock >
-   </ ToolTip >
- </ StackPanel.ToolTip ></code></pre>
-<p>对于ToolTip的控制，还提供了ToolTipService类，ToolTipService是一个静态类，表示一个服务，该服务提供用于控制提示的显示和行为的属性和事件。</p>
-<pre class=" language-xaml"><code class="language-xaml">< Button ToolTipService.Placement ="Center" ToolTipService.BetweenShowDelay ="1000" ToolTipService.ToolTip ="按钮提示"  Content ="Button" HorizontalAlignment ="Left" Margin ="80,58,0,0" VerticalAlignment ="Top" Width ="75">
-    < Button.ToolTip >
-        < ToolTip Placement ="Right">
-            < TextBlock >
-                 按钮tooltip
-            </ TextBlock >
-        </ ToolTip >
-    </ Button.ToolTip >
-</ Button ></code></pre>
-<p>ToolTipService主要属性</p>
-<p>ToolTipService.InitialShowDelay=”1000”  //获取或设置工具提示打开前的时间长度</p>
-<p>ToolTipService.ShowDuration=”7000” //显示时间</p>
-<p>ToolTipService.BetweenShowDelay=”2000”//获取或设置两个工具提示显示之间的最大时间（第二个工具提示不经延迟即会出现）。</p>
-<p>ToolTipService.Placement=”Right”//工具提示相对原控件打开时的方向，并指定工具提示在与屏幕边界重叠时的行为。</p>
-<p>ToolTipService.PlacementRectangle=”50,0,0,0”//获取或设置相对于其来放置工具提示的矩形区域。</p>
-<p>ToolTipService.HorizontalOffset=”10”//获取或设置由 PlacementRectangle 和 PlacementTarget 属性为工具提示指定的区域的左侧偏移量。</p>
-<p>ToolTipService.VerticalOffset=”20”//获取或设置由 PlacementRectangle 和 PlacementTarget 属性为工具提示指定的区域的顶部距离。</p>
-<p>ToolTipService.HasDropShadow=”False”//获取或设置工具提示是否显示投影效果。</p>
-<p>ToolTipService.IsEnabled=”True”//获取或设置是否显示工具提示。</p>
-<h2 id="DispatcherTimer线程"><a href="#DispatcherTimer线程" class="headerlink" title="DispatcherTimer线程"></a>DispatcherTimer线程</h2><p>什么是 DispatcherTimer？ DispatcherTimer是一种定时器！</p>
-<pre class=" language-c#"><code class="language-c#">        public MainWindow()
-        {
-            InitializeComponent();
-            this.Loaded += MainWindow_Loaded;
-
-
-        }
-        DispatcherTimer time;//实例化一个定时器
-
-        void MainWindow_Loaded(object sender,RoutedEventArgs e)
-        {
-            time = new DispatcherTimer();
-            time.Interval = TimeSpan.FromSeconds(3000);
-            time.Tick += time_tick;
-            time.Start();
-
-        }
-        void time_tick (object sender,EventArgs e)
-        {
-
-        }</code></pre>
-<h2 id="WPF窗体出现位置"><a href="#WPF窗体出现位置" class="headerlink" title="WPF窗体出现位置"></a>WPF窗体出现位置</h2><p>如何设置WPF窗体在屏幕上显示的位置？</p>
-<pre class=" language-c#"><code class="language-c#">public Login()
+<h2 id="类型转换"><a href="#类型转换" class="headerlink" title="类型转换"></a>类型转换</h2><p>基本的类型转换：<a href="https://www.runoob.com/csharp/csharp-type-conversion.html" target="_blank" rel="noopener">https://www.runoob.com/csharp/csharp-type-conversion.html</a></p>
+<p>类型转换：<a href="https://www.cnblogs.com/minotauros/p/11440040.html" target="_blank" rel="noopener">https://www.cnblogs.com/minotauros/p/11440040.html</a></p>
+<p>讲解的比较详细：<a href="https://blog.csdn.net/wu_l_v/article/details/78989303" target="_blank" rel="noopener">https://blog.csdn.net/wu_l_v/article/details/78989303</a></p>
+<h1 id="C-文件读写"><a href="#C-文件读写" class="headerlink" title="C#文件读写"></a>C#文件读写</h1><h2 id="添加命名控件"><a href="#添加命名控件" class="headerlink" title="添加命名控件"></a>添加命名控件</h2><pre class=" language-c#"><code class="language-c#">System.IO;
+System.Text;</code></pre>
+<h2 id="文件读取"><a href="#文件读取" class="headerlink" title="文件读取"></a>文件读取</h2><p>使用FileStream类进行文件的读取 ，并将它转换成char数组，然后输出</p>
+<pre class=" language-c#"><code class="language-c#">byte[] byData = new byte[100];
+char[] charData = new char[1000];
+public void Read()
 {
-InitializeComponent();
-WindowStartupLocation = WindowStartupLocation.CenterScreen;//WPF窗体在屏幕上居中
+  try
+   {
+     FileStream file = new FileStream("E:\\test.txt", FileMode.Open);
+     file.Seek(0, SeekOrigin.Begin);
+     file.Read(byData, 0, 100);      //byData传进来的字节数组,用以接受FileStream对象中的数据,第2个参数是字节数组中开始写入数据的位置,它通常是0,     //表示从数组的开端文件中向数组写数据,最后一个参数规定从文件读多少字符.
+     Decoder d = Encoding.Default.GetDecoder();
+     d.GetChars(byData, 0, byData.Length, charData, 0);
+     Console.WriteLine(charData);
+     file.Close();
+    }
+   catch (IOException e)
+   {
+      Console.WriteLine(e.ToString());
+   }
 }</code></pre>
-<h2 id="获取当前桌面路径"><a href="#获取当前桌面路径" class="headerlink" title="获取当前桌面路径"></a>获取当前桌面路径</h2><pre class=" language-c#"><code class="language-c#">string strDesktopPath = Environment.GetFolderPath(Environment.SpecialFolder.DesktopDirectory);//用函数获取当前电脑的桌面路径保存为string类型的变量</code></pre>
-<h1 id="错误error"><a href="#错误error" class="headerlink" title="错误error"></a>错误error</h1><h2 id="未将对象引用设置到对象的实例"><a href="#未将对象引用设置到对象的实例" class="headerlink" title="未将对象引用设置到对象的实例"></a>未将对象引用设置到对象的实例</h2><p>完整错误：System.NullReferenceException：未将对象引用设置到对象的实例</p>
-<p>错误场景：</p>
-<pre class=" language-c#"><code class="language-c#"> public static int numberPeople()
-        {//当前排队人数
-            SensorDataFuzzyQryPagingParas query = new SensorDataFuzzyQryPagingParas()
-            {
-                DeviceID=119374,
-                ApiTags = "number_up"
-            };
-            var yxh = SDK.GetSensorDatas(query, TempInfo.API_HOST);
-             /*
-             修改前
-             return yxh.ResultObj.count;
-         */
-            if(yxh.IsSuccess())
-            {
-                return yxh.ResultObj.Count;
-            }
-            else
-            {
-                return 0;
-            }
-</code></pre>
-<p>错误原因：出现这个问题是因为引用的对象是null或empty导致</p>
-<p>声明变量时：T t = null;(T为类名),此时在栈上有一个地址。地址占4个字节，但地址没有任何指向，即指向内容为空。如果调用T的成员函数，出错：未将对象引用设置到对象实例</p>
-<h2 id="不能在变量声明中指定数组大小"><a href="#不能在变量声明中指定数组大小" class="headerlink" title="不能在变量声明中指定数组大小"></a>不能在变量声明中指定数组大小</h2><p>不能在变量声明中指定数组大小（请尝试使用“new”表达式初始化）</p>
-<p>将大小指定为数组声明的一部分时会发生此错误。 若要解决此错误，请使用 <a href="https://docs.microsoft.com/zh-cn/dotnet/csharp/language-reference/operators/new-operator" target="_blank" rel="noopener">new 运算符</a>表达式。</p>
-<p>下面的示例生成 CS0270：</p>
-<pre class=" language-c#"><code class="language-c#">// CS0270.cs  
-// compile with: /t:module  
-
-public class Test  
-{  
-   int[10] a;   // CS0270  
-   // To resolve, use the following line instead:  
-   // int[] a = new int[10];  
+<p>使用StreamReader读取文件，然后一行一行的输出。</p>
+<pre class=" language-c#"><code class="language-c#">public void Read(string path)
+{
+    StreamReader sr = new StreamReader(path,Encoding.Default);
+    String line;
+    while ((line = sr.ReadLine()) != null) 
+    {
+     Console.WriteLine(line.ToString());
+    }
 }</code></pre>
-<h1 id="动态图表LiveCharts"><a href="#动态图表LiveCharts" class="headerlink" title="动态图表LiveCharts"></a>动态图表LiveCharts</h1><h2 id="推荐阅读"><a href="#推荐阅读" class="headerlink" title="推荐阅读"></a>推荐阅读</h2><p>基本图表图线建立:<a href="http://www.manongjc.com/detail/14-bpxrwoalubxfjxk.html" target="_blank" rel="noopener">http://www.manongjc.com/detail/14-bpxrwoalubxfjxk.html</a></p>
-<p>基本图形的数据绑定:<a href="https://www.liangzl.com/get-article-detail-172477.html" target="_blank" rel="noopener">https://www.liangzl.com/get-article-detail-172477.html</a></p>
-<pre class=" language-c#"><code class="language-c#"> mychart.Series = new SeriesCollection
-            {
-                new LineSeries
-                {
-                    Values = new ChartValues<int>(temp),
-                    DataLabels=true,
-                    Title = "当前人数"
-                }
-
-            };
-
-            //myAxisX.Labels = new[] { "", "", "", "", "","","","","","" };//横坐标定义
-            DateTime now = new DateTime();
-
-            for (int j = 0; j < 10; j++)
-            {
-                time1[j] = now.ToString();
-
-            }
-            myAxisX.Labels = time1;
-            myAxisY.MaxValue = 10;//纵坐标最大值定义
-            //myAxisY.LabelFormatter = value => value.ToString("0%");
-            myAxisY.Title = "人数";//纵坐标标题</code></pre>
-<h2 id="设置曲线"><a href="#设置曲线" class="headerlink" title="设置曲线"></a>设置曲线</h2><pre class=" language-C#"><code class="language-C#">LineSeries mylineseries = new LineSeries();//首先实例化一条折线
-
-mylineseries.Title = "night";//设置折线名称
-
-mylineseries.Stroke = System.Windows.Media.Brushes.Black;//设置折线颜色
-
-mylineseries.StrokeThickness = 10;//设置折线粗细
-
-mylineseries.StrokeDashArray = new System.Windows.Media.DoubleCollection { 2 };//设置折线样式
-
-mylineseries.LineSmoothness = 1;//设置折线是否光滑
-
-mylineseries.Fill = System.Windows.Media.Brushes.LightBlue;//设置折线填充颜色</code></pre>
-<h2 id="设置图表"><a href="#设置图表" class="headerlink" title="设置图表"></a>设置图表</h2><pre class=" language-c#"><code class="language-c#"><lvc:CartesianChart x:Name="mychart" Series="{Binding SeriesCollection}"/ >//首先在前台给图表命名
-
-mychart.Background = System.Windows.Media.Brushes.Gray;//设置图表的背景颜色
-
-mychart.LegendLocation = LegendLocation.Top;//设置图示位置</code></pre>
-<h2 id="设置轴线"><a href="#设置轴线" class="headerlink" title="设置轴线"></a>设置轴线</h2><pre class=" language-xaml"><code class="language-xaml">//首先在前台对轴线命名
-<lvc:CartesianChart.AxisX>  
-<lvc:Axis x:Name="myaxisx"/>  
-</lvc:CartesianChart.AxisX>  </code></pre>
-<pre class=" language-c#"><code class="language-c#">myaxisx.Separator.StrokeThickness = 10;//设置轴线粗细
-
-myaxisx.Separator.Step = 0.5;//设置轴线间隔
-
-myaxisx.Title = "Date";//设置轴线标题
-
-myaxisx.Position = AxisPosition.RightTop;//设置轴线标题
-
-myaxisx.Labels = new[]{ "Mon", "Tue","Wen","Thu","Fri","Sat","Sun"};//设置坐标轴标签
-
-myaxisx.LabelsRotation = 45;//设置坐标轴标签旋转角度</code></pre>
-<h2 id="设置提示"><a href="#设置提示" class="headerlink" title="设置提示"></a>设置提示</h2><pre class=" language-xaml"><code class="language-xaml">//首先在前台对提示命名
-<lvc:CartesianChart.DataTooltip>  
-<lvc:DefaultTooltip x:Name="mytooltip"/>  
-</lvc:CartesianChart.DataTooltip>  </code></pre>
-<pre class=" language-c#"><code class="language-c#">mytooltip.Background = System.Windows.Media.Brushes.LightCyan;//设置提示的背景颜色
-
-mytooltip.SelectionMode = TooltipSelectionMode.OnlySender;//设置提示的选择模式
-
-mytooltip.CornerRadius = new CornerRadius(5);//设置提示框的圆角半径</code></pre>
-<pre class=" language-c#"><code class="language-c#">//设置提示框的边框颜色和大小
-mytooltip.BorderBrush = System.Windows.Media.Brushes.Yellow ;  
-mytooltip.BorderThickness = new Thickness (2);  </code></pre>
-<p>以上所有后台代码设置均可以在前台实现同样的设置<br>部分前台设置如下：</p>
-<pre class=" language-xaml"><code class="language-xaml"><lvc:CartesianChart.AxisY> 
-<lvc:Axis Title="star" LabelFormatter="{Binding Formatter}" ></lvc:Axis> 
-</lvc:CartesianChart.AxisY> </code></pre>
-<h2 id="完整代码"><a href="#完整代码" class="headerlink" title="完整代码"></a>完整代码</h2><pre class=" language-xaml"><code class="language-xaml"><Window x:Class="chart_line.MainWindow"
-xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-xmlns:local="clr-namespace:chart_line"
-xmlns:lvc="clr-namespace:LiveCharts.Wpf;assembly=LiveCharts.Wpf"
-mc:Ignorable="d"
-Title="MainWindow" Height="350" Width="525">
-<Grid x:Name="grid">
-<lvc:CartesianChart x:Name="mychart" Series="{Binding SeriesCollection}" >
-<lvc:CartesianChart.AxisX>
-<lvc:Axis x:Name="myaxisx"/>
-</lvc:CartesianChart.AxisX><lvc:CartesianChart.AxisY>
-<lvc:Axis Title="star" LabelFormatter="{Binding Formatter}" ></lvc:Axis>
-</lvc:CartesianChart.AxisY>
-<lvc:CartesianChart.DataTooltip>
-<lvc:DefaultTooltip x:Name="mytooltip"  />
-</lvc:CartesianChart.DataTooltip>
-</lvc:CartesianChart>
-</Grid>
-</Window></code></pre>
-<pre class=" language-c#"><code class="language-c#">using LiveCharts;
-using LiveCharts.Wpf;
-
-namespace chart_line
+<h2 id="文件写入"><a href="#文件写入" class="headerlink" title="文件写入"></a>文件写入</h2><p>使用FileStream类创建文件，然后将数据写入到文件里。</p>
+<pre class=" language-c#"><code class="language-c#">public void Write()
 {
-/// <summary>
-/// Interaction logic for MainWindow.xaml
-/// </summary>
-public partial class MainWindow : Window
-{
-public SeriesCollection SeriesCollection { get; set; }
-public Func<double, string> Formatter { get; set; }
-public MainWindow()
-{
-InitializeComponent();
-LineSeries mylineseries = new LineSeries();
-mylineseries.Title = "night";mylineseries.Stroke = System.Windows.Media.Brushes.Blue ;
-mylineseries.StrokeThickness = 10;mylineseries.StrokeDashArray = new System.Windows.Media.DoubleCollection { 2 };
-mylineseries.LineSmoothness = 1;mylineseries.Fill = System.Windows.Media.Brushes.LightBlue  ;//mylineseries.PointGeometry = null;
-
-mychart.LegendLocation = LegendLocation.Top ;mychart.Background = System.Windows.Media.Brushes.Gray ;
-myaxisx.Separator.StrokeThickness = 10;myaxisx.Separator.Stroke= System.Windows.Media.Brushes.Red;
-myaxisx.Separator.Step = 0.5;myaxisx.Title = "Date";myaxisx.Position = AxisPosition.RightTop;//myaxisx.IsMerged = true;
-
-myaxisx.LabelsRotation = 45;myaxisx.Labels = new[]{ "Mon", "Tue","Wen","Thu","Fri","Sat","Sun"};
-//mytooltip.BulletSize = 10;
-mytooltip.Background = System.Windows.Media.Brushes.LightCyan  ;
-mytooltip.SelectionMode = TooltipSelectionMode.OnlySender;mytooltip.CornerRadius = new CornerRadius(5);mytooltip.BorderBrush = System.Windows.Media.Brushes.Yellow ;
-mytooltip.BorderThickness = new Thickness (2);
-double[] mynum = { 1, 3, 1, 6, 2, 9, 4 };
-mylineseries.Values = new ChartValues<double> ( mynum );
-Formatter = value => value + "-N";
-SeriesCollection = new SeriesCollection {mylineseries};
-
-DataContext = this;
-}
-}
+   //FileMode.Append为不覆盖文件效果.create为覆盖   FileStream fs = new FileStream("E:\\ak.txt", FileMode.Create);
+   //获得字节数组
+   byte[] data = System.Text.Encoding.Default.GetBytes("Hello World!"); 
+   //开始写入
+   fs.Write(data, 0, data.Length);
+   //清空缓冲区、关闭流
+   fs.Flush();
+   fs.Close();
 }</code></pre>
-<p><img src="https://img-blog.csdnimg.cn/20190124225942411.?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzIzMTc2MTMz,size_16,color_FFFFFF,t_70" alt="效果图"></p>
+<p>使用FileStream类创建文件，使用StreamWriter类，将数据写入到文件。</p>
+<pre class=" language-c#"><code class="language-c#">public void Write(string path)
+{
+   FileStream fs = new FileStream(path, FileMode.Create);
+   StreamWriter sw = new StreamWriter(fs);
+   sw.Write("Hello World!!!!");//开始写入
+   sw.Flush();//清空缓冲区
+   sw.Close();//关闭流
+   fs.Close();
+}</code></pre>
 <h1 id="C-List介绍"><a href="#C-List介绍" class="headerlink" title="C# List介绍"></a>C# List介绍</h1><h2 id="一、LIST概述"><a href="#一、LIST概述" class="headerlink" title="一、LIST概述"></a><strong>一、LIST概述</strong></h2><p><strong>所属命名空间：</strong>System.Collections.Generic   </p>
 <p>public class List<t> : IList<t>, ICollection<t>, IEnumerable<t>, IList, ICollection, IEnumerable</t></t></t></t></p>
 <p> <a href="http://msdn.microsoft.com/zh-cn/library/5y536ey6.aspx" target="_blank" rel="noopener">List</a>类是 <a href="http://msdn.microsoft.com/zh-cn/library/system.collections.arraylist.aspx" target="_blank" rel="noopener">ArrayList</a> 类的泛型等效类。该类使用大小可按需动态增加的数组实现 <a href="http://msdn.microsoft.com/zh-cn/library/5y536ey6.aspx" target="_blank" rel="noopener">IList</a> 泛型接口。 </p>
 <p> <strong>泛型的好处</strong>： 它为使用c#语言编写面向对象程序增加了极大的效力和灵活性。不会强行对值类型进行装箱和拆箱，或对引用类型进行向下强制类型转换，所以性能得到提高。 </p>
-<h2 id="二、性能注意事项："><a href="#二、性能注意事项：" class="headerlink" title="二、性能注意事项："></a><strong>二、性能注意事项：</strong></h2><p><strong>在决定使用</strong><a href="http://msdn.microsoft.com/zh-cn/library/5y536ey6.aspx" target="_blank" rel="noopener"><strong>IList</strong></a> <strong>还是使用</strong><a href="http://msdn.microsoft.com/zh-cn/library/system.collections.arraylist.aspx" target="_blank" rel="noopener"><strong>ArrayList</strong></a><strong>类（两者具有类似的功能）时，记住</strong><a href="http://msdn.microsoft.com/zh-cn/library/5y536ey6.aspx" target="_blank" rel="noopener"><strong>IList</strong></a> <strong>类在**</strong>大多数情况下执行得更好并且是类型安全的<strong>**。</strong></p>
+<h2 id="二、性能注意事项："><a href="#二、性能注意事项：" class="headerlink" title="二、性能注意事项："></a><strong>二、性能注意事项：</strong></h2><p><strong>在决定使用</strong><a href="http://msdn.microsoft.com/zh-cn/library/5y536ey6.aspx" target="_blank" rel="noopener"><strong>IList</strong></a> <strong>还是使用</strong><a href="http://msdn.microsoft.com/zh-cn/library/system.collections.arraylist.aspx" target="_blank" rel="noopener"><strong>ArrayList</strong></a><strong>类（两者具有类似的功能）时，记住</strong><a href="http://msdn.microsoft.com/zh-cn/library/5y536ey6.aspx" target="_blank" rel="noopener"><strong>IList</strong></a> 类在大多数情况下执行得更好并且是类型安全的。</p>
 <p>如果对<a href="http://msdn.microsoft.com/zh-cn/library/5y536ey6.aspx" target="_blank" rel="noopener">IList</a> 类的类型 T 使用引用类型，则两个类的行为是完全相同的。但是，如果对类型 T 使用值类型，则需要考虑实现和装箱问题。</p>
 <p> “添加到 ArrayList 中的任何引用或值类型都将隐式地向上强制转换为 Object。如果项是值类型，则必须在将其添加到列表中时进行装箱操作，在检索时进行取消装箱操作。强制转换以及装箱和取消装箱操作都会降低性能；在必须对大型集合进行循环访问的情况下，装箱和取消装箱的影响非常明显。”</p>
 <h2 id="三、一般用法"><a href="#三、一般用法" class="headerlink" title="三、一般用法"></a><strong>三、一般用法</strong></h2><p><strong>List</strong>的基础、常用方法：</p>
@@ -1046,6 +862,361 @@ List.Add("3");//添加数据
 System.String[] str = { };
 str = List.ToArray();</code></pre>
 <p>3.字符串数组可以，其他有些类型像int数组等等的也是可以的。</p>
+<h1 id="C-字符分割"><a href="#C-字符分割" class="headerlink" title="C# 字符分割"></a>C# 字符分割</h1><h2 id="Split-函数"><a href="#Split-函数" class="headerlink" title="Split()函数"></a>Split()函数</h2><p>Split方法提供了字符分割的几种方法</p>
+<p>String.Split方法提供了如下6个重载函数：</p>
+<table>
+<thead>
+<tr>
+<th align="left">名称</th>
+<th align="left">说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"><a href="http://blog.csdn.net/chen_zw/article/details/M_System_String_Split_1_86599791.htm" target="_blank" rel="noopener">String.Split (Char[])</a></td>
+<td align="left">返回包含此实例中的子字符串（由指定 Char 数组的元素分隔）的 String 数组。由 .NET Compact Framework 支持。</td>
+</tr>
+<tr>
+<td align="left"><a href="http://blog.csdn.net/chen_zw/article/details/M_System_String_Split_1_d4a51604.htm" target="_blank" rel="noopener">String.Split (Char[], Int32)</a></td>
+<td align="left">返回包含此实例中的子字符串（由指定 Char 数组的元素分隔）的 String 数组。参数指定返回的子字符串的最大数量。</td>
+</tr>
+<tr>
+<td align="left"><a href="http://blog.csdn.net/chen_zw/article/details/M_System_String_Split_1_0b4c5fa1.htm" target="_blank" rel="noopener">String.Split (Char[], StringSplitOptions)</a></td>
+<td align="left">返回包含此字符串中的子字符串（由指定的 Char 数组的元素分隔）的 String 数组。参数指定是否返回空数组元素。</td>
+</tr>
+<tr>
+<td align="left"><a href="http://blog.csdn.net/chen_zw/article/details/M_System_String_Split_2_f66d5c6c.htm" target="_blank" rel="noopener">String.Split (String[], StringSplitOptions)</a></td>
+<td align="left">返回包含此字符串中的子字符串（由指定的 String 数组的元素分隔）的 String 数组。参数指定是否返回空数组元素。</td>
+</tr>
+<tr>
+<td align="left"><a href="http://blog.csdn.net/chen_zw/article/details/M_System_String_Split_1_7399acf4.htm" target="_blank" rel="noopener">String.Split (Char[], Int32, StringSplitOptions)</a></td>
+<td align="left">返回包含此字符串中的子字符串（由指定的 Char 数组的元素分隔）的 String 数组。参数指定要返回子字符串的最大数量，以及是否要返回空数组元素。</td>
+</tr>
+<tr>
+<td align="left"><a href="http://blog.csdn.net/chen_zw/article/details/M_System_String_Split_2_42368699.htm" target="_blank" rel="noopener">String.Split (String[], Int32, StringSplitOptions)</a></td>
+<td align="left">返回包含此字符串中的子字符串（由指定的 String 数组的元素分隔）的 String 数组。参数指定要返回子字符串的最大数量，以及是否要返回空数组元素。</td>
+</tr>
+</tbody></table>
+<p>以下详细举例说明:</p>
+<h3 id="String-Split-Char"><a href="#String-Split-Char" class="headerlink" title="String.Split(Char[])"></a>String.Split(Char[])</h3><pre class=" language-c#"><code class="language-c#">string str = "aaatbbscctdd";
+
+string []strArray = str.Split(new char[]{'t'}); 或string []strArray = str.Split('t'); //单字符切割(result : "aaa" "bbscc" "dd")
+
+string []strArray = str.Split(new char[]{'t','s'}); //多字节切割(result : "aaa" "bb" "cc" "dd")</code></pre>
+<h3 id="String-Split-Char-Int32"><a href="#String-Split-Char-Int32" class="headerlink" title="String.Split(Char[],Int32)"></a>String.Split(Char[],Int32)</h3><pre class=" language-c#"><code class="language-c#">string str = "aaatbbscctdd";
+
+string []strArray = str.Split(new char[]{'t',2});//只切割成2份(result :"aaa" "bbscctdd")</code></pre>
+<h3 id="String-Split-Char-StringSplitOptions"><a href="#String-Split-Char-StringSplitOptions" class="headerlink" title="String.Split(Char[],StringSplitOptions)"></a>String.Split(Char[],StringSplitOptions)</h3><pre class=" language-c#"><code class="language-c#">string str = "aaatbbscctddt";
+
+string []strArray = str.Split(new char[]{'t',StringSplitOptions.RemoveEmptyEntries});//去除空元素(result :"aaa" "bbscc" "dd")
+
+string []strArray = str.Split(new char[]{'t',StringSplitOptions.None});//保留空元素(result :"aaa" "bbscc" "dd" “”) </code></pre>
+<h3 id="String-Split-String-StringSplitOptions"><a href="#String-Split-String-StringSplitOptions" class="headerlink" title="String.Split(String[],StringSplitOptions)"></a>String.Split(String[],StringSplitOptions)</h3><pre class=" language-c#"><code class="language-c#">string str = "aaatbbscctddt";
+
+string []strArray = str.Split(new String[]{"t",StringSplitOptions.RemoveEmptyEntries});//去除空元素(result :"aaa" "bbscc" "dd")
+
+string []strArray = str.Split(new String[]{"t",StringSplitOptions.None});//保留空元素(result :"aaa" "bbscc" "dd" “”) </code></pre>
+<h3 id="String-Split-Char-Int32-StringSplitOptions"><a href="#String-Split-Char-Int32-StringSplitOptions" class="headerlink" title="String.Split(Char[],Int32,StringSplitOptions)"></a>String.Split(Char[],Int32,StringSplitOptions)</h3><pre class=" language-c#"><code class="language-c#">string str = "aaatbbscctddt";
+
+string []strArray = str.Split(new char[]{'t',2,StringSplitOptions.RemoveEmptyEntries});//切割成2份且去除空元素(result :"aaa" "bbscctddt")
+
+string []strArray = str.Split(new char[]{'t',2,StringSplitOptions.None});//切割成2份且保留空元素(result :"aaa" "bbscctddt" “”)</code></pre>
+<h3 id="String-Split-String-Int32-StringSplitOptions"><a href="#String-Split-String-Int32-StringSplitOptions" class="headerlink" title="String.Split(String[],Int32,StringSplitOptions)"></a>String.Split(String[],Int32,StringSplitOptions)</h3><pre class=" language-c#"><code class="language-c#">string str = "aaatbbscctddt";
+
+string []strArray = str.Split(new String[]{"t",2,StringSplitOptions.RemoveEmptyEntries});//切割成2份且去除空元素(result :"aaa" "bbscctddt")
+
+string []strArray = str.Split(new String[]{"t",2,StringSplitOptions.None});//切割成2份且保留空元素(result :"aaa" "bbscctddt" “”)</code></pre>
+<h2 id="正则匹配"><a href="#正则匹配" class="headerlink" title="正则匹配"></a>正则匹配</h2><p>正则匹配拆分字符串提供了5个重载函数：</p>
+<table>
+<thead>
+<tr>
+<th align="left">名称</th>
+<th align="left">说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"><a href="http://blog.csdn.net/chen_zw/article/details/M_System_Text_RegularExpressions_Regex_Split_1_16219e3a.htm" target="_blank" rel="noopener">Regex.Split (String)</a></td>
+<td align="left">在由 <a href="http://blog.csdn.net/chen_zw/article/details/T_System_Text_RegularExpressions_Regex.htm" target="_blank" rel="noopener">Regex</a> 构造函数中指定的正则表达式模式定义的位置拆分指定的输入字符串。由 .NET Compact Framework 支持。</td>
+</tr>
+<tr>
+<td align="left"><a href="http://blog.csdn.net/chen_zw/article/details/M_System_Text_RegularExpressions_Regex_Split_1_843a3b0f.htm" target="_blank" rel="noopener">Regex.Split (String, Int32)</a></td>
+<td align="left">在由 Regex 构造函数中指定的正则表达式定义的位置，将指定的输入字符串拆分指定的最大次数。由 .NET Compact Framework 支持。</td>
+</tr>
+<tr>
+<td align="left"><a href="http://blog.csdn.net/chen_zw/article/details/M_System_Text_RegularExpressions_Regex_Split_1_d460c748.htm" target="_blank" rel="noopener">Regex.Split (String, String)</a></td>
+<td align="left">在由正则表达式模式定义的位置拆分输入字符串。由 .NET Compact Framework 支持。</td>
+</tr>
+<tr>
+<td align="left"><a href="http://blog.csdn.net/chen_zw/article/details/M_System_Text_RegularExpressions_Regex_Split_1_1c9576da.htm" target="_blank" rel="noopener">Regex.Split (String, Int32, Int32)</a></td>
+<td align="left">从输入字符串中的指定字符位置开始，在由 Regex 构造函数中指定的正则表达式定义的位置，将指定的输入字符串拆分指定的最大次数。由 .NET Compact Framework 支持。</td>
+</tr>
+<tr>
+<td align="left"><a href="http://blog.csdn.net/chen_zw/article/details/M_System_Text_RegularExpressions_Regex_Split_2_385f6254.htm" target="_blank" rel="noopener">Regex.Split (String, String, RegexOptions)</a></td>
+<td align="left">在由指定的正则表达式模式定义的位置拆分输入字符串。可指定选项来修改匹配的行为。</td>
+</tr>
+</tbody></table>
+<h3 id="添加命名空间"><a href="#添加命名空间" class="headerlink" title="添加命名空间"></a>添加命名空间</h3><pre class=" language-c#"><code class="language-c#">using System.Text.RegularExpressions;</code></pre>
+<h3 id="函数demo"><a href="#函数demo" class="headerlink" title="函数demo"></a>函数demo</h3><h4 id="Regex-Split-String-String"><a href="#Regex-Split-String-String" class="headerlink" title="Regex.Split(String,String)"></a>Regex.Split(String,String)</h4><p>string str = “aaatsbbtscctsdd”;<br>stirng []strArray = Regex.Split(str,”ts”); //正则匹配切割(result: “aaa” “bb” “cc” “dd”);</p>
+<h4 id="Regex-Split-String-String-1"><a href="#Regex-Split-String-String-1" class="headerlink" title="Regex.Split(String,String)"></a>Regex.Split(String,String)</h4><p>string str = “aaatsbbtscctsdd”;<br>stirng []strArray = Regex.Split(str,”ts”,RegexOptions.IgnoreCase); //正则匹配切割(result: “aaa” “bb” “cc” “dd”);</p>
+<h2 id="字符分割应用"><a href="#字符分割应用" class="headerlink" title="字符分割应用"></a>字符分割应用</h2><h3 id="单字符拆分"><a href="#单字符拆分" class="headerlink" title="单字符拆分"></a>单字符拆分</h3><pre class=" language-c#"><code class="language-c#">string str = "aaatbbscctdd";
+
+string []strArray = str.Split(new char[]{'t'}); 或string []strArray = str.Split('t'); //单字符切割(result : "aaa"  "bbscc"  "dd")</code></pre>
+<h3 id="多字符拆分"><a href="#多字符拆分" class="headerlink" title="多字符拆分"></a>多字符拆分</h3><pre class=" language-c#"><code class="language-c#">string str = "aaatbbscctdd";
+
+string []strArray = str.Split(new char[]{'t','s'}); //多字节切割(result : "aaa" "bb" "cc" "dd")</code></pre>
+<h3 id="字符串拆分"><a href="#字符串拆分" class="headerlink" title="字符串拆分"></a>字符串拆分</h3><pre class=" language-c#"><code class="language-c#">using System.Text.RegularExpressions;
+
+string str = "aaatsbbtscctsdd";
+
+stirng []strArray = Regex.Split(str,"ts",RegexOptions.IgnoreCase); //正则匹配切割且(result: "aaa" "bb" "cc" "dd");</code></pre>
+<p>或者</p>
+<pre class=" language-c#"><code class="language-c#">string str = "aaatsbbtscctsdd";
+
+string []strArray = str.Split(new string[]{"ts"}); //字符串切割(result : "aaa" "bb" "cc" "dd")</code></pre>
+<h2 id="注意"><a href="#注意" class="headerlink" title="注意"></a>注意</h2><p>String.Split方法没有重载String.Split(stirng [])方法，也就是说str.Split(“t”)或者str.Split(new string[]{“ts”,”dd”})都是错误的。</p>
+<p>除了切割单字符可用String.Split(‘t’)外，其它的都必须用String.Split(new char[]{})这样的格式，否则编译会出错</p>
+<h1 id="功能实现小记"><a href="#功能实现小记" class="headerlink" title="功能实现小记"></a>功能实现小记</h1><h2 id="登录文本框判空提示"><a href="#登录文本框判空提示" class="headerlink" title="登录文本框判空提示"></a>登录文本框判空提示</h2><pre class=" language-c#"><code class="language-c#">getUsername.text == null;
+
+getPassword.password == null;</code></pre>
+<h2 id="ToolTip提示控件"><a href="#ToolTip提示控件" class="headerlink" title="ToolTip提示控件"></a>ToolTip提示控件</h2><p>ToolTip控件可以在鼠标移动到某控件上后弹出提示的控件</p>
+<pre class=" language-xaml"><code class="language-xaml"> < Button Content ="Button" HorizontalAlignment ="Left" Margin ="80,58,0,0" VerticalAlignment ="Top" Width ="75">
+            < Button.ToolTip >
+                < ToolTip Placement ="Right">
+                    < TextBlock >
+                    按钮tooltip
+                    </ TextBlock >
+                </ ToolTip >                
+            </ Button.ToolTip >
+        </ Button ></code></pre>
+<p>其中Placement用来确定Tooltip提示框出现的位置。</p>
+<p>对于StackPanel的控件，如下所示：</p>
+<pre class=" language-xaml"><code class="language-xaml"> < StackPanel.ToolTip >
+   < ToolTip Placement ="Center">
+       < TextBlock > 
+           第一个按钮 
+       </ TextBlock >
+   </ ToolTip >
+ </ StackPanel.ToolTip ></code></pre>
+<p>对于ToolTip的控制，还提供了ToolTipService类，ToolTipService是一个静态类，表示一个服务，该服务提供用于控制提示的显示和行为的属性和事件。</p>
+<pre class=" language-xaml"><code class="language-xaml">< Button ToolTipService.Placement ="Center" ToolTipService.BetweenShowDelay ="1000" ToolTipService.ToolTip ="按钮提示"  Content ="Button" HorizontalAlignment ="Left" Margin ="80,58,0,0" VerticalAlignment ="Top" Width ="75">
+    < Button.ToolTip >
+        < ToolTip Placement ="Right">
+            < TextBlock >
+                 按钮tooltip
+            </ TextBlock >
+        </ ToolTip >
+    </ Button.ToolTip >
+</ Button ></code></pre>
+<p>ToolTipService主要属性</p>
+<p>ToolTipService.InitialShowDelay=”1000”  //获取或设置工具提示打开前的时间长度</p>
+<p>ToolTipService.ShowDuration=”7000” //显示时间</p>
+<p>ToolTipService.BetweenShowDelay=”2000”//获取或设置两个工具提示显示之间的最大时间（第二个工具提示不经延迟即会出现）。</p>
+<p>ToolTipService.Placement=”Right”//工具提示相对原控件打开时的方向，并指定工具提示在与屏幕边界重叠时的行为。</p>
+<p>ToolTipService.PlacementRectangle=”50,0,0,0”//获取或设置相对于其来放置工具提示的矩形区域。</p>
+<p>ToolTipService.HorizontalOffset=”10”//获取或设置由 PlacementRectangle 和 PlacementTarget 属性为工具提示指定的区域的左侧偏移量。</p>
+<p>ToolTipService.VerticalOffset=”20”//获取或设置由 PlacementRectangle 和 PlacementTarget 属性为工具提示指定的区域的顶部距离。</p>
+<p>ToolTipService.HasDropShadow=”False”//获取或设置工具提示是否显示投影效果。</p>
+<p>ToolTipService.IsEnabled=”True”//获取或设置是否显示工具提示。</p>
+<h2 id="DispatcherTimer线程"><a href="#DispatcherTimer线程" class="headerlink" title="DispatcherTimer线程"></a>DispatcherTimer线程</h2><p>什么是 DispatcherTimer？ DispatcherTimer是一种定时器！</p>
+<pre class=" language-c#"><code class="language-c#">        public MainWindow()
+        {
+            InitializeComponent();
+            this.Loaded += MainWindow_Loaded;
+
+
+        }
+        DispatcherTimer time;//实例化一个定时器
+
+        void MainWindow_Loaded(object sender,RoutedEventArgs e)
+        {
+            time = new DispatcherTimer();
+            time.Interval = TimeSpan.FromSeconds(3000);
+            time.Tick += time_tick;
+            time.Start();
+
+        }
+        void time_tick (object sender,EventArgs e)
+        {
+
+        }</code></pre>
+<h2 id="WPF窗体出现位置"><a href="#WPF窗体出现位置" class="headerlink" title="WPF窗体出现位置"></a>WPF窗体出现位置</h2><p>如何设置WPF窗体在屏幕上显示的位置？</p>
+<pre class=" language-c#"><code class="language-c#">public Login()
+{
+InitializeComponent();
+WindowStartupLocation = WindowStartupLocation.CenterScreen;//WPF窗体在屏幕上居中
+}</code></pre>
+<h2 id="获取当前桌面路径"><a href="#获取当前桌面路径" class="headerlink" title="获取当前桌面路径"></a>获取当前桌面路径</h2><pre class=" language-c#"><code class="language-c#">string strDesktopPath = Environment.GetFolderPath(Environment.SpecialFolder.DesktopDirectory);//用函数获取当前电脑的桌面路径保存为string类型的变量</code></pre>
+<h1 id="错误error"><a href="#错误error" class="headerlink" title="错误error"></a>错误error</h1><h2 id="未将对象引用设置到对象的实例"><a href="#未将对象引用设置到对象的实例" class="headerlink" title="未将对象引用设置到对象的实例"></a>未将对象引用设置到对象的实例</h2><p>完整错误：System.NullReferenceException：未将对象引用设置到对象的实例</p>
+<p>错误场景：</p>
+<pre class=" language-c#"><code class="language-c#"> public static int numberPeople()
+        {//当前排队人数
+            SensorDataFuzzyQryPagingParas query = new SensorDataFuzzyQryPagingParas()
+            {
+                DeviceID=119374,
+                ApiTags = "number_up"
+            };
+            var yxh = SDK.GetSensorDatas(query, TempInfo.API_HOST);
+             /*
+             修改前
+             return yxh.ResultObj.count;
+         */
+            if(yxh.IsSuccess())
+            {
+                return yxh.ResultObj.Count;
+            }
+            else
+            {
+                return 0;
+            }
+</code></pre>
+<p>错误原因：出现这个问题是因为引用的对象是null或empty导致</p>
+<p>声明变量时：T t = null;(T为类名),此时在栈上有一个地址。地址占4个字节，但地址没有任何指向，即指向内容为空。如果调用T的成员函数，出错：未将对象引用设置到对象实例</p>
+<h2 id="不能在变量声明中指定数组大小"><a href="#不能在变量声明中指定数组大小" class="headerlink" title="不能在变量声明中指定数组大小"></a>不能在变量声明中指定数组大小</h2><p>不能在变量声明中指定数组大小（请尝试使用“new”表达式初始化）</p>
+<p>将大小指定为数组声明的一部分时会发生此错误。 若要解决此错误，请使用 <a href="https://docs.microsoft.com/zh-cn/dotnet/csharp/language-reference/operators/new-operator" target="_blank" rel="noopener">new 运算符</a>表达式。</p>
+<p>下面的示例生成 CS0270：</p>
+<pre class=" language-c#"><code class="language-c#">// CS0270.cs  
+// compile with: /t:module  
+
+public class Test  
+{  
+   int[10] a;   // CS0270  
+   // To resolve, use the following line instead:  
+   // int[] a = new int[10];  
+}</code></pre>
+<h1 id="动态图表LiveCharts"><a href="#动态图表LiveCharts" class="headerlink" title="动态图表LiveCharts"></a>动态图表LiveCharts</h1><h2 id="推荐阅读"><a href="#推荐阅读" class="headerlink" title="推荐阅读"></a>推荐阅读</h2><p>基本图表图线建立:<a href="http://www.manongjc.com/detail/14-bpxrwoalubxfjxk.html" target="_blank" rel="noopener">http://www.manongjc.com/detail/14-bpxrwoalubxfjxk.html</a></p>
+<p>基本图形的数据绑定:<a href="https://www.liangzl.com/get-article-detail-172477.html" target="_blank" rel="noopener">https://www.liangzl.com/get-article-detail-172477.html</a></p>
+<pre class=" language-c#"><code class="language-c#"> mychart.Series = new SeriesCollection
+            {
+                new LineSeries
+                {
+                    Values = new ChartValues<int>(temp),
+                    DataLabels=true,
+                    Title = "当前人数"
+                }
+
+            };
+
+            //myAxisX.Labels = new[] { "", "", "", "", "","","","","","" };//横坐标定义
+            DateTime now = new DateTime();
+
+            for (int j = 0; j < 10; j++)
+            {
+                time1[j] = now.ToString();
+
+            }
+            myAxisX.Labels = time1;
+            myAxisY.MaxValue = 10;//纵坐标最大值定义
+            //myAxisY.LabelFormatter = value => value.ToString("0%");
+            myAxisY.Title = "人数";//纵坐标标题</code></pre>
+<h2 id="设置曲线"><a href="#设置曲线" class="headerlink" title="设置曲线"></a>设置曲线</h2><pre class=" language-C#"><code class="language-C#">LineSeries mylineseries = new LineSeries();//首先实例化一条折线
+
+mylineseries.Title = "night";//设置折线名称
+
+mylineseries.Stroke = System.Windows.Media.Brushes.Black;//设置折线颜色
+
+mylineseries.StrokeThickness = 10;//设置折线粗细
+
+mylineseries.StrokeDashArray = new System.Windows.Media.DoubleCollection { 2 };//设置折线样式
+
+mylineseries.LineSmoothness = 1;//设置折线是否光滑
+
+mylineseries.Fill = System.Windows.Media.Brushes.LightBlue;//设置折线填充颜色</code></pre>
+<h2 id="设置图表"><a href="#设置图表" class="headerlink" title="设置图表"></a>设置图表</h2><pre class=" language-c#"><code class="language-c#"><lvc:CartesianChart x:Name="mychart" Series="{Binding SeriesCollection}"/ >//首先在前台给图表命名
+
+mychart.Background = System.Windows.Media.Brushes.Gray;//设置图表的背景颜色
+
+mychart.LegendLocation = LegendLocation.Top;//设置图示位置</code></pre>
+<h2 id="设置轴线"><a href="#设置轴线" class="headerlink" title="设置轴线"></a>设置轴线</h2><pre class=" language-xaml"><code class="language-xaml">//首先在前台对轴线命名
+<lvc:CartesianChart.AxisX>  
+<lvc:Axis x:Name="myaxisx"/>  
+</lvc:CartesianChart.AxisX>  </code></pre>
+<pre class=" language-c#"><code class="language-c#">myaxisx.Separator.StrokeThickness = 10;//设置轴线粗细
+
+myaxisx.Separator.Step = 0.5;//设置轴线间隔
+
+myaxisx.Title = "Date";//设置轴线标题
+
+myaxisx.Position = AxisPosition.RightTop;//设置轴线标题
+
+myaxisx.Labels = new[]{ "Mon", "Tue","Wen","Thu","Fri","Sat","Sun"};//设置坐标轴标签
+
+myaxisx.LabelsRotation = 45;//设置坐标轴标签旋转角度</code></pre>
+<h2 id="设置提示"><a href="#设置提示" class="headerlink" title="设置提示"></a>设置提示</h2><pre class=" language-xaml"><code class="language-xaml">//首先在前台对提示命名
+<lvc:CartesianChart.DataTooltip>  
+<lvc:DefaultTooltip x:Name="mytooltip"/>  
+</lvc:CartesianChart.DataTooltip>  </code></pre>
+<pre class=" language-c#"><code class="language-c#">mytooltip.Background = System.Windows.Media.Brushes.LightCyan;//设置提示的背景颜色
+
+mytooltip.SelectionMode = TooltipSelectionMode.OnlySender;//设置提示的选择模式
+
+mytooltip.CornerRadius = new CornerRadius(5);//设置提示框的圆角半径</code></pre>
+<pre class=" language-c#"><code class="language-c#">//设置提示框的边框颜色和大小
+mytooltip.BorderBrush = System.Windows.Media.Brushes.Yellow ;  
+mytooltip.BorderThickness = new Thickness (2);  </code></pre>
+<p>以上所有后台代码设置均可以在前台实现同样的设置<br>部分前台设置如下：</p>
+<pre class=" language-xaml"><code class="language-xaml"><lvc:CartesianChart.AxisY> 
+<lvc:Axis Title="star" LabelFormatter="{Binding Formatter}" ></lvc:Axis> 
+</lvc:CartesianChart.AxisY> </code></pre>
+<h2 id="完整代码"><a href="#完整代码" class="headerlink" title="完整代码"></a>完整代码</h2><pre class=" language-xaml"><code class="language-xaml"><Window x:Class="chart_line.MainWindow"
+xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+xmlns:local="clr-namespace:chart_line"
+xmlns:lvc="clr-namespace:LiveCharts.Wpf;assembly=LiveCharts.Wpf"
+mc:Ignorable="d"
+Title="MainWindow" Height="350" Width="525">
+<Grid x:Name="grid">
+<lvc:CartesianChart x:Name="mychart" Series="{Binding SeriesCollection}" >
+<lvc:CartesianChart.AxisX>
+<lvc:Axis x:Name="myaxisx"/>
+</lvc:CartesianChart.AxisX><lvc:CartesianChart.AxisY>
+<lvc:Axis Title="star" LabelFormatter="{Binding Formatter}" ></lvc:Axis>
+</lvc:CartesianChart.AxisY>
+<lvc:CartesianChart.DataTooltip>
+<lvc:DefaultTooltip x:Name="mytooltip"  />
+</lvc:CartesianChart.DataTooltip>
+</lvc:CartesianChart>
+</Grid>
+</Window></code></pre>
+<pre class=" language-c#"><code class="language-c#">using LiveCharts;
+using LiveCharts.Wpf;
+
+namespace chart_line
+{
+/// <summary>
+/// Interaction logic for MainWindow.xaml
+/// </summary>
+public partial class MainWindow : Window
+{
+public SeriesCollection SeriesCollection { get; set; }
+public Func<double, string> Formatter { get; set; }
+public MainWindow()
+{
+InitializeComponent();
+LineSeries mylineseries = new LineSeries();
+mylineseries.Title = "night";mylineseries.Stroke = System.Windows.Media.Brushes.Blue ;
+mylineseries.StrokeThickness = 10;mylineseries.StrokeDashArray = new System.Windows.Media.DoubleCollection { 2 };
+mylineseries.LineSmoothness = 1;mylineseries.Fill = System.Windows.Media.Brushes.LightBlue  ;//mylineseries.PointGeometry = null;
+
+mychart.LegendLocation = LegendLocation.Top ;mychart.Background = System.Windows.Media.Brushes.Gray ;
+myaxisx.Separator.StrokeThickness = 10;myaxisx.Separator.Stroke= System.Windows.Media.Brushes.Red;
+myaxisx.Separator.Step = 0.5;myaxisx.Title = "Date";myaxisx.Position = AxisPosition.RightTop;//myaxisx.IsMerged = true;
+
+myaxisx.LabelsRotation = 45;myaxisx.Labels = new[]{ "Mon", "Tue","Wen","Thu","Fri","Sat","Sun"};
+//mytooltip.BulletSize = 10;
+mytooltip.Background = System.Windows.Media.Brushes.LightCyan  ;
+mytooltip.SelectionMode = TooltipSelectionMode.OnlySender;mytooltip.CornerRadius = new CornerRadius(5);mytooltip.BorderBrush = System.Windows.Media.Brushes.Yellow ;
+mytooltip.BorderThickness = new Thickness (2);
+double[] mynum = { 1, 3, 1, 6, 2, 9, 4 };
+mylineseries.Values = new ChartValues<double> ( mynum );
+Formatter = value => value + "-N";
+SeriesCollection = new SeriesCollection {mylineseries};
+
+DataContext = this;
+}
+}
+}</code></pre>
+<p><img src="https://img-blog.csdnimg.cn/20190124225942411.?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzIzMTc2MTMz,size_16,color_FFFFFF,t_70" alt="效果图"></p>
 </object></p><script>
         document.querySelectorAll('.github-emoji')
           .forEach(el => {
@@ -1652,7 +1823,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">65.4k</span>&nbsp;字
+                class="white-color">67k</span>&nbsp;字
             
             
             
