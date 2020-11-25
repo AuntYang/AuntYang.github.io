@@ -748,58 +748,41 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="far fa-dot-circle"></i>&nbsp;本篇
-            </div>
+                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2020/09/24/man-qie-si-te-bian-jie-ma/">
+                <a href="/2020/11/13/qiang-zhi-bei-wu-lian-wang-da-sai-c-liu-cheng/">
                     <div class="card-image">
                         
                         
-                        <img src="https://cdn.jsdelivr.net/gh/AuntYang/AuntYang.github.io/medias/featureimages/1.jpg" class="responsive-img" alt="曼切斯特编解码">
+                        <img src="https://cdn.jsdelivr.net/gh/AuntYang/AuntYang.github.io/medias/featureimages/6.jpg" class="responsive-img" alt="“强智杯”物联网大赛C#流程">
                         
-                        <span class="card-title">曼切斯特编解码</span>
+                        <span class="card-title">“强智杯”物联网大赛C#流程</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            在RFID射频技术课中，老师提到了曼切斯特编码在RFID中常用，相对于传统的编解码方式，曼切斯特码具有丰富的时序信息等，这里学习一下曼切斯特软件编解码原理。
+                            项目建立前工作启动Utools剪切板和变量名
+VS新建WPF常规内容不必多说，直接建立在桌面文件夹
+添加引用添加Nuget引用动态图表Nuget程序
+LiveCharts
+LiveCharts.Wpf果壳材料包Nuget程序
+Materia
                         
                     </div>
                     <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-09-24
-                            </span>
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2020-11-13
+                        </span>
                         <span class="publish-author">
                             
-                            <i class="fas fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/source/categories/RFID%E5%B0%84%E9%A2%91%E6%8A%80%E6%9C%AF/" class="post-category">
-                                    RFID射频技术
-                                </a>
-                            
+                            <i class="fas fa-user fa-fw"></i>
+                            auntyang
                             
                         </span>
                     </div>
-                </div>
-
-                
-                <div class="card-action article-tags">
-                    
-                    <a href="/tags/%E5%A4%8D%E4%B9%A0/">
-                        <span class="chip bg-color">复习</span>
-                    </a>
-                    
-                    <a href="/tags/RFID%E5%B0%84%E9%A2%91%E6%8A%80%E6%9C%AF/">
-                        <span class="chip bg-color">RFID射频技术</span>
-                    </a>
-                    
-                    <a href="/tags/%E6%9B%BC%E5%88%87%E6%96%AF%E7%89%B9%E7%A0%81/">
-                        <span class="chip bg-color">曼切斯特码</span>
-                    </a>
-                    
                 </div>
                 
             </div>
@@ -875,7 +858,7 @@
 
         var selection = window.getSelection();
         // if the selection is short let's not annoy our users.
-        if (('' + selection).length < Number.parseInt('120')) {
+        if (('' + selection).length < Number.parseInt('100')) {
             return;
         }
 
@@ -957,7 +940,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             contentSelector: '#articleContent',
             headingsOffset: -($(window).height() * 0.4 - 45),
             collapseDepth: Number('5'),
-            headingSelector: 'h2, h3, h4'
+            headingSelector: 'h1, h2, h3, h4'
         });
 
         // modify the toc link href to support Chinese.
@@ -969,7 +952,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
 
         // modify the heading title id to support Chinese.
         i = 0;
-        $('#articleContent').children('h2, h3, h4').each(function () {
+        $('#articleContent').children('h1, h2, h3, h4').each(function () {
             $(this).attr('id', tocHeading + (++i));
         });
 
@@ -1101,7 +1084,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">67k</span>&nbsp;字
+                class="white-color">67.5k</span>&nbsp;字
             
             
             
