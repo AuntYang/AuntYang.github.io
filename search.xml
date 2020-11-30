@@ -4,6 +4,35 @@
   
     
     <entry>
+      <title>大三阶段感受和生活</title>
+      <link href="/2020/11/30/jie-duan-gan-shou/"/>
+      <url>/2020/11/30/jie-duan-gan-shou/</url>
+      
+        <content type="html"><![CDATA[<p>d的</p><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+      
+      
+      <categories>
+          
+          <category> 生活 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 计划 </tag>
+            
+            <tag> 感受 </tag>
+            
+            <tag> 生活 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>“强智杯”物联网大赛C#流程</title>
       <link href="/2020/11/13/qiang-zhi-bei-wu-lian-wang-da-sai-c-liu-cheng/"/>
       <url>/2020/11/13/qiang-zhi-bei-wu-lian-wang-da-sai-c-liu-cheng/</url>
