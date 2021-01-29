@@ -1,0 +1,495 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>小准子_Code</title>
+  
+  <subtitle>杨阿姨.talk</subtitle>
+  <link href="https://auntyang.tk/atom.xml" rel="self"/>
+  
+  <link href="https://auntyang.tk/"/>
+  <updated>2020-12-25T06:40:52.408Z</updated>
+  <id>https://auntyang.tk/</id>
+  
+  <author>
+    <name>auntyang</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>zigbee课程设计</title>
+    <link href="https://auntyang.tk/2020/12/25/zigbee-ke-cheng-she-ji/"/>
+    <id>https://auntyang.tk/2020/12/25/zigbee-ke-cheng-she-ji/</id>
+    <published>2020-12-25T06:40:52.408Z</published>
+    <updated>2020-12-25T06:40:52.408Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;script&gt;
+        document.querySelectorAll(&#39;.github-emoji&#39;)
+          .forEach(el =&gt; {
+            if (!el.dataset.src) { return; }
+       </summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>大三阶段感受和生活</title>
+    <link href="https://auntyang.tk/2020/11/30/jie-duan-gan-shou/"/>
+    <id>https://auntyang.tk/2020/11/30/jie-duan-gan-shou/</id>
+    <published>2020-11-30T10:50:00.000Z</published>
+    <updated>2020-11-30T10:54:59.715Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;d的&lt;/p&gt;
+&lt;script&gt;
+        document.querySelectorAll(&#39;.github-emoji&#39;)
+          .forEach(el =&gt; {
+            if (!el.dataset.src) { return;</summary>
+        
+      
+    
+    
+    
+    <category term="生活" scheme="https://auntyang.tk/source/categories/%E7%94%9F%E6%B4%BB/"/>
+    
+    
+    <category term="计划" scheme="https://auntyang.tk/tags/%E8%AE%A1%E5%88%92/"/>
+    
+    <category term="感受" scheme="https://auntyang.tk/tags/%E6%84%9F%E5%8F%97/"/>
+    
+    <category term="生活" scheme="https://auntyang.tk/tags/%E7%94%9F%E6%B4%BB/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>曼切斯特编解码</title>
+    <link href="https://auntyang.tk/2020/09/24/man-qie-si-te-bian-jie-ma/"/>
+    <id>https://auntyang.tk/2020/09/24/man-qie-si-te-bian-jie-ma/</id>
+    <published>2020-09-24T11:02:00.000Z</published>
+    <updated>2020-09-24T11:46:52.645Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;曼切斯特码及数据帧的特征&quot;&gt;&lt;a href=&quot;#曼切斯特码及数据帧的特征&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="RFID射频技术" scheme="https://auntyang.tk/source/categories/RFID%E5%B0%84%E9%A2%91%E6%8A%80%E6%9C%AF/"/>
+    
+    
+    <category term="复习" scheme="https://auntyang.tk/tags/%E5%A4%8D%E4%B9%A0/"/>
+    
+    <category term="RFID射频技术" scheme="https://auntyang.tk/tags/RFID%E5%B0%84%E9%A2%91%E6%8A%80%E6%9C%AF/"/>
+    
+    <category term="曼切斯特码" scheme="https://auntyang.tk/tags/%E6%9B%BC%E5%88%87%E6%96%AF%E7%89%B9%E7%A0%81/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>现代通信原理笔记</title>
+    <link href="https://auntyang.tk/2020/09/17/xian-dai-tong-xin-yuan-li/"/>
+    <id>https://auntyang.tk/2020/09/17/xian-dai-tong-xin-yuan-li/</id>
+    <published>2020-09-17T04:00:00.000Z</published>
+    <updated>2020-10-02T12:11:23.992Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;概论&quot;&gt;&lt;a href=&quot;#概论&quot; class=&quot;headerlink&quot; title=&quot;概论&quot;&gt;&lt;/a&gt;概论&lt;/h1&gt;&lt;h2 id=&quot;信息及其度量&quot;&gt;&lt;a href=&quot;#信息及其度量&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="现代通信原理" scheme="https://auntyang.tk/source/categories/%E7%8E%B0%E4%BB%A3%E9%80%9A%E4%BF%A1%E5%8E%9F%E7%90%86/"/>
+    
+    
+    <category term="复习" scheme="https://auntyang.tk/tags/%E5%A4%8D%E4%B9%A0/"/>
+    
+    <category term="现代通信原理" scheme="https://auntyang.tk/tags/%E7%8E%B0%E4%BB%A3%E9%80%9A%E4%BF%A1%E5%8E%9F%E7%90%86/"/>
+    
+    <category term="扎实" scheme="https://auntyang.tk/tags/%E6%89%8E%E5%AE%9E/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>C#之WPF学习</title>
+    <link href="https://auntyang.tk/2020/07/08/c-zhi-wpf/"/>
+    <id>https://auntyang.tk/2020/07/08/c-zhi-wpf/</id>
+    <published>2020-07-08T00:55:00.000Z</published>
+    <updated>2020-09-07T07:54:30.255Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;WPF界面布局与控件&quot;&gt;&lt;a href=&quot;#WPF界面布局与控件&quot; class=&quot;headerlink&quot; title=&quot;WPF界面布局与控件&quot;&gt;&lt;/a&gt;WPF界面布局与控件&lt;/h1&gt;&lt;h2 id=&quot;WPF界面布局&quot;&gt;&lt;a href=&quot;#WPF界面布局&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="C#" scheme="https://auntyang.tk/source/categories/C/"/>
+    
+    
+    <category term="C#" scheme="https://auntyang.tk/tags/C/"/>
+    
+    <category term="物联网大赛" scheme="https://auntyang.tk/tags/%E7%89%A9%E8%81%94%E7%BD%91%E5%A4%A7%E8%B5%9B/"/>
+    
+    <category term="WPF" scheme="https://auntyang.tk/tags/WPF/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>学术英语复习笔记</title>
+    <link href="https://auntyang.tk/2020/06/21/xue-zhu-ying-yu-fu-xi-bi-ji/"/>
+    <id>https://auntyang.tk/2020/06/21/xue-zhu-ying-yu-fu-xi-bi-ji/</id>
+    <published>2020-06-21T12:37:00.000Z</published>
+    <updated>2020-09-30T05:12:02.722Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;Text5&quot;&gt;&lt;a href=&quot;#Text5&quot; class=&quot;headerlink&quot; title=&quot;Text5&quot;&gt;&lt;/a&gt;Text5&lt;/h1&gt;&lt;p&gt;Litigable [‘lɪtɪɡəbl]: a. 可诉讼的，可作诉讼标的&lt;/p&gt;
+&lt;p&gt;Pot: n.</summary>
+        
+      
+    
+    
+    
+    <category term="学术英语" scheme="https://auntyang.tk/source/categories/%E5%AD%A6%E6%9C%AF%E8%8B%B1%E8%AF%AD/"/>
+    
+    
+    <category term="学术英语" scheme="https://auntyang.tk/tags/%E5%AD%A6%E6%9C%AF%E8%8B%B1%E8%AF%AD/"/>
+    
+    <category term="复习" scheme="https://auntyang.tk/tags/%E5%A4%8D%E4%B9%A0/"/>
+    
+    <category term="考研" scheme="https://auntyang.tk/tags/%E8%80%83%E7%A0%94/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>数据库原理复习笔记</title>
+    <link href="https://auntyang.tk/2020/06/09/shu-ju-ku-yuan-li-fu-xi-bi-ji/"/>
+    <id>https://auntyang.tk/2020/06/09/shu-ju-ku-yuan-li-fu-xi-bi-ji/</id>
+    <published>2020-06-09T09:23:00.000Z</published>
+    <updated>2020-09-30T05:11:51.165Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;数据库概述&quot;&gt;&lt;a href=&quot;#数据库概述&quot; class=&quot;headerlink&quot; title=&quot;数据库概述&quot;&gt;&lt;/a&gt;数据库概述&lt;/h1&gt;&lt;h2 id=&quot;概述&quot;&gt;&lt;a href=&quot;#概述&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="数据库原理" scheme="https://auntyang.tk/source/categories/%E6%95%B0%E6%8D%AE%E5%BA%93%E5%8E%9F%E7%90%86/"/>
+    
+    
+    <category term="复习" scheme="https://auntyang.tk/tags/%E5%A4%8D%E4%B9%A0/"/>
+    
+    <category term="考研" scheme="https://auntyang.tk/tags/%E8%80%83%E7%A0%94/"/>
+    
+    <category term="数据库原理" scheme="https://auntyang.tk/tags/%E6%95%B0%E6%8D%AE%E5%BA%93%E5%8E%9F%E7%90%86/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>计算机网络原理复习笔记</title>
+    <link href="https://auntyang.tk/2020/06/07/ji-suan-ji-wang-luo-yuan-li-fu-xi-bi-ji/"/>
+    <id>https://auntyang.tk/2020/06/07/ji-suan-ji-wang-luo-yuan-li-fu-xi-bi-ji/</id>
+    <published>2020-06-07T12:37:00.000Z</published>
+    <updated>2020-09-30T05:10:22.390Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;第一章考小题、第五章主要考拥塞控制、第六章名词解释&lt;br&gt;串行通信和并行通信&lt;br&gt;MAC地址那块分清楚单播、广播、多播，及应用场合，什么时候封装MAC帧&lt;br&gt;一定要知道交换表怎么生成&lt;br&gt;第三章把作业弄明白&lt;br&gt;IP协议簇和网络中间设备的区别、IP数据报格式及首部检</summary>
+        
+      
+    
+    
+    
+    <category term="计算机网络原理" scheme="https://auntyang.tk/source/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E5%8E%9F%E7%90%86/"/>
+    
+    
+    <category term="复习" scheme="https://auntyang.tk/tags/%E5%A4%8D%E4%B9%A0/"/>
+    
+    <category term="考研" scheme="https://auntyang.tk/tags/%E8%80%83%E7%A0%94/"/>
+    
+    <category term="计算机网络原理" scheme="https://auntyang.tk/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E5%8E%9F%E7%90%86/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>路由器OSPF动态路由配置</title>
+    <link href="https://auntyang.tk/2020/05/22/ji-suan-ji-wang-luo-yuan-li-shi-yan-12/"/>
+    <id>https://auntyang.tk/2020/05/22/ji-suan-ji-wang-luo-yuan-li-shi-yan-12/</id>
+    <published>2020-05-22T12:01:00.000Z</published>
+    <updated>2020-09-30T05:11:04.952Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;实验名称-路由器OSPF动态路由配置&quot;&gt;&lt;a href=&quot;#实验名称-路由器OSPF动态路由配置&quot; class=&quot;headerlink&quot; title=&quot;﻿实验名称  路由器OSPF动态路由配置&quot;&gt;&lt;/a&gt;﻿实验名称  路由器OSPF动态路由配置&lt;/h2&gt;&lt;h2</summary>
+        
+      
+    
+    
+    
+    <category term="计算机网络原理" scheme="https://auntyang.tk/source/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E5%8E%9F%E7%90%86/"/>
+    
+    
+    <category term="实验" scheme="https://auntyang.tk/tags/%E5%AE%9E%E9%AA%8C/"/>
+    
+    <category term="计算机网络" scheme="https://auntyang.tk/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>路由器RIP动态路由配置</title>
+    <link href="https://auntyang.tk/2020/05/21/ji-suan-ji-wang-luo-yuan-li-shi-yan-11/"/>
+    <id>https://auntyang.tk/2020/05/21/ji-suan-ji-wang-luo-yuan-li-shi-yan-11/</id>
+    <published>2020-05-21T11:57:00.000Z</published>
+    <updated>2020-09-30T05:10:48.901Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;实验名称-路由器RIP动态路由配置&quot;&gt;&lt;a href=&quot;#实验名称-路由器RIP动态路由配置&quot; class=&quot;headerlink&quot; title=&quot;﻿实验名称  路由器RIP动态路由配置&quot;&gt;&lt;/a&gt;﻿实验名称  路由器RIP动态路由配置&lt;/h2&gt;&lt;h2</summary>
+        
+      
+    
+    
+    
+    <category term="计算机网络原理" scheme="https://auntyang.tk/source/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E5%8E%9F%E7%90%86/"/>
+    
+    
+    <category term="实验" scheme="https://auntyang.tk/tags/%E5%AE%9E%E9%AA%8C/"/>
+    
+    <category term="计算机网络" scheme="https://auntyang.tk/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>web自动化测试（python+selenium）</title>
+    <link href="https://auntyang.tk/2020/05/18/web-zi-dong-hua-ce-shi/"/>
+    <id>https://auntyang.tk/2020/05/18/web-zi-dong-hua-ce-shi/</id>
+    <published>2020-05-18T09:40:00.000Z</published>
+    <updated>2020-05-23T08:55:02.785Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;环境配置&quot;&gt;&lt;a href=&quot;#环境配置&quot; class=&quot;headerlink&quot; title=&quot;环境配置&quot;&gt;&lt;/a&gt;环境配置&lt;/h2&gt;&lt;h3 id=&quot;Python安装&quot;&gt;&lt;a href=&quot;#Python安装&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="Web" scheme="https://auntyang.tk/source/categories/Web/"/>
+    
+    
+    <category term="Web" scheme="https://auntyang.tk/tags/Web/"/>
+    
+    <category term="自动化测试" scheme="https://auntyang.tk/tags/%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95/"/>
+    
+    <category term="python" scheme="https://auntyang.tk/tags/python/"/>
+    
+    <category term="selenium库" scheme="https://auntyang.tk/tags/selenium%E5%BA%93/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Linux根目录详解</title>
+    <link href="https://auntyang.tk/2020/05/17/linux-gen-mu-lu-xiang-jie/"/>
+    <id>https://auntyang.tk/2020/05/17/linux-gen-mu-lu-xiang-jie/</id>
+    <published>2020-05-17T09:34:55.000Z</published>
+    <updated>2020-05-16T09:37:55.087Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;﻿使用Linux需要弄清楚其文件目录，尤其是根目录的各项文件的作用，进一步可以了解Linux系统的内核原理。&lt;br&gt;&lt;img</summary>
+        
+      
+    
+    
+    
+    <category term="Linux" scheme="https://auntyang.tk/source/categories/Linux/"/>
+    
+    
+    <category term="思维导图" scheme="https://auntyang.tk/tags/%E6%80%9D%E7%BB%B4%E5%AF%BC%E5%9B%BE/"/>
+    
+    <category term="Linux文件" scheme="https://auntyang.tk/tags/Linux%E6%96%87%E4%BB%B6/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>使用网络协议分析仪Wireshark</title>
+    <link href="https://auntyang.tk/2020/05/16/ji-suan-ji-wang-luo-yuan-li-shi-yan-1/"/>
+    <id>https://auntyang.tk/2020/05/16/ji-suan-ji-wang-luo-yuan-li-shi-yan-1/</id>
+    <published>2020-05-16T11:17:00.000Z</published>
+    <updated>2020-05-16T11:18:57.447Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;实验名称-使用网络协议分析仪Wireshark&quot;&gt;&lt;a href=&quot;#实验名称-使用网络协议分析仪Wireshark&quot; class=&quot;headerlink&quot; title=&quot;﻿实验名称  使用网络协议分析仪Wireshark&quot;&gt;&lt;/a&gt;﻿实验名称 </summary>
+        
+      
+    
+    
+    
+    <category term="计算机网络原理" scheme="https://auntyang.tk/source/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E5%8E%9F%E7%90%86/"/>
+    
+    
+    <category term="实验" scheme="https://auntyang.tk/tags/%E5%AE%9E%E9%AA%8C/"/>
+    
+    <category term="计算机网络" scheme="https://auntyang.tk/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Python基础入门</title>
+    <link href="https://auntyang.tk/2020/05/16/python-ji-chu/"/>
+    <id>https://auntyang.tk/2020/05/16/python-ji-chu/</id>
+    <published>2020-05-16T09:28:23.000Z</published>
+    <updated>2020-05-16T09:43:08.213Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;﻿ 编程语言很多，但大多是大同小异的，所以掌握编程思维、设计模式和学习方法才能更好的适应一门新的编程语言，我习惯于用思维导图的方式开始一门新的学习。&lt;br&gt;&lt;img</summary>
+        
+      
+    
+    
+    
+    <category term="Python" scheme="https://auntyang.tk/source/categories/Python/"/>
+    
+    
+    <category term="思维导图" scheme="https://auntyang.tk/tags/%E6%80%9D%E7%BB%B4%E5%AF%BC%E5%9B%BE/"/>
+    
+    <category term="Python基础" scheme="https://auntyang.tk/tags/Python%E5%9F%BA%E7%A1%80/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Git常用初级命令</title>
+    <link href="https://auntyang.tk/2020/05/16/git-chang-yong-ming-ling/"/>
+    <id>https://auntyang.tk/2020/05/16/git-chang-yong-ming-ling/</id>
+    <published>2020-05-16T09:23:00.000Z</published>
+    <updated>2020-05-16T09:25:37.735Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;﻿&lt;img</summary>
+        
+      
+    
+    
+    
+    <category term="Git" scheme="https://auntyang.tk/source/categories/Git/"/>
+    
+    
+    <category term="Git命令" scheme="https://auntyang.tk/tags/Git%E5%91%BD%E4%BB%A4/"/>
+    
+    <category term="思维导图" scheme="https://auntyang.tk/tags/%E6%80%9D%E7%BB%B4%E5%AF%BC%E5%9B%BE/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="https://auntyang.tk/2020/05/16/hello-world/"/>
+    <id>https://auntyang.tk/2020/05/16/hello-world/</id>
+    <published>2020-05-16T09:11:00.000Z</published>
+    <updated>2020-05-16T09:13:56.592Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a</summary>
+        
+      
+    
+    
+    
+    
+    <category term="指南" scheme="https://auntyang.tk/tags/%E6%8C%87%E5%8D%97/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>路由器静态路由配置实验</title>
+    <link href="https://auntyang.tk/2020/05/14/ji-suan-ji-wang-luo-yuan-li-shi-yan-10/"/>
+    <id>https://auntyang.tk/2020/05/14/ji-suan-ji-wang-luo-yuan-li-shi-yan-10/</id>
+    <published>2020-05-14T01:00:00.000Z</published>
+    <updated>2020-05-16T09:09:31.231Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;实验名称-路由器静态路由配置&quot;&gt;&lt;a href=&quot;#实验名称-路由器静态路由配置&quot; class=&quot;headerlink&quot; title=&quot;实验名称  路由器静态路由配置&quot;&gt;&lt;/a&gt;实验名称  路由器静态路由配置&lt;/h2&gt;&lt;h2 id=&quot;实验目的&quot;&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="计算机网络原理" scheme="https://auntyang.tk/source/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E5%8E%9F%E7%90%86/"/>
+    
+    
+    <category term="实验" scheme="https://auntyang.tk/tags/%E5%AE%9E%E9%AA%8C/"/>
+    
+    <category term="计算机网络" scheme="https://auntyang.tk/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"/>
+    
+  </entry>
+  
+</feed>

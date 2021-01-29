@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="“强智杯”物联网大赛C#流程, 小准子_Code">
+    <meta name="keywords" content="zigbee课程设计, 小准子_Code">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>“强智杯”物联网大赛C#流程 | 小准子_Code</title>
+    <title>zigbee课程设计 | 小准子_Code</title>
     <link rel="icon" type="image/png" href="https://cdn.jsdelivr.net/gh/AuntYang/AuntYang.github.io/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/AuntYang/AuntYang.github.io/libs/awesome/css/all.css">
@@ -30,7 +30,8 @@
     <script src="https://cdn.jsdelivr.net/gh/AuntYang/AuntYang.github.io/libs/jquery/jquery.min.js"></script>
 
 
-<meta name="generator" content="Hexo 4.2.0"><link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
+<meta name="generator" content="Hexo 4.2.0"><link rel="alternate" href="/atom.xml" title="小准子_Code" type="application/atom+xml">
+<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
 
 
 <body>
@@ -322,12 +323,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('https://cdn.jsdelivr.net/gh/AuntYang/AuntYang.github.io/medias/featureimages/6.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('https://cdn.jsdelivr.net/gh/AuntYang/AuntYang.github.io/medias/featureimages/2.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">“强智杯”物联网大赛C#流程</h1>
+                    <h1 class="description center-align post-title">zigbee课程设计</h1>
                 </div>
             </div>
         </div>
@@ -456,28 +457,28 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2020-11-13
+                    2020-12-25
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2020-11-14
+                    2020-12-25
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    476
+                    52
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    2 分
+                    1 分
                 </div>
                 
 
@@ -492,150 +493,7 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="项目建立前工作"><a href="#项目建立前工作" class="headerlink" title="项目建立前工作"></a>项目建立前工作</h1><h2 id="启动Utools"><a href="#启动Utools" class="headerlink" title="启动Utools"></a>启动Utools</h2><p>剪切板和变量名</p>
-<h2 id="VS新建WPF"><a href="#VS新建WPF" class="headerlink" title="VS新建WPF"></a>VS新建WPF</h2><p>常规内容不必多说，直接建立在桌面文件夹</p>
-<h1 id="添加引用"><a href="#添加引用" class="headerlink" title="添加引用"></a>添加引用</h1><h2 id="添加Nuget引用"><a href="#添加Nuget引用" class="headerlink" title="添加Nuget引用"></a>添加Nuget引用</h2><p>动态图表Nuget程序</p>
-<pre><code>LiveCharts
-LiveCharts.Wpf</code></pre><p>果壳材料包Nuget程序</p>
-<pre><code>MaterialDesignColors
-MaterialDesignThemes</code></pre><p>果壳弹窗引用</p>
-<pre><code>SampleMessageDialog.xaml</code></pre><p>在Pandora-Box项目文件夹中直接引用</p>
-<p>HandyControl控件包Nuget程序</p>
-<pre><code>HandyControl</code></pre><h2 id="添加项目引用"><a href="#添加项目引用" class="headerlink" title="添加项目引用"></a>添加项目引用</h2><p>云平台SDK引用</p>
-<pre><code>NLECloudSDK</code></pre><p>云平台二次封装项目引用</p>
-<pre><code>CloudPlatformInfo
-Device.cs</code></pre><p>学长封装的Device.cs在使用时务必记得实例化（声明）</p>
-<p>雷达图和玫瑰图项目引用</p>
-<pre><code>Painter</code></pre><p>说明：项目引用均在Pandora-Box项目文件夹中可以找到</p>
-<h2 id="引用和优化代码添加"><a href="#引用和优化代码添加" class="headerlink" title="引用和优化代码添加"></a>引用和优化代码添加</h2><p>App.xaml中添加两个美化包的引用</p>
-<pre class=" language-xaml"><code class="language-xaml"><ResourceDictionary.MergedDictionaries>
-                <ResourceDictionary Source="pack://application:,,,/HandyControl;component/Themes/SkinDefault.xaml"/>
-                <ResourceDictionary Source="pack://application:,,,/HandyControl;component/Themes/Theme.xaml"/>
-                <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.Light.xaml" />
-                <ResourceDictionary Source="pack://application:,,,/MaterialDesignColors;component/Themes/Recommended/Primary/MaterialDesignColor.DeepPurple.xaml" />
-                <ResourceDictionary Source="pack://application:,,,/MaterialDesignColors;component/Themes/Recommended/Accent/MaterialDesignColor.Lime.xaml" />
-                <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.Defaults.xaml" />
-            </ResourceDictionary.MergedDictionaries>
-            <Style TargetType="Path" BasedOn="{x:Null}"/></code></pre>
-<p>同时设置启动窗口</p>
-<pre class=" language-xaml"><code class="language-xaml">StartupUri="LoginWindow.xaml"</code></pre>
-<p>using添加</p>
-<h1 id="框架搭建"><a href="#框架搭建" class="headerlink" title="框架搭建"></a>框架搭建</h1><h2 id="登录界面"><a href="#登录界面" class="headerlink" title="登录界面"></a>登录界面</h2><p>在完成之前的工作后可以直接套用Pandora-Box的代码</p>
-<h1 id="小葛代码"><a href="#小葛代码" class="headerlink" title="小葛代码"></a>小葛代码</h1><pre class=" language-c#"><code class="language-c#">using NLECloudSDK;
-using NLECloudSDK.Model;
-using System;
-using System.Collections.Generic;
-using System.Collections.ObjectModel;
-using System.ComponentModel;
-using System.Windows;
-using System.Windows.Controls;
-
-namespace NLECloud
-{
-    public partial class Page1 : Page
-    {
-        public Page1()
-        {
-            InitializeComponent();
-        }
-        class sensorDataInfo : INotifyPropertyChanged
-        {
-            private int _Index;
-            private String _Data;
-            private String _Time;
-            public event PropertyChangedEventHandler PropertyChanged;
-            public sensorDataInfo(int Index, String Data, String Time)
-            {
-                _Index = Index;
-                _Data = Data;
-                _Time = Time;
-            }
-            public int Index
-            {
-                set
-                {
-                    _Index = value;
-                    PropertyChanged(this, new PropertyChangedEventArgs("Index"));
-                }
-                get { return _Index; }
-            }
-            public String Data
-            {
-                set
-                {
-                    _Data = value;
-                    PropertyChanged(this, new PropertyChangedEventArgs("Data"));
-                }
-                get { return _Data; }
-            }
-            public String Time
-            {
-                set
-                {
-                    _Time = value;
-                    PropertyChanged(this, new PropertyChangedEventArgs("Time"));
-                }
-                get { return _Time; }
-            }
-        }
-
-        private void google_Click(object sender, RoutedEventArgs e)
-        {
-            SensorDataFuzzyQryPagingParas qry = new SensorDataFuzzyQryPagingParas()
-            {
-                DeviceID = 90596,
-                ApiTags = apiTagBox.Text,
-                Method = 5,
-                TimeAgo = 2,
-                Sort = "DESC"
-            };
-            ResultMsg < SensorDataPageDTO > senDatas = MainWindow.SDK.GetSensorDatas(qry, MainWindow.accToken);
-            if (senDatas.IsSuccess())
-            {
-                IEnumerable<SensorDataAddDTO> sensorDatas = senDatas.ResultObj.DataPoints;
-                ObservableCollection<sensorDataInfo> dataInfos = new ObservableCollection<sensorDataInfo>();
-                foreach (var item1 in sensorDatas)
-                {
-                    int count = 0;
-                    foreach (var item2 in item1.PointDTO)
-                    {
-                        count++;
-                        dataInfos.Add(new sensorDataInfo(count, item2.Value.ToString(), item2.RecordTime));
-                    }
-                }
-                listView.ItemsSource = dataInfos;
-            }
-            else
-            {
-                MessageBox.Show(senDatas.Msg, "历史数据");
-            }
-        }
-    }
-}
-</code></pre>
-<pre class=" language-xaml"><code class="language-xaml">    <Grid>
-        <StackPanel>
-            <WrapPanel>
-                <TextBlock Text="传感器名称" Margin="10" FontSize="20"/>
-                <TextBox x:Name="apiTagBox" HorizontalAlignment="Center" VerticalAlignment="Center" 
-                         Width="200" BorderBrush="Black" BorderThickness="2"/>
-                <Button x:Name="google" Content="查询" Margin="100 0 0 0" FontSize="20" Click="google_Click"/>
-            </WrapPanel>
-            <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Center" Height="220" Margin="200,20,200,0" VerticalAlignment="Top" Width="400">
-                <ListView x:Name ="listView"  ItemContainerStyle="{StaticResource ListViewItemStyle}">
-                    <ListView.View>
-                        <GridView>
-                            <GridViewColumn Header="索引" Width="100" DisplayMemberBinding="{Binding Path=Index}" />
-                            <GridViewColumn Header="数据" Width="100" DisplayMemberBinding="{Binding Path=Data}"/>
-                            <GridViewColumn Header="时间" Width="200" DisplayMemberBinding="{Binding Path=Time}"/>
-                        </GridView>
-                    </ListView.View>
-                </ListView>
-            </Border>
-        </StackPanel>
-    </Grid>
-</code></pre>
-<script>
+                <script>
         document.querySelectorAll('.github-emoji')
           .forEach(el => {
             if (!el.dataset.src) { return; }
@@ -678,7 +536,7 @@ namespace NLECloud
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://auntyang.tk/2020/11/13/qiang-zhi-bei-wu-lian-wang-da-sai-c-liu-cheng/">https://auntyang.tk/2020/11/13/qiang-zhi-bei-wu-lian-wang-da-sai-c-liu-cheng/</a>
+                    <a href="https://auntyang.tk/2020/12/25/zigbee-ke-cheng-she-ji/">https://auntyang.tk/2020/12/25/zigbee-ke-cheng-she-ji/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -1144,9 +1002,51 @@ namespace NLECloud
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
+            <div class="card">
+                <a href="/2020/12/25/zigbee-ke-cheng-she-ji/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="https://cdn.jsdelivr.net/gh/AuntYang/AuntYang.github.io/medias/featureimages/2.jpg" class="responsive-img" alt="zigbee课程设计">
+                        
+                        <span class="card-title">zigbee课程设计</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+        document.querySelectorAll('.github-emoji')
+          .forEach(el => {
+            if (!el.dataset.src) { return
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-12-25
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-user fa-fw"></i>
+                            auntyang
+                            
+                        </span>
+                    </div>
+                </div>
+
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
             <div class="card">
                 <a href="/2020/11/30/jie-duan-gan-shou/">
                     <div class="card-image">
@@ -1164,9 +1064,9 @@ namespace NLECloud
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2020-11-30
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-11-30
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
@@ -1192,63 +1092,6 @@ namespace NLECloud
                     
                     <a href="/tags/%E7%94%9F%E6%B4%BB/">
                         <span class="chip bg-color">生活</span>
-                    </a>
-                    
-                </div>
-                
-            </div>
-        </div>
-        
-        
-        <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge right-badge text-color">
-                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
-            </div>
-            <div class="card">
-                <a href="/2020/09/24/man-qie-si-te-bian-jie-ma/">
-                    <div class="card-image">
-                        
-                        
-                        <img src="https://cdn.jsdelivr.net/gh/AuntYang/AuntYang.github.io/medias/featureimages/1.jpg" class="responsive-img" alt="曼切斯特编解码">
-                        
-                        <span class="card-title">曼切斯特编解码</span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary block-with-text">
-                        
-                            在RFID射频技术课中，老师提到了曼切斯特编码在RFID中常用，相对于传统的编解码方式，曼切斯特码具有丰富的时序信息等，这里学习一下曼切斯特软件编解码原理。
-                        
-                    </div>
-                    <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-09-24
-                            </span>
-                        <span class="publish-author">
-                            
-                            <i class="fas fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/source/categories/RFID%E5%B0%84%E9%A2%91%E6%8A%80%E6%9C%AF/" class="post-category">
-                                    RFID射频技术
-                                </a>
-                            
-                            
-                        </span>
-                    </div>
-                </div>
-                
-                <div class="card-action article-tags">
-                    
-                    <a href="/tags/%E5%A4%8D%E4%B9%A0/">
-                        <span class="chip bg-color">复习</span>
-                    </a>
-                    
-                    <a href="/tags/RFID%E5%B0%84%E9%A2%91%E6%8A%80%E6%9C%AF/">
-                        <span class="chip bg-color">RFID射频技术</span>
-                    </a>
-                    
-                    <a href="/tags/%E6%9B%BC%E5%88%87%E6%96%AF%E7%89%B9%E7%A0%81/">
-                        <span class="chip bg-color">曼切斯特码</span>
                     </a>
                     
                 </div>
@@ -1488,7 +1331,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">67.6k</span>&nbsp;字
+                class="white-color">61.3k</span>&nbsp;字
             
             
             
