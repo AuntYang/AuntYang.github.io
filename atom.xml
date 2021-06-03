@@ -6,7 +6,7 @@
   <link href="https://auntyang.tk/atom.xml" rel="self"/>
   
   <link href="https://auntyang.tk/"/>
-  <updated>2020-12-25T06:40:52.408Z</updated>
+  <updated>2021-06-03T06:15:34.470Z</updated>
   <id>https://auntyang.tk/</id>
   
   <author>
@@ -15,6 +15,75 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>毕业实习-Linux智能家居项目</title>
+    <link href="https://auntyang.tk/2021/06/01/bi-ye-shi-xi-linux-zhi-neng-jia-ju-xiang-mu/"/>
+    <id>https://auntyang.tk/2021/06/01/bi-ye-shi-xi-linux-zhi-neng-jia-ju-xiang-mu/</id>
+    <published>2021-06-01T06:04:00.000Z</published>
+    <updated>2021-06-03T06:15:34.470Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;第一天&quot;&gt;&lt;a href=&quot;#第一天&quot; class=&quot;headerlink&quot; title=&quot;第一天&quot;&gt;&lt;/a&gt;第一天&lt;/h1&gt;&lt;p&gt;2021年6月1日，于长沙市学士桥粤嵌众创作毕业实习项目，项目为基于Linux的智能家居应用。&lt;/p&gt;
+&lt;h2</summary>
+        
+      
+    
+    
+    
+    <category term="实习" scheme="https://auntyang.tk/source/categories/%E5%AE%9E%E4%B9%A0/"/>
+    
+    
+    <category term="Linux" scheme="https://auntyang.tk/tags/Linux/"/>
+    
+    <category term="毕业实习" scheme="https://auntyang.tk/tags/%E6%AF%95%E4%B8%9A%E5%AE%9E%E4%B9%A0/"/>
+    
+    <category term="实习" scheme="https://auntyang.tk/tags/%E5%AE%9E%E4%B9%A0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>生产实习-STM32避障循迹小车项目</title>
+    <link href="https://auntyang.tk/2021/06/01/sheng-chan-shi-xi-stm32-dai-bi-zhang-gong-neng-de-xun-ji-xiao-che-xiang-mu/"/>
+    <id>https://auntyang.tk/2021/06/01/sheng-chan-shi-xi-stm32-dai-bi-zhang-gong-neng-de-xun-ji-xiao-che-xiang-mu/</id>
+    <published>2021-06-01T06:04:00.000Z</published>
+    <updated>2021-06-01T06:12:50.531Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;script&gt;
+        document.querySelectorAll(&#39;.github-emoji&#39;)
+          .forEach(el =&gt; {
+            if (!el.dataset.src) { return; }
+       </summary>
+        
+      
+    
+    
+    
+    <category term="实习" scheme="https://auntyang.tk/source/categories/%E5%AE%9E%E4%B9%A0/"/>
+    
+    
+    <category term="实习" scheme="https://auntyang.tk/tags/%E5%AE%9E%E4%B9%A0/"/>
+    
+    <category term="STM32" scheme="https://auntyang.tk/tags/STM32/"/>
+    
+    <category term="生产实习" scheme="https://auntyang.tk/tags/%E7%94%9F%E4%BA%A7%E5%AE%9E%E4%B9%A0/"/>
+    
+    <category term="循迹小车" scheme="https://auntyang.tk/tags/%E5%BE%AA%E8%BF%B9%E5%B0%8F%E8%BD%A6/"/>
+    
+    <category term="避障小车" scheme="https://auntyang.tk/tags/%E9%81%BF%E9%9A%9C%E5%B0%8F%E8%BD%A6/"/>
+    
+    <category term="蓝牙模块" scheme="https://auntyang.tk/tags/%E8%93%9D%E7%89%99%E6%A8%A1%E5%9D%97/"/>
+    
+  </entry>
   
   <entry>
     <title>zigbee课程设计</title>
